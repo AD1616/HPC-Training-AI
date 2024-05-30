@@ -33,13 +33,17 @@ Helps a user find relevant training materials in topics related to High Performa
 11. ```
     ./local_setup.sh
     ```
+    
+Note that if it says "address already in use", that (likely) means ollama is already running. From the Mac taskbar, you can always quit ollama so you can start and stop from command line. Make sure to run step 11 again if you do this.
+
+![image](https://github.com/AD1616/HPC-Training-AI/assets/64157584/2547e651-3ee8-47bf-ba83-4e4eca0764e9)
+
+Your current terminal is now running ollama, and will show any requests made to ollama. To continue with the next steps, keep this terminal running and open a new terminal window. Navigate to the directory where the cloned repository is located.
+
 12. ```
-    cd ..
-    ```
-13. ```
     python load_sdsc_events_data.py
     ```
-14. ```
+13. ```
     python generate_embeddings.py
     ```
 
