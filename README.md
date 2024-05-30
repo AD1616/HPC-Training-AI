@@ -49,7 +49,7 @@ If all of the above was done properly, you can now run:
 python query.py <query>
 ```
 
-where <query> is what you want to learn about, such as:
+where \<query\> is what you want to learn about, such as:
 
 ```
 python query.py "I want to learn about Cyberinfrastructure"
