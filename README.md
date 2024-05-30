@@ -5,31 +5,61 @@ Helps a user find relevant training materials in topics related to High Performa
 ### Running locally on MacOS
 
 1. Install [ollama](https://ollama.com/)
-2. ```ollama pull nomic-embed-text```
-3. ```ollama run llama3```
+2. ```
+   ollama pull nomic-embed-text
+   ```
+3. ```
+   ollama run llama3
+   ```
 4. Install [mongodb community edition](https://www.mongodb.com/try/download/community)
-5. ```git clone https://github.com/AD1616/HPC-Training-AI.git```
-6. ```cd HPC-Training-AI/local_scripts```
-7. ```pip install -r requirements.txt```
-8. ```chmod +x local_kill.sh```
-9. ```./local_kill.sh```
-10. ```chmod +x local_setup.sh```
-11. ```./local_setup.sh```
-12. ```cd ..```
-13. ```python load_sdsc_events_data.py```
-14. ```python generate_embeddings.py```
+5. ```
+   git clone https://github.com/AD1616/HPC-Training-AI.git
+   ```
+6. ```
+   cd HPC-Training-AI/local_scripts
+   ```
+7. ```
+    pip install -r requirements.txt
+   ```
+8. ```
+    chmod +x local_kill.sh
+    ```
+9. ```
+    ./local_kill.sh
+    ```
+10. ```
+    chmod +x local_setup.sh
+    ```
+11. ```
+    ./local_setup.sh
+    ```
+12. ```
+    cd ..
+    ```
+13. ```
+    python load_sdsc_events_data.py
+    ```
+14. ```
+    python generate_embeddings.py
+    ```
 
 If all of the above was done properly, you can now run:
 
-```python query.py <query>```
+```
+python query.py <query>
+```
 
 where <query> is what you want to learn about, such as:
 
-```python query.py "I want to learn about Cyberinfrastructure"```
+```
+python query.py "I want to learn about Cyberinfrastructure"
+```
 
 When finished, run:
 
-```./local_scripts/local_kill.sh```
+```
+./local_scripts/local_kill.sh
+```
 
 ### Notes
 
