@@ -77,6 +77,9 @@ def save_to_chroma(chunks: list[Document]):
     print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
 
 
+"""
+Once there are more collections, load_documents() must be called for each one.
+"""
 def pipeline():
     documents = load_documents("hpc_training_raw_local_db", "sdsc_events")
     chunks = chunk_documents(documents)
