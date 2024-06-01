@@ -13,7 +13,7 @@ Answer the question based only on the following sources:
 
 ---
 
-Answer the question by providing a numbered list of sources with URLs and descriptions ONLY coming from the above list: {question}
+Answer the question by providing a numbered list of sources with titles, URLs and descriptions ONLY coming from the above list: {question}
 """
 
 
