@@ -11,11 +11,15 @@ Helps a user find relevant training materials in topics related to High Performa
 3. ```
    ollama pull llama3
    ```
+   
 Step 4 is optional, only if you want to try different chat models.
+
 4. ```
    ollama pull gemma
    ```
+
 5. Install [mongodb community edition](https://www.mongodb.com/try/download/community)
+
 6. ```
    git clone https://github.com/AD1616/HPC-Training-AI.git
    ```
@@ -23,11 +27,11 @@ Step 4 is optional, only if you want to try different chat models.
    cd HPC-Training-AI/local_scripts
    ```
 8. ```
-    pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 9. ```
-    chmod +x local_kill.sh
-    ```
+   chmod +x local_kill.sh
+   ```
 10. ```
     ./local_kill.sh
     ```
@@ -63,6 +67,10 @@ where \<query\> is what you want to learn about and \<model\> is a LLM model you
 python query.py "I want to learn about Cyberinfrastructure" "llama3"
 ```
 
+```
+python query.py "I want to learn about parallel computing" "gemma"
+```
+
 When finished, run:
 
 ```
@@ -76,10 +84,6 @@ This will be migrated to a cluster at SDSC, which means:
 * mongodb database will be hosted on cluster (for raw data)
 * chroma database will be hosted on cluster (for vector embeddings)
 
-Data from other sources will be included, which means:
-* mongodb database will have multiple collections, theoretically one for each source
-* each collection needs to have a proper vector embedding in the chroma database
-
-Miscellaneous
+Data
 * mongodb database on local is called: "hpc_training_raw_local_db"
 * mongodb collection for SDSC events within database is called: "sdsc_events"
