@@ -9,28 +9,32 @@ Helps a user find relevant training materials in topics related to High Performa
    ollama pull nomic-embed-text
    ```
 3. ```
-   ollama run llama3
+   ollama pull llama3
    ```
-4. Install [mongodb community edition](https://www.mongodb.com/try/download/community)
-5. ```
+Step 4 is optional, only if you want to try different chat models.
+4. ```
+   ollama pull gemma
+   ```
+5. Install [mongodb community edition](https://www.mongodb.com/try/download/community)
+6. ```
    git clone https://github.com/AD1616/HPC-Training-AI.git
    ```
-6. ```
+7. ```
    cd HPC-Training-AI/local_scripts
    ```
-7. ```
+8. ```
     pip install -r requirements.txt
    ```
-8. ```
+9. ```
     chmod +x local_kill.sh
     ```
-9. ```
+10. ```
     ./local_kill.sh
     ```
-10. ```
+11. ```
     chmod +x local_setup.sh
     ```
-11. ```
+12. ```
     ./local_setup.sh
     ```
     
@@ -40,23 +44,23 @@ Note that if it says "address already in use", that (likely) means ollama is alr
 
 Your current terminal is now running ollama, and will show any requests made to ollama. To continue with the next steps, keep this terminal running and open a new terminal window. Navigate to the directory where the cloned repository is located.
 
-12. ```
+13. ```
     python load_sdsc_events_data.py
     ```
-13. ```
+14. ```
     python generate_embeddings.py
     ```
 
 If all of the above was done properly, you can now run:
 
 ```
-python query.py <query>
+python query.py <query> <model>
 ```
 
-where \<query\> is what you want to learn about, such as:
+where \<query\> is what you want to learn about and \<model\> is a LLM model you pulled from ollama, such as:
 
 ```
-python query.py "I want to learn about Cyberinfrastructure"
+python query.py "I want to learn about Cyberinfrastructure" "llama3"
 ```
 
 When finished, run:
