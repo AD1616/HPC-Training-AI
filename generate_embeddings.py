@@ -64,26 +64,67 @@ def chunk_documents(documents: list[Document]) -> list[Document]:
 On a local machine, run "ollama serve" to get the embeddings.
 
 Embeddings are saved to the chroma database locally at "CHROMA_PATH".
+
+We only add new chunks if either collection, title, or start index is different from existing chunks.
 """
 def save_to_chroma(chunks: list[Document]):
-    if os.path.exists(CHROMA_PATH):
-        shutil.rmtree(CHROMA_PATH)
-
-    # automatically saves to directory "CHROMA_PATH"
-    db = Chroma.from_documents(
-        chunks, get_embedding_function(), persist_directory=CHROMA_PATH
+    db = Chroma(
+        persist_directory=CHROMA_PATH, embedding_function=get_embedding_function()
     )
 
-    print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
+    existing_items = db.get(include=[])
+    existing_ids = set(existing_items["ids"])
+    print(f"Number of existing documents in DB: {len(existing_ids)}")
+
+    new_chunks = []
+    for chunk in chunks:
+        chunk_chroma_id = chroma_id_format(chunk)
+        if chunk_chroma_id not in existing_ids:
+            new_chunks.append(chunk)
+
+    if len(new_chunks) > 0:
+        print(f"Adding new documents: {len(new_chunks)}")
+        new_chunk_ids, duplicates = create_chroma_ids(new_chunks)
+        for i in sorted(duplicates, reverse=True):
+            del new_chunks[i]
+        db.add_documents(new_chunks, ids=new_chunk_ids)
+    else:
+        print("No new documents to add.")
 
 
 """
-Once there are more collections, load_documents() must be called for each one.
+This is the way we will have unique IDs for each document in chromadb.
+
+Chunks from the same document will have the same title, so start index is included as well.
 """
+def chroma_id_format(chunk: Document) -> str:
+    collection = chunk.metadata.get("collection")
+    title = chunk.metadata.get("Title")
+    start_index = chunk.metadata.get("start_index")
+    return f"{collection}:{title}:{start_index}"
+
+
+def create_chroma_ids(chunks: list[Document]):
+    ids = set()
+    duplicates = set()
+    for i in range(len(chunks)):
+        chunk_id = chroma_id_format(chunks[i])
+        if chunk_id in ids:
+            duplicates.add(i)
+        ids.add(chunk_id)
+
+    return list(ids), list(duplicates)
+
+
 def pipeline():
-    documents = load_documents("hpc_training_raw_local_db", "sdsc_events")
-    chunks = chunk_documents(documents)
-    save_to_chroma(chunks)
+    client = pymongo.MongoClient("mongodb://localhost:27017/")
+    db = client["hpc_training_raw_local_db"]
+    collections = db.list_collection_names()
+    for collection in collections:
+        documents = load_documents("hpc_training_raw_local_db", collection)
+        chunks = chunk_documents(documents)
+
+        save_to_chroma(chunks)
 
 
 if __name__ == "__main__":
