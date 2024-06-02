@@ -43,14 +43,22 @@ def load_documents(db_name: str, collection_name: str) -> list[Document]:
     db = client[db_name]
     collection = db[collection_name]
     for i in range(len(documents)):
-        document_title = collection.find_one({"_id": i})["Title"]
+        document_mongo = collection.find_one({"_id": i})
+        document_title = document_mongo["Title"]
         documents[i].metadata.update({"Title": document_title})
+
+        document_link = document_mongo["Link"]
+
+        if document_link is not None and document_link != "":
+            documents[i].metadata.update({"Link": str(document_link)})
+        else:
+            documents[i].metadata.update({"Link": "Link not currently provided."})
     return documents
 
 
 def chunk_documents(documents: list[Document]) -> list[Document]:
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
+        chunk_size=2000,
         chunk_overlap=500,
         length_function=len,
         add_start_index=True,
@@ -123,7 +131,6 @@ def pipeline():
     for collection in collections:
         documents = load_documents("hpc_training_raw_local_db", collection)
         chunks = chunk_documents(documents)
-
         save_to_chroma(chunks)
 
 

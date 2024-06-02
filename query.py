@@ -33,7 +33,8 @@ def main():
         print("Unable to find matching results.")
         return
 
-    context_text = "\n\n---\n\n".join([doc.page_content for doc in results])
+    context_text = "\n\n---\n\n".join([doc.page_content + str(doc.metadata) for doc in results])
+    print(context_text)
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context_text, question=query_text)
 

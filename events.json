@@ -1,0 +1,2256 @@
+{
+    "202405-Intermediate-Linux-and-Shell-Scripting": {
+        "name": "202405-Intermediate-Linux-and-Shell-Scripting",
+        "title": "COMPLECS: Intermediate Linux and Shell Scripting",
+        "start": 1715857200,
+        "end": null,
+        "desc": {
+            "long": "Knowledge of Linux is indispensable for using advanced CI. While GUIs are becoming more prevalent, being able to work at the command line interface (CLI) provides the greatest power and flexibility. In this session, we assume that participants are already comfortable with basic Linux operations such as creating, deleting and renaming files, and navigating between directories. Topics covered include the filesystem hierarchy, file permissions, symbolic and hard links, wildcards and file globbing, finding commands and files, environment variables and modules, configuration files, aliases, history and tips for effective Bash shell scripting.",
+            "short": "Knowledge of Linux is indispensable for using advanced CI. While GUIs are becoming more prevalent, being able to work at the command line interface (CLI) provides the greatest power and flexibility. In this session, we assume that participants are already comfortable with basic Linux operations such as creating, deleting and renaming files, and navigating between directories. Topics covered include the filesystem hierarchy, file permissions, symbolic and hard links, wildcards and file globbing, finding commands and files, environment variables and modules, configuration files, aliases, history and tips for effective Bash shell scripting."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Mary Thomas",
+            "title": "Computational Data Scientist, HPC Trainer",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/Jgjneo4S8EI",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1ZpBZkJma2jMHcl8SJV1H876DdOgoGUoi/view?usp=sharing"
+        }
+    },
+    "202405-Parallel-Computing-Concepts": {
+        "name": "202405-Parallel-Computing-Concepts",
+        "title": "COMPLECS: Parallel Computing Concepts",
+        "start": 1714672800,
+        "end": 1714678200,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing.</span></p>\n",
+            "short": "<p><span style=\"font-weight: 400;\">All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing.</span></p>\n"
+        },
+        "tags": [
+            "HPC Training",
+            "Expanse",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Marty Kandes",
+            "title": "Computational and Data Science Research Specialist, SDSC",
+            "bio": "Marty Kandes a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Comet — SDSC’s largest supercomputer. Marty obtained his Ph.D. in Computational Science in 2015 from the Computational Science Research Center at San Diego State University, where his research focused on studying quantum systems in rotating frames of reference through the use of numerical simulation. He also holds an M.S. in Physics from San Diego State University and B.S. degrees in both Applied Mathematics and Physics from the University of Michigan, Ann Arbor. His current research interests include problems in Bayesian statistics, combinatorial optimization, nonlinear dynamical systems, and numerical partial differential equations."
+        },
+        "vid_link": "https://youtu.be/7d0zmJ7aGTE",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1VCgkUY0HKHtnmOHeEbubPsKpW3IeI6Ec/view?usp=sharing"
+        }
+    },
+    "202404-Interactive-Computing": {
+        "name": "202404-Interactive-Computing",
+        "title": "COMPLECS: Interactive Computing",
+        "start": 1713463200,
+        "end": 1713468600,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">Interactive computing refers to working with software that accepts input from the user as it runs. This applies not only to business and office applications, such as word processing and spreadsheet software, but HPC use cases involving code development, real-time data exploration and advanced visualizations run across one or more compute nodes. Interactive computing is often used when applications require large memory, have large data sets that are not that practical to download to local devices, need access to higher core counts, or rely on software that is difficult to install. User inputs are entered via a command line interface (CLI) or application GUI (e.g., Jupyter Notebooks, Matlab, RStudio). Actions are initiated on remote compute nodes as a result of user inputs. This session will introduce participants to advanced CI concepts and what's going on \"under the hood\" when they are using interactive tools. Topics covered will include mechanisms for accessing interactive resources, commonalities and differences between batch and interactive computing, understanding the differences between web-based services and X11/GUI applications, monitoring jobs running on interactive nodes, and an overview of Open OnDemand portals.\u00a0</span></p>\n",
+            "short": " Interactive high-performance computing (HPC) involves real-time user inputs that result in actions being performed on HPC compute nodes. This session presents an overview of interactive computing tools and methods."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Mary P. Thomas",
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/TYi-B_HeMuk",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1mcar_FpNEjJDyyGj0WIvEPBZ89F6iKf3/view?usp=sharing"
+        }
+    },
+    "202404-HPC-Hardware-Overview": {
+        "name": "202404-HPC-Hardware-Overview",
+        "title": "COMPLECS: HPC Hardware Overview",
+        "start": 1712253600,
+        "end": 1712259000,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">All users of advanced CI can benefit from a basic understanding of the hardware to determine which factors affect application performance. In this session we provide an overview including CPUs (processors, cores, hyperthreading, instruction sets), the anatomy of a compute node (sockets, memory, attached devices, accelerators) and cluster architecture (login and compute nodes, interconnects, file systems). We also cover how to obtain hardware information using Linux tools, pseudo-filesystems and commonly used hardware utilization monitoring tools.</span></p>\n",
+            "short": "<p><span style=\"font-weight: 400;\">All users of advanced CI can benefit from a basic understanding of the hardware to determine which factors affect application performance. In this session we provide an overview including CPUs (processors, cores, hyperthreading, instruction sets), the anatomy of a compute node (sockets, memory, attached devices, accelerators) and cluster architecture (login and compute nodes, interconnects, file systems). We also cover how to obtain hardware information using Linux tools, pseudo-filesystems and commonly used hardware utilization monitoring tools.</span></p>\n"
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Nicole Wolter",
+            "title": "Computational and Data Science Research Specialist, SDSC",
+            "bio": "Nicole Wolter is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. She currently manages the accounts and allocations and provides user support for the three HPC systems at SDSC. Nicole graduated from San Diego State University with a degree in Computer Science in 2001. She is currently involved in working with and helping users porting their AI applications to SDSC\u2019s NSF funded AI supercomputer - Voyager."
+        },
+        "vid_link": "https://youtu.be/TkJhKfoohb0",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1N9GkyShkg6ztAxt9ZbwBJaEYi5lsuLU3/view?usp=drive_link"
+        }
+    },
+    "202403-Batch-Computing-Part-1": {
+        "name": "202403-Batch-Computing-Part-1",
+        "title": "COMPLECS: Batch Computing: Getting Started with Batch Job Scheduling - Slurm Edition",
+        "start": 1711044000,
+        "end": 1711049400,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">Understanding what a scheduler is and how it works is fundamental to learning how to run your batch computing workloads on high-performance computing (HPC) systems well. A scheduler manages all aspects of how your application will access and consume the compute, memory, storage, I/O, and network resources available to you on these systems. There are a number of different distributed batch job schedulers \u2014 also sometimes referred to as workload or resource managers \u2014 that you might encounter on an HPC system. For example, the Slurm Workload Manager is the most popular one in use today on HPC systems. However, at the core of every such system sits the Linux scheduler.\u00a0</span></p>\n",
+            "short": "In this second part of our series on Batch Computing, we will introduce you to the concept of a distributed batch job scheduler — what they are, why they exist, and how they work — using the Slurm Workload Manager as our reference implementation and testbed. You will then learn how to write your first job script and submit it to an HPC System running Slurm as its scheduler. We will also discuss the best practices for how to structure your batch job scripts, teach you how to leverage Slurm environment variables, and provide tips on how to request resources from the scheduler to get your work done faster."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Marty Kandes",
+            "title": "Computational and Data Science Research Specialist, SDSC",
+            "bio": "Marty Kandes a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Comet \u2014 SDSC\u2019s largest supercomputer. Marty obtained his Ph.D. in Computational Science in 2015 from the Computational Science Research Center at San Diego State University, where his research focused on studying quantum systems in rotating frames of reference through the use of numerical simulation. He also holds an M.S. in Physics from San Diego State University and B.S. degrees in both Applied Mathematics and Physics from the University of Michigan, Ann Arbor. His current research interests include problems in Bayesian statistics, combinatorial optimization, nonlinear dynamical systems, and numerical partial differential equations."
+        },
+        "vid_link": "https://youtu.be/7aVumEnQWwg",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1xVEf32OyHT27m9-8Fn94kBKk8eaeO196/view?usp=drive_link"
+        }
+    },
+    "202403_5nrp": {
+        "name": "202403_5nrp",
+        "title": "5NRP",
+        "start": 1710918000,
+        "end": 1711090800,
+        "desc": {
+            "long": null,
+            "short": "The Fifth National Research Platform (5NRP) workshop will focus on examining opportunities for designing and implementing future-oriented cyber-capabilities for our science research communities, and how to engage researchers and educators. This event is held in partnership with FABRIC's KNIT 8 workshop. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202403knit8": {
+        "name": "202403knit8",
+        "title": "KNIT8",
+        "start": 1710831600,
+        "end": 1711004400,
+        "desc": {
+            "long": "<p>KNIT 8, the\u00a0<strong>next FABRIC Community Workshop</strong>, will take place March 19-21, 2024 in San Diego, CA. KNIT 8 will be hosted by the\u00a0<a href=\"https://www.sdsc.edu/\" rel=\"noreferrer noopener\" target=\"_blank\">San Diego Supercomputer Center</a>\u00a0and co-located with the\u00a0<a href=\"https://na.eventscloud.com/website/67819/\" rel=\"noopener noreferrer\" target=\"_blank\">Fifth National Research Platform (5NRP) Workshop</a>. It will be the first workshop since FABRIC has entered full operations.</p>\n",
+            "short": "KNIT 8, the next FABRIC Community Workshop, will take place March 19-21, 2024 in San Diego, CA. KNIT 8 will be hosted by the San Diego Supercomputer Center and co-located with the Fifth National Research Platform (5NRP) Workshop. It will be the first workshop since FABRIC has entered full operations."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202403-Code-Migration": {
+        "name": "202403-Code-Migration",
+        "title": "COMPLECS: Code Migration",
+        "start": 1709838000,
+        "end": 1709843400,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">We will cover typical approaches to moving your computations to HPC resources \u2013 use of applications/software packages already available on the system through Linux environment modules; compiling code from source with information on compilers, libraries, and optimization flags to use; setting up Python &amp; R environments; use of conda based environments; managing workflows; and use of containerized solutions via Singularity. The session covers general principles, with hands-on activities on SDSC resources.</span></p>\n",
+            "short": "<p><span style=\"font-weight: 400;\">We will cover typical approaches to moving your computations to HPC resources \u2013 use of applications/software packages already available on the system through Linux environment modules; compiling code from source with information on compilers, libraries, and optimization flags to use; setting up Python &amp; R environments; use of conda based environments; managing workflows; and use of containerized solutions via Singularity. The session covers general principles, with hands-on activities on SDSC resources.</span></p>\n"
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Mahidhar Tatineni",
+            "title": "Director of User Services, SDSC",
+            "bio": "Mahidhar Tatineni received his M.S. & Ph.D. in Aerospace Engineering from UCLA. He currently leads the User Services group at SDSC and has done many optimization and parallelization projects on the supercomputing resources including Gordon, Comet, Expanse and Voyager."
+        },
+        "vid_link": "https://youtu.be/jpZVyzPbA2I"
+    },
+    "202402-HPC-Security-and-Getting-Help": {
+        "name": "202402-HPC-Security-and-Getting-Help",
+        "title": "COMPLECS: HPC Security and Getting Help",
+        "start": 1708023600,
+        "end": 1708027200,
+        "desc": {
+            "long": "<p><span style=\"font-weight: 400;\">HPC systems are shared resources, therefore all users must be aware of the complexity of working in a shared environment and the implications associated with resource management and security. This module also addresses two essential and related sets of skills that should be a part of everyone\u2019s toolbox, but that are frequently overlooked: (1) solving problems on your own leveraging online resources and (2) how to best work with the help desk or user support by properly collecting the information that can be used to help resolve your problem.</span></p>\n",
+            "short": "HPC systems are shared resources, therefore all users must be aware of the complexity of working in a shared environment and the implications associated with resource management and security. This module also addresses two essential and related sets of skills that should be a part of everyone\u2019s toolbox, but that are frequently overlooked: (1) solving problems on your own leveraging online resources and (2) how to best work with the help desk or user support by properly collecting the information that can be used to help resolve your problem."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Nicole Wolter",
+            "title": "Computational and Data Science Research Specialist, SDSC",
+            "bio": "Nicole Wolter is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. She currently manages the accounts and allocations and provides user support for the three HPC systems at SDSC. Nicole graduated from San Diego State University with a degree in Computer Science in 2001. She is currently involved in working with and helping users porting their AI applications to SDSC\u2019s NSF funded AI supercomputer - Voyager. "
+        },
+        "vid_link": "https://youtu.be/BCxvgN7myAI"
+    },
+    "202402-Intermediate-Linux-and-shell-scripting": {
+        "name": "202402-Intermediate-Linux-and-shell-scripting",
+        "title": "COMPLECS: Linux Tools for File Processing",
+        "start": 1706839409,
+        "end": null,
+        "desc": {
+            "long": "Many computational and data processing workloads require pre-processing of input files to get the data into a format that is compatible with the user\u2019s application and/or post-processing of output files to extract key results for further analysis. While these operations could be done by hand, they tend to be time-consuming, tedious and, worst of all, error prone. In this session we cover the Linux tools awk, sed, grep, sort, head, tail, cut, paste, cat and split, which will help users to easily automate repetitive tasks. We conclude by showing how large language models (LLMs) such as ChatGPT could be used to write commands using these tools.",
+            "short": "Many computational and data processing workloads require pre-processing of input files to get the data into a format that is compatible with the user\u2019s application and/or post-processing of output files to extract key results for further analysis. While these operations could be done by hand, they tend to be time-consuming, tedious and, worst of all, error prone. In this session we cover the Linux tools awk, sed, grep, sort, head, tail, cut, paste, cat and split, which will help users to easily automate repetitive tasks. We conclude by showing how large language models (LLMs) such as ChatGPT could be used to write commands using these tools."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Director of Education and Training, SDSC",
+            "bio": ""
+        },
+        "vid_link": "https://youtu.be/QPGLKZSD4M4",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1vWWret9rJs5io3jHsGglDDbRR1F-gPVu/view?usp=sharing"
+        }
+    },
+    "202402-Linux-Tools-for-File-Processing": {
+        "name": "202402-Linux-Tools-for-File-Processing",
+        "title": "COMPLECS: Linux Tools for File Processing",
+        "start": 1706814000,
+        "end": 1706817600,
+        "desc": {
+            "long": null,
+            "short": "An overview of commonly used Linux tools for searching and manipulating text."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Director of Education and Training, SDSC",
+            "bio": "Dr. Sinkovits leads the education and training efforts at the San Diego Supercomputer Center, where he has been a computational scientist for more than 25 years. He has collaborated with researchers spanning many fields including physics, chemistry, astronomy, structural biology, finance, ecology, climate, immunology, and the social sciences, always with an emphasis on making the most effective use of high-performance computing resources. Dr. Sinkovits is the PI for the COMPLECS CyberTraining project and co-PI for the Voyager and Expanse supercomputer awards. "
+        },
+        "vid_link": null
+    },
+    "202401-Intermediate-Linux-and-Shell-Scripting": {
+        "name": "202405-Intermediate-Linux-and-Shell-Scripting",
+        "title": "COMPLECS: Intermediate Linux and Shell Scripting",
+        "start": 1705629809,
+        "end": null,
+        "desc": {
+            "long": "Knowledge of Linux is indispensable for using advanced CI. While GUIs are becoming more prevalent, being able to work at the command line interface (CLI) provides the greatest power and flexibility. In this session, we assume that participants are already comfortable with basic Linux operations such as creating, deleting and renaming files, and navigating between directories. Topics covered include the filesystem hierarchy, file permissions, symbolic and hard links, wildcards and file globbing, finding commands and files, environment variables and modules, configuration files, aliases, history and tips for effective Bash shell scripting.",
+            "short": "Knowledge of Linux is indispensable for using advanced CI. While GUIs are becoming more prevalent, being able to work at the command line interface (CLI) provides the greatest power and flexibility. In this session, we assume that participants are already comfortable with basic Linux operations such as creating, deleting and renaming files, and navigating between directories. Topics covered include the filesystem hierarchy, file permissions, symbolic and hard links, wildcards and file globbing, finding commands and files, environment variables and modules, configuration files, aliases, history and tips for effective Bash shell scripting."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Mary Thomas",
+            "title": "Computational Data Scientist, HPC Trainer",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/LFbIabBatD0",
+        "resources": {
+            "Slides": "https://drive.google.com/file/d/1ZpBZkJma2jMHcl8SJV1H876DdOgoGUoi/view?usp=sharing"
+        }
+    },
+    "20241_cipinfo": {
+        "name": "20241_cipinfo",
+        "title": "CIP Information Session",
+        "start": 1705010400,
+        "end": 1705014000,
+        "desc": {
+            "long": "<p style=\"text-align: left;\"><strong>CyberInfrastructure Professional (CIP) Fellows Program CyberTraining: Training and Developing a Research Computing and Data (RCD) CI Professionals Community <br></strong><em>A joint program between UC San Diego</em><em>, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce.</em></p>\n",
+            "short": "CyberTraining Information Session: Training and Developing a Research Computing and Data (RCD) CI Professionals Community. A joint program between UC San Diego, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce."
+        },
+        "tags": [
+            "HPC Training",
+            "Expanse",
+            "TSCC",
+            "Voyager",
+            "Industry",
+            "NRP"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202401_cipinfo": {
+        "name": "202401_cipinfo",
+        "title": "CIP Information Session",
+        "start": 1705010400,
+        "end": 1705014000,
+        "desc": {
+            "long": "<p style=\"text-align: left;\"><strong>CyberInfrastructure Professional (CIP) Fellows Program CyberTraining: Training and Developing a Research Computing and Data (RCD) CI Professionals Community <br></strong><em>A joint program between UC San Diego</em><em>, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce.</em></p>\n",
+            "short": "CyberTraining Information Session: Training and Developing a Research Computing and Data (RCD) CI Professionals Community. A joint program between UC San Diego, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce."
+        },
+        "tags": [
+            "HPC Training",
+            "Expanse",
+            "TSCC",
+            "Voyager",
+            "Industry",
+            "NRP"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202401-Parallel-Computing-Concepts": {
+        "name": "202401-Parallel-Computing-Concepts",
+        "title": "COMPLECS: Parallel computing concepts",
+        "start": 1704394800,
+        "end": 1704398400,
+        "desc": {
+            "long": "All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing.",
+            "short": "All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Director of Education and Training, SDSC",
+            "bio": "Dr. Sinkovits leads the education and training efforts at the San Diego Supercomputer Center, where he has been a computational scientist for more than 25 years. He has collaborated with researchers spanning many fields including physics, chemistry, astronomy, structural biology, finance, ecology, climate, immunology, and the social sciences, always with an emphasis on making the most effective use of high-performance computing resources. Dr. Sinkovits is the PI for the COMPLECS CyberTraining project and co-PI for the Voyager and Expanse supercomputer awards. "
+        },
+        "vid_link": "https://youtu.be/NWwH2tzcX6k",
+        "resources": {
+            "slides": "/misc/www/projects/education/training/interactive/resources/202401-Parallel-Computing-Conecepts_slides.pdf"
+        }
+    },
+    "202312_cipinfo": {
+        "name": "202312_cipinfo",
+        "title": "CIP Information Session",
+        "start": 1703023200,
+        "end": 1703026800,
+        "desc": {
+            "long": "<p><strong>CyberInfrastructure Professional (CIP) Fellows Program CyberTraining: Training and Developing a Research Computing and Data (RCD) CI Professionals Community<br> </strong><em>A joint program between UC San Diego</em><em>, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce.</em></p>\n",
+            "short": "CyberTraining Information Session: Training and Developing a Research Computing and Data (RCD) CI Professionals Community. A joint program between UC San Diego, San Diego State University and Cal State University, San Bernardino partners to develop a CIP workforce."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202312-SDSCWebinar-Interactive-Computing-on-HPC-Resources": {
+        "name": "202312-SDSCWebinar-Interactive-Computing-on-HPC-Resources",
+        "title": "SDSC Webinar: Interactive Computing on High Performance Computing Resources",
+        "start": 1701975600,
+        "end": 1701979200,
+        "desc": {
+            "long": null,
+            "short": "Interactive computing includes commonly used programs, such as word processors or spreadsheet applications running user devices (mobile phones, laptops).  Interactive high-performance computing (HPC) involves real-time user inputs that result in actions being performed on HPC compute nodes. In this session we\u2019ll present an overview of interactive computing tools and methods. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "HPC Training Lead, SDSC",
+            "bio": "Mary Thomas works in the Data-Enabled Scientific Computing Division, where she is leading education, outreach & training on HPC systems. In the past, Mary has led several portal and Web services projects for high-performance computing infrastructure. Mary holds a Ph.D. in computational science, and her primary research has been focused on HPC computing, coastal ocean modeling, cyberinfrastructure, web technologies, and Amazon Web Services. Mary is also a research faculty member in the Computational Sciences Research Center at San Diego State University. For fun, Mary has sponsored several teams at the annual student cluster competitions at the SC Conference (The International Conference for High Performance Computing, Networking, Storage, and Analysis)."
+        },
+        "vid_link": "https://youtu.be/X2YWyX97gCA"
+    },
+    "202311-TSCC-2.0-Transitional-Workshop": {
+        "name": "202311-TSCC-2.0-Transitional-Workshop",
+        "title": "TSCC 1.0 to 2.0 Transitional Workshop ",
+        "start": 1699304400,
+        "end": 1699313400,
+        "desc": {
+            "long": "<p><span>During this workshop, we will provide an overview of TSCC 2.0 including the new authentication method, new allocation system, new filesystems, shared data transfer options from the current TSCC to TSCC 2.0, software stack, new partition characteristics, and provide examples of SLURM job scripts.</span></p>\n",
+            "short": "During this workshop, we will provide an overview of TSCC 2.0 including the new authentication method, new allocation system, new filesystems, shared data transfer options from the current TSCC to TSCC 2.0, software stack, new partition characteristics, and provide examples of SLURM job scripts."
+        },
+        "tags": [
+            "TSCC",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Computational Data Science Researcher, SDSC",
+            "bio": "Dr. Chen received his PhD from Louisiana State University in chemical engineering with an emphasis on molecular dynamics simulation of proteins. Yuwu\u2019s key responsibility is to provide a high degree of HPC customer support and professionalism to the research communities of UCSD and other institutions. "
+        },
+        "vid_link": null
+    },
+    "202310_gateways23": {
+        "name": "202310_gateways23",
+        "title": "Gateways 2023",
+        "start": 1698649200,
+        "end": 1698822000,
+        "desc": {
+            "long": null,
+            "short": "Gateways 2023 is an opportunity for science gateways to showcase their ability to teach, empower and engage research, and provide technologies to various communities. It will also offer diverse options for sharing work and networking in the community. The format includes tutorial sessions, presentations, panels, posters, demos, and a BYOP - Bring Your Own Portal. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202310-SDSCWebinar-GPU-Computing-and-Programming-on-Expanse": {
+        "name": "202310-SDSCWebinar-GPU-Computing-and-Programming-on-Expanse ",
+        "title": "SDSC Webinar: GPU Computing and Programming on Expanse ",
+        "start": 1698343200,
+        "end": 1698346800,
+        "desc": {
+            "long": null,
+            "short": "This webinar gives a brief introduction to GPU computing and programming on Expanse. We will cover the GPU architecture, programming with the Nvidia CUDA Toolkit and HPC SDK via libraries, OpenACC compiler directives, and CUDA, and submitting GPU enabled jobs on Expanse. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Director of Computational Chemistry Laboratory, SDSC",
+            "bio": "Andreas Goetz leads the computational chemistry efforts at SDSC, working at the intersection of chemistry, biophysics, and scientific computing. His research draws on quantum mechanics, statistical mechanics, molecular dynamics, and machine learning approaches to enable simulations of complex molecular systems from atmospheric chemistry to computational drug design on massively parallel computer architectures. He is a contributing author to the ADF and QUICK quantum chemistry software and the AMBER software for biomolecular simulations, which are widely used in academic and industrial research. His research has been supported by NSF, DOE, NIH, Intel, AMD and Nvidia. Andreas also enjoys training the next generation of scientists in software engineering and numerical simulation methods via lectures, workshops and supervision of interns. He is author of over 70 scientific publications and editor of the book 'Electronic structure calculations on GPUs'. Prior to joining SDSC in 2009 Andreas performed postdoctoral research at the VU University in Amsterdam and obtained his undergraduate and Ph.D. degrees in chemistry from the University of Erlangen in Germany."
+        },
+        "vid_link": "https://youtu.be/vZz3gV8j1Yg"
+    },
+    "202310-SDSCWebinar-GPU-Computing-and-Programming-on-Expanse ": {
+        "name": "202310-SDSCWebinar-GPU-Computing-and-Programming-on-Expanse ",
+        "title": "SDSC Webinar: GPU Computing and Programming on Expanse ",
+        "start": 1698343200,
+        "end": 1698346800,
+        "desc": {
+            "long": null,
+            "short": "This webinar gives a brief introduction to GPU computing and programming on Expanse. We will cover the GPU architecture, programming with the Nvidia CUDA Toolkit and HPC SDK via libraries, OpenACC compiler directives, and CUDA, and submitting GPU enabled jobs on Expanse. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Director of Computational Chemistry Laboratory, SDSC",
+            "bio": "Andreas Goetz leads the computational chemistry efforts at SDSC, working at the intersection of chemistry, biophysics, and scientific computing. His research draws on quantum mechanics, statistical mechanics, molecular dynamics, and machine learning approaches to enable simulations of complex molecular systems from atmospheric chemistry to computational drug design on massively parallel computer architectures. He is a contributing author to the ADF and QUICK quantum chemistry software and the AMBER software for biomolecular simulations, which are widely used in academic and industrial research. His research has been supported by NSF, DOE, NIH, Intel, AMD and Nvidia. Andreas also enjoys training the next generation of scientists in software engineering and numerical simulation methods via lectures, workshops and supervision of interns. He is author of over 70 scientific publications and editor of the book 'Electronic structure calculations on GPUs'. Prior to joining SDSC in 2009 Andreas performed postdoctoral research at the VU University in Amsterdam and obtained his undergraduate and Ph.D. degrees in chemistry from the University of Erlangen in Germany."
+        },
+        "vid_link": null
+    },
+    "202310-hpc-ci-onboarding-fall-2023": {
+        "name": "202310-hpc-ci-onboarding-fall-2023",
+        "title": "Fall 2023: Quarterly Mini-Workshop on HPC CI Onboarding for the UCSD Research Community",
+        "start": 1696345200,
+        "end": 1697068800,
+        "desc": {
+            "long": "<p><span>The mini-workshop is designed to provide the UCSD research community with a streamlined pathway to swiftly engage with the Expanse cluster for their scientific endeavors. Collaboratively organized by Research IT and SDSC, this workshop series offers participants the opportunity to start using the Expanse cluster through the Campus Champions allocation, while benefiting from comprehensive training resources and expert guidance provided by SDSC.</span></p>\n",
+            "short": "The mini-workshop is designed to provide the UCSD research community with a streamlined pathway to swiftly engage with the Expanse cluster for their scientific endeavors. Collaboratively organized by Research IT and SDSC, this workshop series offers participants the opportunity to start using the Expanse cluster through the Campus Champions allocation, while benefiting from comprehensive training resources and expert guidance provided by SDSC."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "Research Data Services",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/33D01Mas_Z4"
+    },
+    "202309_CBopenAI": {
+        "name": "202309_CBopenAI",
+        "title": "OpenAI for Research",
+        "start": 1695841200,
+        "end": 1695844800,
+        "desc": {
+            "long": null,
+            "short": "The CloudBank project is hosting a webinar on OpenAI with Microsoft -- please join us to hear a quick introduction to CloudBank, get an overview of OpenAI from the Microsoft team, hear from one of our CloudBank researchers, and then have an opportunity to ask questions. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "Research Data Services",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202309-SDSCWebinar-Performance-Tuning-and-Optimization": {
+        "name": "202309-SDSCWebinar-Performance-Tuning-and-Optimization",
+        "title": "SDSC Webinar: Performance Tuning and Optimization",
+        "start": 1695319200,
+        "end": 1695322800,
+        "desc": {
+            "long": "<p><span class=\"LineBreakBlob BlobObject DragDrop SCXW156956504 BCX0\">Writing optimized code will help you to become a more productive computational scientist and reduce your time to solution, while making more efficient use of advanced cyberinfrastructure and reducing the carbon footprint of your workload. We start with a brief overview of software profiling, which allows you to identify portions of the code that account for most of the run time. We then cover some of the key principles of writing fast code, with an emphasis on loop level transformations and making effective use of your processor\u2019s cache. We also address commonly used techniques such as force reduction (replacement of expensive operations with equivalent, faster options), time-space tradeoffs (pre-computation and reuse of results), short circuiting (avoiding operations in compound logical tests) and one-off optimizations based on the specific features of your code. </span></p>",
+            "short": "This session is intended for attendees who do their own code development and need their calculations to finish as quickly as possible. We cover effective use of cache, loop-level optimizations, and other topics for writing and building optimal code. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Director of Education and Training, SDSC",
+            "bio": "Robert leads the education and training efforts at the San Diego Supercomputer Center, where he also serves as the industry program liaison. He has collaborated with researchers spanning many fields including physics, chemistry, astronomy, structural biology, finance, ecology, climate, immunology, and the social sciences, always with an emphasis on making the most effective use of high-end computing resources. He is the PI of the NSF-funded Space Use Ecology Gateway, co-PI of the Voyager supercomputer award, co-PI of several NSF training projects and former director of XSEDE\u2019s Extended Collaborative Support Service (ECSS). He is also an avid cyclist and mountain climber, having summited more than 400 peaks. "
+        },
+        "vid_link": "https://youtu.be/y2gfV3RZZhM",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202309-SDSCWebinar-Performance-Tuning-and-Optimization_slides.pdf"
+        }
+    },
+    "202308-HPC-DS-SI": {
+        "name": "202308-HPC-DS-SI",
+        "title": "2023 HPC and Data Science Summer Institute",
+        "start": 1691420400,
+        "end": 1691798400,
+        "desc": {
+            "long": "<p>The SDSC Summer Institute is a week-long workshop hosted by the San Diego Supercomputer Center (SDSC) at the University of California, San Diego focusing on a broad spectrum of introductory-to-intermediate topics in High Performance Computing and Data Science. The program is aimed at researchers in academia and industry, especially in domains not traditionally engaged in supercomputing, who have problems that cannot typically be solved using local computing resources. <br><br>This year, the Summer Institute will continue with the two-part structure in response to the needs of our diverse user base and the increasingly diverse suite of resources and services that they need to utilize (often referred to as cyberinfrastructure). We recognize that while many researchers still need to write and parallelize their own software, a significant number of users of our supercomputers are not parallel/HPC/CI programmers (\u201cnon-programmers\u201d). Rather, they use existing, robust third-party applications to solve problems in fields as diverse as phylogenetics, genomics, molecular biology, computational chemistry, material science, climate simulation and others. Nonetheless, these non-programmers still need to acquire specialized skills in order to effectively use advanced cyberinfrastructure.</p>\n",
+            "short": "The SDSC Summer Institute is a week-long workshop hosted by the San Diego Supercomputer Center (SDSC) at the University of California, San Diego focusing on a broad spectrum of introductory-to-intermediate topics in High Performance Computing and Data Science. The program is aimed at researchers in academia and industry, especially in domains not traditionally engaged in supercomputing, who have problems that cannot typically be solved using local computing resources. (Application deadline is Friday, May 19)."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "Research Data Services",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202307-SDSCWebinar-Scientific-Computing-with-Kubernetes": {
+        "name": "202307-SDSCWebinar-Scientific-Computing-with-Kubernetes",
+        "title": "SDSC Webinar: Scientific Computing with Kubernetes ",
+        "start": 1689876000,
+        "end": 1689879600,
+        "desc": {
+            "long": null,
+            "short": "In this webinar, we provide recipes for transitioning scientific workloads that currently run on traditional batch systems to Kubernetes systems. Kubernetes is batch-like in nature, but there are some differences that science users should be aware of. We will also briefly describe capabilities that are not found in traditional batch systems that can improve the effectiveness of scientific computing."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Lead Scientific Software Developer and Researcher, SDSC",
+            "bio": "Over the years, Igor Sfiligoi has been engaged in the computing community across a wide breadth of roles, participating among others as researcher, operator, developer, architect, and manager. He has been working in both academia and industry, which helps him appreciate the variety of problems computers help to solve. He has been working with both systems that support tightly coupled and worldwide-scale pleasantly parallel codes and realizes that each approach has its own advantages and challenges. In his current role at SDSC he is putting his extensive knowledge to use across many scientific domains, spanning computational biology, fusion research, high energy physics and astrophysics."
+        },
+        "vid_link": "https://youtu.be/vxkIYGBsHiE",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202307-SDSCWebinar-Scientific-Computing-with-Kubernetes_slides.pdf"
+        }
+    },
+    "202306_cimlsi": {
+        "name": "202306_cimlsi",
+        "title": "2023 CIML Summer Institute",
+        "start": 1687878000,
+        "end": 1688083200,
+        "desc": {
+            "long": "<p>The San Diego Supercomputer Center (SDSC) Cyberinfrastructure-Enabled Machine Learning (CIML) project is focused on teaching researchers and students the best practices for effectively running machine learning (ML) and data science applications on advanced cyberinfrastructure (CI) and high-performance computing (HPC) systems. <br><br>The CIML Summer Institute introduces machine learning (ML) concepts to researchers, developers and educators to techniques and methods needed to migrate their ML applications from smaller, locally run resources, such as laptops and workstations, to large-scale HPC systems, such as the SDSC\u2019s Expanse supercomputer. Participants will have the opportunity to accelerate their learning process through highly interactive classes with hands-on tutorials using SDSC\u2019s Expanse.</p>\n",
+            "short": "The CIML Summer Institute will involve introducing ML researchers, developers and educators to the techniques and methods needed to migrate their ML applications from smaller, locally run resources, such as laptops and workstations, to large-scale HPC systems, such as the SDSC Expanse supercomputer. (Application deadline is Friday, April 7.)"
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202306-SDSCWebinar-Running-Jupyter-Notebooks": {
+        "name": "202306-SDSCWebinar-Running-Jupyter-Notebooks",
+        "title": "SDSC Webinar: Run your Jupyter Notebooks anywhere: Scaling up your Projects from your Laptop",
+        "start": 1686852000,
+        "end": 1686855600,
+        "desc": {
+            "long": null,
+            "short": "In this webinar, we demonstrate how to transition your Jupyter Notebooks from a local machine to the Expanse HPC system using command-line tools and the Expanse Portal. We cover creating transferable software environments, scaling up calculations to large datasets, parallel processing, and running Jupyter Notebooks in batch mode. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Director for Structural Bioinformatics Laboratory ",
+            "bio": "Dr. Rose is Director of the Structural Bioinformatics Lab and Lead for Bioinformatics and Biomedical Applications at the San Diego Supercomputer Center (SDSC), UC San Diego. He has previously led bioinformatics and scientific computing departments at Pfizer and Agouron Pharmaceuticals. He led the RCSB Protein Data Bank team at UC San Diego, one of the largest open access databases in biology. In his current position at SDSC, he is involved in projects to integrate cross-disciplinary data for novel COVID-19 diagnostic and surveillance methods, and the application of knowledge graphs to COVID-19 and precision medicine datasets. His research interests include the development of interactive and scalable platforms for data integration and machine learning in biomedicine and structural biology. He is an advocate for open-source software development and reproducible computational research."
+        },
+        "vid_link": "https://youtu.be/jaCjg2V581k",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202306-SDSCWebinar-Running-Jupyter-Notebooks_slides.pdf"
+        }
+    },
+    "202305-SDSCWebinar-Singularity-Containers": {
+        "name": "202305-SDSCWebinar-Singularity-Containers",
+        "title": "SDSC Webinar: Singularity Containers",
+        "start": 1684432800,
+        "end": 1684436400,
+        "desc": {
+            "long": "<p>Singularity is a container platform that allows you, as an HPC user, to pack the applications and libraries into a single container (as a Singularity image). With the Singularity image, you can share, move and reproduce the application you build in the container. You can also build the image outside the supercomputer cluster with your laptop, which will give you complete control over choosing any major Linux distributions and system libraries and can decide how to install the application you need. What is more important is, unlike other container platforms such as Docker, Singularity is dedicated to running on clusters! Therefore, once the Singularity image is created, you can quickly run it on supercomputer clusters, including TSCC and Expanse at SDSC. You do not have to worry about how to install all the software you need in each different cluster. <br><br>In this webinar, we will first show you how to build Singularity images on your local resource, such as your laptop. Then, we will introduce some commonly used repositories, e.g., Docker Hub, so you will learn where to pull other containers to create the Singularity images. For more complicated software requests, we will introduce the proper workflow to build a Singularity sandbox for test purposes and how to record them into a Singularity recipe so a final custom container can be created accordingly. Once a Singularity image is created, it can be uploaded and run on an SDSC cluster. We will show three ways to run the applications within the container. Based on the cluster file system structure, we will introduce the binding point technique from Singularity to locate the proper storage and how to add binding points into the recipe. Also, we will let you know how to make a short command to replace the long Singularity run command.</p>\n",
+            "short": "This webinar will briefly introduce how to build Singularity images and how to run them on the SDSC supercomputer clusters. We will also share some insider knowledge of best practices and pitfalls to avoid while working with Singularity. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Computational Data Science Researcher",
+            "bio": "Yuwu Chen received his PhD from Louisiana State University in chemical engineering with an emphasis on molecular dynamics simulation of proteins. Yuwu\u2019s key responsibility is to provide a high degree of HPC customer support and professionalism to the research communities of UCSD and other institutions. Yuwu is a Singularity user and has been providing Singularity user support for HPC users since 2019. "
+        },
+        "vid_link": "https://youtu.be/hL_ij4fplDY",
+        "resources": {
+            "Link": "https://education.sdsc.edu/training/interactive/202305_singularity_containers/Introduction_to_Singularity%20(002).pdf"
+        }
+    },
+    "202305_lug23": {
+        "name": "202305_lug23",
+        "title": "LUG 2023",
+        "start": 1683010800,
+        "end": 1683183600,
+        "desc": {
+            "long": "<p style=\"text-align: left;\"><span style=\"font-size: 16px;\"><span style=\"font-family: Open Sans,sans-serif;\">The annual\u00a0<strong>Lustre User Group</strong>\u00a0conference is the high performance computing industry\u2019s primary venue for discussion on the open source Lustre file system and other technologies. The conference focuses on the latest Lustre developments and allows attendees to network with peers.<br><br><strong>Student Support</strong><br>OpenSFS announces funding for student participation at Lustre User Group meeting. <u><strong>Application deadline is April 7</strong></u>. See application for all details <strong><a data-cke-saved-href=\"https://docs.google.com/forms/d/e/1FAIpQLSd5-ahZI44QhvUHuA5U0kLhh6u1JdLDpQmtcV62yFtbh3_aNw/viewform\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd5-ahZI44QhvUHuA5U0kLhh6u1JdLDpQmtcV62yFtbh3_aNw/viewform\">HERE</a></strong>.<br></span></span></p>\n",
+            "short": "The annual Lustre User Group conference is the high performance computing industry\u2019s primary venue for discussion on the open source Lustre file system and other technologies. The conference focuses on the latest Lustre developments and allows attendees to network with peers."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "NRP",
+            "Research Data Services",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202311_scc23": {
+        "name": "202311_scc23",
+        "title": "SCC at SC23",
+        "start": 1682060400,
+        "end": 1682060400,
+        "desc": {
+            "long": "<p><strong>APPLY TO COMPETE IN THE STUDENT CLUSTER COMPETITION AT SC23!</strong></p>\n",
+            "short": "Application deadline April 21, 2023. The San Diego Supercomputer Center (SDSC) and UC San Diego are putting together a team to compete in the Student Cluster Competition (SCC), held at the annual Supercomputing conference SC23 in Denver, Colorado November 13-15. The SCC teams consist of a mentor plus 6 students who will design and build a small cluster with support from mentors and hardware and software vendor partners. They will learn designated scientific applications and apply optimization techniques for their chosen architectures. SCC teams compete in a non-stop 48-hour challenge to complete a real-world scientific workload, while keeping the cluster up and running, and demonstrating to the judges their HPC skills and knowledge."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202304-SDSCWebinar-Neural-Networks": {
+        "name": "202304-SDSCWebinar-Neural-Networks",
+        "title": "SDSC Webinar: Introduction to Neural Networks, Convolution Neural Networks and Deep Learning",
+        "start": 1682013600,
+        "end": 1682017200,
+        "desc": {
+            "long": "<p><span class=\"TextRun SCXW217407515 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW217407515 BCX0\">Deep learning neural networks have become a prominent tool in science and machine learning. This </span><span class=\"NormalTextRun SCXW217407515 BCX0\">webinar</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> will </span><span class=\"NormalTextRun SCXW217407515 BCX0\">provide</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> </span><span class=\"NormalTextRun SCXW217407515 BCX0\">a brief overview</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> of the main concepts of neural networks and feature discovery. </span><span class=\"NormalTextRun SCXW217407515 BCX0\">We will also </span><span class=\"NormalTextRun SCXW217407515 BCX0\">demonstrate</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> the basic convolution neural network for digit recognition using </span><span class=\"NormalTextRun SCXW217407515 BCX0\">TensorFlow</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> and try to get an intuition about how the network performs and what defines deep learning in practice.</span><span class=\"NormalTextRun SCXW217407515 BCX0\"> We will also review some useful notes on running deep networks </span><span class=\"NormalTextRun SCXW217407515 BCX0\">on </span><span class=\"NormalTextRun SCXW217407515 BCX0\">HPCs</span><span class=\"NormalTextRun SCXW217407515 BCX0\">, such as using </span><span class=\"NormalTextRun SCXW217407515 BCX0\">tensorboard</span><span class=\"NormalTextRun SCXW217407515 BCX0\">, notebooks, and batch jobs.</span></span><span class=\"EOP SCXW217407515 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559685&quot;:0,&quot;335559737&quot;:0,&quot;335559738&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}\">\u00a0</span></p>\n",
+            "short": "This webinar will be a quick introduction and overview of neural networks, convolution networks, and demonstration of executing deep learning models in an HPC environment. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Paul Rodriguez",
+            "title": "Computational Data Scientist",
+            "bio": "Paul Rodriguez received his PhD in Cognitive Science at University of California, San Diego (UCSD) in 1999. He spent several years doing research in neural network modeling, dynamical systems simulations, time series analysis, and statistical methods for analysis and predictions in fMRI data. For the last several years he has been helping users from a variety of domains with performing big data analytics, applying machine learning models, implementing deep learning models, all in an HPC (High Performance Computing) environment."
+        },
+        "vid_link": "https://youtu.be/avlJCDb102Q",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202304-SDSCWebinar-Neural-Networks_slides.pdf"
+        }
+    },
+    "202304-TSCC-2.0": {
+        "name": "202304-TSCC-2.0",
+        "title": "Introduction to TSCC 2.0 ",
+        "start": 1681416000,
+        "end": 1681419600,
+        "desc": {
+            "long": null,
+            "short": "This training will cover everything users need to know about the new TSCC 2.0 system that will be launched in phases starting late spring. Topics will include changes to the TSCC system, scheduler, queues, software stack, accounting, and policies for using TSCC. "
+        },
+        "tags": [
+            "HPC Training",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Computational Data Science Researcher ",
+            "bio": "Dr. Chen received a PhD from Louisiana State University in chemical engineering with an emphasis on molecular dynamics simulation of proteins. Generally, Yuwu provides a high degree of HPC customer support and professionalism to the research communities of UCSD and other institutions."
+        },
+        "vid_link": null
+    },
+    "202303-SDSCWebinar-Data-Management-File-Systems": {
+        "name": "202303-SDSCWebinar-Data-Management-File-Systems",
+        "title": "SDSC Webinar: Data Management & File Systems",
+        "start": 1678989600,
+        "end": 1678993200,
+        "desc": {
+            "long": null,
+            "short": "Managing data efficiently on a supercomputer is important from both users' and system's perspectives. In this webinar, we will cover a few basic data management techniques and I/O best practices in the context of the Expanse system at SDSC. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Mahidhar Tatineni",
+            "title": "Director of User Services, SDSC",
+            "bio": "Mahidhar Tatineni received his M.S. & Ph.D. in Aerospace Engineering from UCLA. He currently leads the User Services group at SDSC and has done many optimization and parallelization projects on the supercomputing resources including Gordon, Comet, and Expanse. "
+        },
+        "vid_link": "https://youtu.be/husT8bcrpSI",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202303-SDSCWebinar-Data-Management-File-Systems_slides.pdf"
+        }
+    },
+    "202302-SDSCWebinar-Batch-Job-Scheduling-Slurm-Edition": {
+        "name": "202302-SDSCWebinar-Batch-Job-Scheduling-Slurm-Edition",
+        "title": "SDSC Webinar: Getting Started with Batch Job Scheduling: Slurm Edition",
+        "start": 1676574000,
+        "end": 1676577600,
+        "desc": {
+            "long": "<p><span>Most high-performance computing (HPC) systems are specialized resources in high demand and shared simultaneously by many researchers across all domains of science, engineering, and beyond. In order to fairly distribute and share the compute resources of an HPC system among these researchers, which have varying compute demand profiles over time, most computational workloads on these systems are executed as batch jobs --- prescripted sets of commands that are executed on a certain type or set of compute resources for a given amount of time. Researchers submit these batch job scripts to a batch job scheduler, a piece of software that controls and tracks where and when the batch jobs submitted to the system will eventually run and execute the p</span><span>rescripted sets of commands</span><span>. However, if this is your first time using an HPC system and interacting with a batch job scheduler like Slurm, writing your first batch job scripts and submitting them to the scheduler can be somewhat intimidating. Moreover, these batch job schedulers can be configured in many different ways and will often have unique features and options from system to system that you will need to consider when writing your batch jobs.</span></p>\n",
+            "short": "Learn how to write your first batch job script and submit it to a Slurm batch job scheduler. We discuss best practices on how to structure your batch job scripts, teach you how to leverage Slurm environment variables, and provide you with some tips on how to request resources from the scheduler to get your work done faster.  We also introduce you to some advanced features like Slurm job arrays and job dependencies for more structured computational workflows."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes",
+            "title": "Computational & Data Science Research Specialist, HPC User Services Group - SDSC",
+            "bio": "Marty Kandes is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Expanse, SDSC\u2019s NSF-funded supercomputer, and maintains all the Singularity containers supported on these systems."
+        },
+        "vid_link": "https://youtu.be/22uJWe5SJEM",
+        "resources": {
+            "GitHub": "https://github.com/mkandes/batch-computing/",
+            "Link": "https://www.sdsc.edu/event_items/202302-SDSCWebinar-Batch-Job-Scheduling-Slurm-Edition.html"
+        }
+    },
+    "202301-SDSCWebinar-Parallel-Computing-Concepts": {
+        "name": "202301-SDSCWebinar-Parallel-Computing-Concepts",
+        "title": "Parallel Computing Concepts",
+        "start": 1674154800,
+        "end": 1674158400,
+        "desc": {
+            "long": "<p><span data-sheets-userformat=\"{&quot;2&quot;:15233,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:6770343},&quot;15&quot;:&quot;Calibri&quot;,&quot;16&quot;:12}\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing.&quot;}\">All users of advanced cyberinfrastructure, whether they develop their own software or use 3rd party applications, should understand fundamental parallel computing concepts. In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. We also discuss how to choose the appropriate number of compute cores or nodes when running your applications and, when appropriate, the best balance between threads and processes. This webinar does not assume any programming experience and is suited for a wide audience, including current and prospective users of parallel computers, anyone who expects to write a proposal for computer time or those who are simply curious about parallel computing.</span></p>",
+            "short": "In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Director of Education and Training",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/6rjXwn2LhZo",
+        "resources": {}
+    },
+    "202211_neurogateway": {
+        "name": "202211_neurogateway",
+        "title": "Neuroscience Gateways",
+        "start": 1668270600,
+        "end": 1668285000,
+        "desc": {
+            "long": "<p>The Neuroscience Gateway (NSG), a free and open platform, eliminates administrative and technical barriers and enables neuroscientists to do large scale modeling and data processing using various tools on supercomputers. NSG is also a platform for dissemination of neuroscience software. Presentations and discussions by NSG users and software developers will be showcased at this workshop.<br> <a href=\"https://urldefense.com/v3/__https:/www.nsgportal.org/__;!!Mih3wA!GSx39Ym6oCX9ACqLC4be8kO3uyIE15VpbdZeXGlnbsvcvPiRdCP3yRxLdS6J6austxbgjF5TS3h2-w$\">https://www.nsgportal.org/</a></p>",
+            "short": "The Neuroscience Gateway (NSG), a free and open platform, eliminates administrative and technical barriers and enables neuroscientists to do large scale modeling and data processing using various tools on supercomputers. NSG is also a platform for dissemination of neuroscience software. \n"
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202211_voyager2": {
+        "name": "202211_voyager2",
+        "title": "Voyager Part 2",
+        "start": 1667925000,
+        "end": 1667934000,
+        "desc": {
+            "long": null,
+            "short": "This is the second of a two-part Voyager training session. Voyager is based on Intel\u2019s Habana Lab AI processors and provides a unique opportunity to use AI focused hardware for exploring AI in science and engineering. Voyager features Habana\u2019s Gaudi processors optimized for training, Goya processors optimized for inference, 100 GbE all-to-all connection within Gaudi nodes, 24 x 100GbE RDMA RoCE for scale-out across Gaudi nodes, and a Ceph file system."
+        },
+        "tags": [
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202210_ExpanseWebinar-Kubernetes": {
+        "name": "202210_ExpanseWebinar-Kubernetes",
+        "title": "Expanse Webinar: Scientific Computing with Kubernetes",
+        "start": 1666288800,
+        "end": 1666292400,
+        "desc": {
+            "long": "<p><span>Kubernetes is a popular container orchestration system that has seen massive adoption in both industry and academic IT departments. Long available in the Clouds, it has recently also become the main interface for several deployed and upcoming large-scale scientific compute facilities. The aim of this webinar is to provide science users that currently rely on traditional batch systems, like SLURM and HTCondor, a solid foundation that will allow them to effectively use Kubernetes-managed resources. The main focus is enabling the porting of batch-oriented scientific workflows, but we will also cover additional Kubernetes concepts not typically present in batch systems that could potentially be useful for science users.</span></p>\n",
+            "short": "In this webinar we provide recipes for transitioning scientific workloads that currently run on traditional batch systems to Kubernetes systems. Kubernetes is batch-like in nature, but there are some differences that science users should be aware of. We will also briefly describe capabilities that are not found in traditional batch systems that can improve the effectiveness of scientific computing."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Igor Sfiligoi",
+            "title": "Lead Scientific Software Developer and Researcher, SDSC",
+            "bio": "Over the years, Igor Sfiligoi has been engaged in the computing community across a wide breadth of roles, participating among others as researcher, operator, developer, architect, and manager. He has been working in both academia and industry, which helps him appreciate the variety of problems computers help to solve. He has been working with both systems that support tightly coupled and worldwide-scale pleasantly parallel codes and realizes that each approach has its own advantages and challenges. In his current role at SDSC he is putting his extensive knowledge to use across many scientific domains, spanning computational biology, fusion research, high energy physics and astrophysics."
+        },
+        "vid_link": "https://youtu.be/WtsukozrOLI",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202210_ExpanseWebinar-Kubernetes_slides.pdf"
+        }
+    },
+    "202210_voyager1": {
+        "name": "202210_voyager1",
+        "title": "Voyager Part 1",
+        "start": 1666108800,
+        "end": 1666116000,
+        "desc": {
+            "long": null,
+            "short": "This is the first of a two-part Voyager training session. Voyager is based on Intel\u2019s Habana Lab AI processors and provides a unique opportunity to use AI focused hardware for exploring AI in science and engineering. Voyager features Habana\u2019s Gaudi processors optimized for training, Goya processors optimized for inference, 100 GbE all-to-all connection within Gaudi nodes, 24 x 100GbE RDMA RoCE for scale-out across Gaudi nodes, and a Ceph file system.\n\n"
+        },
+        "tags": [
+            "HPC Training",
+            "Industry",
+            "TSCC",
+            "Voyager"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202210_TSCCwebinar-Singularity": {
+        "name": "202210_TSCCwebinar-Singularity",
+        "title": "TSCC Webinar: Introduction to Singularity: Creating and Running Containers for High-Performance Computing ",
+        "start": 1665691200,
+        "end": 1665694800,
+        "desc": {
+            "long": "<p>Singularity is a container platform which allows you as an HPC user to pack the applications and libraries into a single container (as a Singularity image). With the Singularity image, you can share, move and reproduce the application you build in the container. You can also build the image outside of the supercomputer cluster, which means with your laptop, you will have full control to choose any major Linux distributions, system libraries, and can decide how to install the application you need. What is more important is, unlike other container platforms such as Docker, Singularity is dedicated to running on clusters! Therefore, once the Singularity image is created, you can easily run it on many of the supercomputer clusters including TSCC at SDSC. You don\u2019t have to worry about how to install all the software you need on each different cluster. <br><br> In this webinar, we will first show how to build Singularity images on your local resource such as your laptop. Some commonly used repositories will be introduced, e.g.: Docker Hub, so you will learn where to pull other containers to create the Singularity images. For more complicated software requests, we will introduce the proper workflow to build a Singularity sandbox for test purposes, and how to record them into a Singularity recipe so a final custom container can be created accordingly. <br><br>Once the Singularity image is created, it can be uploaded and run on a cluster like TSCC. We will show three ways to run the applications within the container. Based on the cluster file system structure, we will introduce the binding point technique from Singularity to locate the proper storage, and how to add binding points into the recipe. Also, we will let you know how to make a short command to replace the long Singularity run command. <br><br>Prerequisites: Basic knowledge of using HPC environment is assumed but not required.</p>",
+            "short": "In this webinar, Yuwu Chen from TSCC User Services will show how to build Singularity images and then run them on the SDSC supercomputer clusters such as TSCC. Yuwu will also be sharing his insider knowledge of best practices along with pitfalls to avoid while working with Singularity."
+        },
+        "tags": [
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Computational Data Science Researcher",
+            "bio": "Yuwu Chen received his PhD from Louisiana State University in chemical engineering with an emphasis on molecular dynamics simulation of proteins. Yuwu\u2019s key responsibility is to provide a high degree of HPC customer support and professionalism to the research communities of UCSD and other institutions. Yuwu is a Singularity user and has been providing Singularity user support for HPC users since 2019."
+        },
+        "vid_link": "https://youtu.be/dDooXHBdRqA",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202210_TSCCwebinar-Singularity_slides.pdf"
+        }
+    },
+    "202209_ExpanseWebinar-Parallel-Computing-Concepts": {
+        "name": "202209_ExpanseWebinar-Parallel-Computing-Concepts",
+        "title": "Expanse Webinar: Parallel Computing Concepts ",
+        "start": 1663178400,
+        "end": 1663182000,
+        "desc": {
+            "long": null,
+            "short": "In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Director of Scientific Computing Applications, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/ebjw82N8KeM",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202209_ExpanseWebinar-Parallel-Computing-Concepts_slides.pdf"
+        }
+    },
+    "2022_hpcsi22": {
+        "name": "2022_hpcsi22",
+        "title": "HPC/DS Summer Institute",
+        "start": 1659337200,
+        "end": 1659682800,
+        "desc": {
+            "long": "<p><strong><em><span style=\"color: #000080;\">The application deadline has closed.</span> </em><br> SI Preparation Day: Wednesday, July 27, 2022\u00a0<br> Summer Institute: Monday, August 1 \u2013 August 5, 2022<br></strong><span style=\"color: #ff0000;\"><em>This event will be held virtually.</em></span><strong><br></strong></p>\n",
+            "short": "The Application Deadline has passed.  The HPC and Data Science Summer Institute is a week-long workshop focusing on a broad spectrum of introductory-to-intermediate topics in High Performance Computing and Data Science. The program is aimed at researchers in academia and industry, especially in domains not traditionally engaged in supercomputing, who have problems that cannot typically be solved using local computing resources. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": [
+            {
+                "title": "1.1 Introduction P1",
+                "description": "Preparation Day - Welcome & Orientation by Robert Sinkovits, Director of Education and Training. Accounts, Login, Environment, Running Jobs, and Logging into Expanse User Portal. Q&A wrap up.",
+                "link": "https://youtu.be/w56k28koVpc"
+            },
+            {
+                "title": "1.2 Introduction P2",
+                "description": "Preparation Day - Welcome & Orientation by Robert Sinkovits, Director of Education and Training. Accounts, Login, Environment, Running Jobs, and Logging into Expanse User Portal. Q&A wrap up.",
+                "link": "https://youtu.be/3l0nrCnacfY"
+            },
+            {
+                "title": "2.1 Parallel Computing Concepts",
+                "description": "Advanced cyberinfrastructure users, whether they develop their own software or run 3rd party applications, should understand fundamental parallel computing concepts. Here we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl’s and Gustafson’s Laws) and benchmarking. We also discuss how to choose the appropriate number of cores, nodes or GPUs when running your applications and, when appropriate, the best balance between threads and processes. This session does not assume any programming experience.",
+                "link": "https://youtu.be/sl-p1oCioO8"
+            },
+            {
+                "title": "2.2 Hardware Overview",
+                "description": "All users of advanced CI can benefit from a basic understanding of hardware, to determine which factors affect application performance. Here we give an overview starting from CPUs (processors, cores, hyperthreading, instruction sets), the anatomy of a compute node (sockets, memory, attached devices, accelerators), to an overview of cluster architecture (login and compute nodes, interconnects). We also cover how to obtain hardware information using Linux tools, pseudo-filesystems and commonly used hardware utilization monitoring tools.",
+                "link": "https://youtu.be/oBnUbafaNFU"
+            },
+            {
+                "title": "2.3 Intermediate Linux",
+                "description": "Effective use of Linux based compute resources via the command line interface (CLI) can significantly increase researcher productivity. Assuming basic familiarity with the Linux CLI we cover some more advanced concepts with focus on the Bash shell. Among others this includes the filesystem hierarchy, file permissions, symbolic and hard links, wildcards and file globbing, finding commands and files, environment variables and modules, configuration files, aliases, history and tips for effective Bash shell scripting.",
+                "link": "https://youtu.be/tZ10aMIY8Uc"
+            },
+            {
+                "title": "2.4 Batch Computing",
+                "description": "As computational and data requirements grow, researchers may find that they need to make the transition from dedicated resources (e.g., laptops, desktops) to campus clusters or nationally allocated systems. Jobs on these shared resources are typically executed under the control of a batch submission system such as Slurm, PBS, LSF or SGE. This requires a different mindset since the job needs to be configured so that the application(s) can be run non-interactively and at a time determined by the scheduler. The user also needs to specify the job duration, account information, hardware requirements and partition or queue. The goals of this session are to introduce participants to the fundamentals of batch computing before diving into the details of any particular workload manager to help them become more proficient, help ease porting of applications to different resources, and to allow CI Users to understand concepts such as fair share scheduling and backfilling.",
+                "link": "https://youtu.be/5Ir-obrNUzs"
+            },
+            {
+                "title": "2.5 Data Management",
+                "description": "Proper data management is essential for the effective use of advanced CI. This session will cover an overview of file systems, data compression, archives (tar files), checksums and MD5 digests, downloading data using wget and curl, data transfer and long-term storage solutions.",
+                "link": "https://youtu.be/m7K71tJdbY0"
+            },
+            {
+                "title": "3.1 Security",
+                "description": "Maintaining a secure CI environment is essential for ensuring the integrity of resources, data and research. In this session we will discuss the importance of, and best practices for maintaining a secure environment.",
+                "link": "https://youtu.be/CQseanqjXgI"
+            },
+            {
+                "title": "3.2 Interactive Computing",
+                "description": "Interactive computing refers to working with software that accepts input from the user as it runs. This session will introduce participants to advanced CI concepts and what’s going on 'under the hood' when they are using interactive tools. Topics covered will include mechanisms for accessing interactive resources; commonalities and differences between batch and interactive computing; understanding the differences between web-based services and X11/GUI applications; monitoring jobs running on interactive nodes; overview of Open OnDemand portals.",
+                "link": "https://youtu.be/ljFXf8VhSgg"
+            },
+            {
+                "title": "3.3 Getting Help",
+                "description": "Reducing the time and effort needed to address problems related to application performance, batch job submission or data management can minimize frustration and enable the users to become more productive. In this section we will cover common problems and best practices on resolving issues.",
+                "link": "https://youtu.be/QQAg5v1PyEo"
+            },
+            {
+                "title": "3.4 Code Migration",
+                "description": "Introduction to porting codes and workflows to SDSC resources. We will cover typical approaches to moving your computations to our resources – use of applications/software packages already available on the system; compiling code from source with information on compilers, libraries, and optimization flags to use; setting up python & R environments on our systems; use of conda based environments; managing workflows; and use of containerized solutions via Singularity.",
+                "link": "https://youtu.be/FwRwLbFv9VA"
+            },
+            {
+                "title": "3.5 High Throughput Computing",
+                "description": "High-throughput computing (HTC) workloads are characterized by large numbers of small jobs. These frequently involve parameter sweeps where the same type of calculation is done repeatedly with different input values or data processing pipelines where an identical set of operations is applied to many files. This session covers the characteristics and potential pitfalls of HTC, job bundling, the Open Science Grid and the resources available through the Partnership to Advance Throughput Computing (PATh).",
+                "link": "https://youtu.be/bu0c_HEHRGc"
+            },
+            {
+                "title": "3.6 Linux for File Processing",
+                "description": "Many computational and data processing workloads require pre-processing of input files to get the data into a format that is compatible with the user’s application and/or post-processing of output files to extract key results. While these tasks could be done by hand, the process can be time-consuming, tedious and, worst of all, error-prone. In this session we cover the Linux tools awk, sed, grep, sort, head, tail, cut, paste, cat and split, which will help users to easily implement automation.",
+                "link": "https://youtu.be/64zFDBGwyVo"
+                },
+                {
+                "title": "4.1a Intro to Git and GitHub",
+                "description": "This session will provide an overview of GitHub and introduce version control with Git/GitHub for beginners. Participants will learn to create a repository on Github and manage files, use pull requests, merge changes, rebase branches, etc.",
+                "link": "https://youtu.be/QZHHFynIzjQ"
+                },
+                {
+                "title": "4.1b Advanced Git and GitHub",
+                "description": "You should be already familiar with creating Pull Requests, merging, and rebasing branches.",
+                "link": "https://youtu.be/pjDU3BaTU4Y"
+                },
+                {
+                "title": "4.2a Python for HPC",
+                "description": "In this session we will introduce four key technologies in the Python ecosystem that provide significant benefits for scientific applications run in supercomputing environments. Previous Python experience is recommended but not required. (1) First, we will learn how to speed up Python code compiling it on-the-fly with numba (2) Then we will introduce the threads, processes and the Global Interpreter lock and we will leverage first numba then dask to use all available cores on a machine (3) Finally we will distribute computations across multiple nodes launching dask workers on a separate Expanse job.",
+                "link": "https://youtu.be/bG0P2cjmX8Y"
+                },
+                {
+                "title": "4.2b A short Introduction to Data Science and its Applications",
+                "description": "The new era of data science is here. Our lives as well as any field of science, engineering, business, and society are continuously transformed by our ability to collect meaningful data in a systematic fashion and turn that into value. These needs not only push for new and innovative capabilities in composable data management and analytical methods that can scale in an anytime anywhere fashion, but also require methods to bridge the gap between applications and compose such capabilities within solution architectures.",
+                "link": "https://youtu.be/pCF9MM2EDq0"
+                },
+                {
+                "title": "4.3a Performance Tuning",
+                "description": "This session is targeted at attendees who both do their own code development and need their calculations to finish as quickly as possible. We will cover the effective use of cache, loop-level optimizations, force reductions, optimizing compilers and their limitations, short-circuiting, time-space tradeoffs and more. Exercises will be done mostly in C, but emphasis will be on general techniques that can be applied in any language.",
+                "link": "https://youtu.be/c4rmWPnyxNw"
+                },
+                {
+                "title": "4.3b Scalable Machine Learning",
+                "description": "Machine learning is an integral part of knowledge discovery in a wide variety of applications. From scientific domains to social media analytics, the data that needs to be analyzed has become massive and complex. This session introduces approaches that can be used to perform machine learning at scale. Tools and procedures for executing machine learning techniques on HPC will be presented. Spark will also be covered for scalable data analytics and machine learning. Please note: Knowledge of fundamental machine learning algorithms and techniques is required.",
+                "link": "https://youtu.be/6zXI7gbQ_r0"
+                },
+                {
+                "title": "5.1a Scientific Visualization for mesh based data with Visit",
+                "description": "This tutorial will provide a high-level overview of scientific visualization techniques and their applicability for structured mesh-based data (such as rectilinear grids). Attendees will follow along exercises in a hands-on manner to employ different types of techniques using VisIt software and also perform remote visualization on Expanse cluster.",
+                "link": "https://youtu.be/xfWU6Qr8NrE"
+                },
+                {
+                "title": "5.1b Deep Learning - Part 1",
+                "description": "Deep learning, a subfield of machine learning, has seen tremendous growth and success in the past few years. Deep learning approaches have achieved state-of-the-art performance across many domains, including image classification, speech recognition, and biomedical applications. This session provides an introduction to neural networks and deep learning concepts and approaches. Examples utilizing deep learning will be presented, and hands-on exercises will be covered using Keras. Please note: Knowledge of fundamental machine learning concepts and techniques is required.",
+                "link": "https://youtu.be/gJ6eQUfhAKs"
+                },
+                {
+                "title": "5.2a GPU Computing and Programming",
+                "description": "This session introduces massively parallel computing with graphics processing units (GPUs). The use of GPUs is popular across all scientific domains since GPUs can significantly accelerate time to solution for many computational tasks. Participants will be introduced to essential background of the GPU chip architecture and will learn how to program GPUs via the use of libraries, OpenACC compiler directives, and CUDA programming. The session will incorporate hands-on exercises for participants to acquire the basic skills to use and develop GPU aware applications.",
+                "link": "https://youtu.be/Hm3G96Ogn1w"
+                },
+                {
+                "title": "5.2b Deep Learning - Part 2",
+                "description": "This session continues and extends Deep Learning - Part 1 by going into more advanced examples. Concepts regarding architecture, layers, and applications will be presented. Additionally, more advanced tutorials and hands-on exercises with larger deep convolutional networks and transfer learning will be executed on GPUs. There will also be a chance to learn Keras more in depth and become familiar with building more flexible models.",
+                "link": "https://youtu.be/CXGr5Fzd7uE"
+                },
+                {
+                "title": "5.3 An Introduction to Singularity: Containers for Scientific and High-Performance Computing",
+                "description": "",
+                "link": "https://youtu.be/OXBS_YKt0eg"
+                },
+                {
+                "title": "6.1a Parallel Computing using MPI & Open MP",
+                "description": "This session is targeted at attendees who are looking for a hands-on introduction to parallel computing using MPI and Open MP programming. The session will start with an introduction and basic information for getting started with MPI. An overview of the common MPI routines that are useful for beginner MPI programmers, including MPI environment set up, point-to-point communications, and collective communications routines will be provided. Simple examples illustrating distributed memory computing, with the use of common MPI routines, will be covered. The OpenMP section will provide an overview of constructs and directives for specifying parallel regions, work sharing, synchronization and data scope. Simple examples will be used to illustrate the use of OpenMP shared-memory programming model, and important run time environment variables Hands on exercises for both MPI and OpenMP will be done in C and FORTRAN.",
+                "link": "https://youtu.be/G63gktITSSs"
+                },
+                {
+                "title": "6.1b Information Visualization Concepts",
+                "description": "This tutorial will provide a ground-up understanding of information visualization concepts and how they can be leveraged to select and use effective visual idioms for different data types such spreadsheet data, geospatial, graph, etc.). Example visualization designs and fixing problems with existing visualizations will be discussed. Practical rules of thumbs for visualization will be discussed as well.",
+                "link": "https://youtu.be/U0wxXvTx18Q"
+                },
+                {
+                "title": "6.2 Scaling up Interactive Data Analysis in Jupyter Lab: From Laptop to HPC",
+                "description": "In this session we will demonstrate scaling up data analysis to larger than memory (out-of-core) datasets and processing them in parallel on CPU and GPU nodes. In the hands-on exercise, we will compare Pandas, Dask, Spark, cuDF, and Dask-cuDF dataframe libraries for handling large datasets. We also cover setting up reproducible and transferable software environments for data analysis.",
+                "link": "https://youtu.be/pC4H-3HBMw4"
+                }
+        ]
+    },
+    "202206_cimlsi": {
+        "name": "202206_cimlsi",
+        "title": "2022 CIML Summer Institute",
+        "start": 1656342000,
+        "end": 1656536400,
+        "desc": {
+            "long": "<p>The San Diego Supercomputer Center (SDSC) Cyberinfrastructure-Enabled Machine Learning (CIML) project is focused on teaching researchers and students the best practices for effectively running machine learning (ML) and data science applications on advanced cyberinfrastructure and high-performance computing (HPC) systems. <br><br>This year\u2019s CIML Summer Institute will involve introducing ML researchers, developers and educators to the techniques and methods needed to migrate their ML applications from smaller, locally run resources, such as laptops and workstations, to large-scale HPC systems, such as the SDSC Expanse supercomputer. Participants will have the opportunity to accelerate their learning process through highly interactive classes with hands-on tutorials on SDSC\u2019s Expanse.</p>\n",
+            "short": "*APPLICATION CLOSED*\nThe CIML Summer Institute will involve introducing ML researchers, developers and educators to the techniques and methods needed to migrate their ML applications from smaller, locally run resources, such as laptops and workstations, to large-scale HPC systems, such as the SDSC Expanse supercomputer. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": [
+            {
+                "title": "1.1 Welcome & Orientation",
+                "description": "",
+                "link": "https://youtu.be/YaQRFcvTo2s"
+            },
+            {
+                "title": "1.3 Running Jupyter Notebooks",
+                "description": "",
+                "link": "https://youtu.be/09zrAznap5Y"
+            },
+            {
+                "title": "2.2 Introduction HPC Cyberinfrastructure",
+                "description": "",
+                "link": "https://youtu.be/EFM46KxyNtg"
+            },
+            {
+                "title": "2.3 CPU Computing",
+                "description": "",
+                "link": "https://youtu.be/qf-8aX_l2Ds"
+            },
+            {
+                "title": "2.4 Data Management and File Systems",
+                "description": "",
+                "link": "https://youtu.be/kPHxTpd_wl8"
+            },
+            {
+                "title": "2.5 GPU Computing",
+                "description": "",
+                "link": "https://youtu.be/tH63qW4b7SQ"
+            },
+            {
+                "title": "3.2 Introduction to Singularity",
+                "description": "",
+                "link": "https://youtu.be/MOpLvc0Zuk0"
+            },
+            {
+                "title": "3.3 CONDA Environments and Jupyter Notebook on Expanse",
+                "description": "",
+                "link": "https://youtu.be/HYJNUvGrVk0"
+            },
+            {
+                "title": "3.5 R on HPC Demo",
+                "description": "",
+                "link": "https://youtu.be/IRrcn-R00Xs"
+            },
+            {
+                "title": "3.6 Spark",
+                "description": "",
+                "link": "https://youtu.be/MjPo7ZvH0k8"
+            },
+            {
+                "title": "4.2 Intro to NN & CNN",
+                "description": "",
+                "link": "https://youtu.be/WY9wAK6qzD0"
+            },
+            {
+                "title": "4.3 Deep Learning",
+                "description": "",
+                "link": "https://youtu.be/6Esk1Cv7s7g"
+            },
+            {
+                "title": "4.4 Deep Learning Layers and Models",
+                "description": "",
+                "link": "https://youtu.be/zDouHE_y5sY"
+            },
+            {
+                "title": "4.5 Deep Learning Transfer Learning",
+                "description": "",
+                "link": "https://youtu.be/UOBjJbBsi1w"
+            },
+            {
+                "title": "4.6 Deep Learning – Other topics",
+                "description": "",
+                "link": "https://youtu.be/zxY2ZRop-EY"
+            }
+        ]
+    },
+    "202206_ExpanseWebinar-Jupyter-Notebooks-from-Local-Machine-to-Expanse": {
+        "name": "202206_ExpanseWebinar-Jupyter-Notebooks-from-Local-Machine-to-Expanse",
+        "title": "Expanse Webinar: Run your Jupyter Notebooks anywhere: Scaling up your Projects from Laptop to Expanse ",
+        "start": 1655402400,
+        "end": 1655406000,
+        "desc": {
+            "long": null,
+            "short": "In this webinar we demonstrate how to transition your Jupyter Notebooks from a local machine to the Expanse HPC system using command-line tools and the Expanse Portal. We cover creating transferable software environments, scaling up calculations to large datasets, parallel processing, and running Jupyter Notebooks in batch mode."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Paul Rodriguez, Ph.D. ",
+            "title": null,
+            "bio": "Dr. Rose is Director of the Structural Bioinformatics Lab and Lead for Bioinformatics and Biomedical Applications at the San Diego Supercomputer Center (SDSC), UC San Diego. He has previously led bioinformatics and scientific computing departments at Pfizer and Agouron Pharmaceuticals. He led the RCSB Protein Data Bank team at UCSD, one of the largest open access databases in biology. In his current position at SDSC, he is involved in projects to integrate cross-disciplinary data for novel COVID-19 diagnostic and surveillance methods, and the application of knowledge graphs to COVID-19 and precision medicine datasets. His research interests include the development of interactive and scalable platforms for data integration and machine learning in biomedicine and structural biology. He is an advocate for open-source software development and reproducible computational research. "
+        },
+        "vid_link": "https://youtu.be/_L-_HSu_y2Q",
+        "resources": {
+            "Presentation Slides": "/misc/www/projects/education/training/interactive/dev/resources/202206_ExpanseWebinar-Jupyter-Notebooks-from-Local-Machine-to-Expanse_presentation_slides.pdf"
+        }
+    },
+    "202205_ExpanseWebinar-Intro-to-Neural-Networks-and-Deep-Learning-on-Expanse": {
+        "name": "202205_ExpanseWebinar-Intro-to-Neural-Networks-and-Deep-Learning-on-Expanse",
+        "title": "Expanse Webinar: Introduction to Neural Networks, Convolution Neural Networks and Deep Learning on Expanse",
+        "start": 1652983200,
+        "end": 1652986800,
+        "desc": {
+            "long": null,
+            "short": "This webinar will be a quick introduction and overview of neural networks, convolution networks, and deep learning on Expanse."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Paul Rodriguez, Ph.D. ",
+            "title": "Research Analyst - SDSC",
+            "bio": "Paul Rodriguez received his PhD in Cognitive Science at University of California, San Diego (UCSD) in 1999. He spent several years doing research in neural network modeling, dynamical systems simulations, time series analysis, and statistical methods for analysis and predictions in fMRI data. He has more recently been supporting HPC applications for diverse users in science and humanities, with emphasis on data mining and deep learning."
+        },
+        "vid_link": "https://youtu.be/PUx3yUuQD7E",
+        "resources": {
+            "Presentation Slides": "/misc/www/projects/education/training/interactive/dev/resources/202205_ExpanseWebinar-Intro-to-Neural-Networks-and-Deep-Learning-on-Expanse_presentation_slides.pdf"
+        }
+    },
+    "202205_Kubernetes-for-Science-Compute": {
+        "name": "202205_Kubernetes-for-Science-Compute",
+        "title": "Kubernetes for Science Compute",
+        "start": 1651680000,
+        "end": 1651694400,
+        "desc": {
+            "long": null,
+            "short": "Several new scientific compute resources are becoming available only through Kubernetes and their users will have to adapt their workloads to interface to it. This tutorial provides the basic Kubernetes notions any science user will need, paired with extensive hands-on exercises on a production-quality system to better explore the details.\u00a0"
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Lead Scientific Software Developer and Researcher, SDSC",
+            "bio": "Over the years, Igor Sfiligoi has been engaged in the computing community across a wide breadth of roles, participating among others as researcher, operator, developer, architect and manager. He has been working in both academia and industry, which helps him appreciate the variety of problems computers help to solve. He has been working with both systems that support tightly coupled and worldwide-scale pleasantly parallel codes and realizes that each approach has its own advantages and challenges. In his current role at SDSC he is putting his extensive knowledge to use across many scientific domains, spanning computational biology, fusion research, high energy physics and astrophysics."
+        },
+        "vid_link": null
+    },
+    "202205_gpuhack": {
+        "name": "202205_gpuhack",
+        "title": "GPU Hackathon",
+        "start": 1651561200,
+        "end": 1652338800,
+        "desc": {
+            "long": "<p><strong>Application deadline: EXTENDED to SUNDAY, MARCH 20, 2022</strong><br><strong>Event to be held: MAY 3 + MAY 10-12, 2022</strong></p>\n",
+            "short": "Application deadline is March 20, 2022.  The SDSC GPU Hackathon is a multi-day (May 3 + May 10-12), intensive hands-on event, designed to help computational scientists and researchers port, optimize, and accelerate their applications using GPUs. These events pair participants with dedicated mentors experienced in GPU programming and development. Representing distinguished scholars and preeminent institutions from around the world, the teams of mentors and attendees work together to realize performance gains and speedups by taking advantage of parallel programming on GPUs."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202204_matlab": {
+        "name": "202204_matlab",
+        "title": "Computing with MATLAB",
+        "start": 1651089600,
+        "end": 1651095000,
+        "desc": {
+            "long": "<p><span>In this session you will learn how to solve and accelerate computationally and data-intensive problems that are becoming common in the areas of machine learning and deep learning using multicore processors, GPUs, and computer clusters.\u202f We will introduce you to high-level programming constructs that allow you to parallelize MATLAB applications and run them on multiple processors.\u202f We will also discuss how to take advantage of GPUs to speed up computations without low-level programming.</span><span>\u00a0</span></p>\n",
+            "short": "In this session you will learn how to solve and accelerate computationally and data-intensive problems that are becoming common in the areas of machine learning and deep learning using multicore processors, GPUs, and computer clusters."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Timothy Kyung",
+            "title": "Application Engineer",
+            "bio": "Timothy Kyung is an Application Engineer supporting the Government and Department of Defense industry with technical focuses in deployment/interfacing with 3rd party software and parallelization. He holds a B.S. and M.S. in Mechanical Engineering with a focus in robotics from Carnegie Mellon University."
+        },
+        "vid_link": "https://youtu.be/cd0xEChYjzI"
+    },
+    "202204_ExpanseWebinar-Enduring-Security-The-Journey-Continues": {
+        "name": "202204_ExpanseWebinar-Enduring-Security-The-Journey-Continues",
+        "title": "Expanse Webinar: Enduring Security: The Journey Continues",
+        "start": 1650564000,
+        "end": 1650567600,
+        "desc": {
+            "long": "<p aria-level=\"1\">Security is a journey, not a destination. In this webinar, attendees will learn about ongoing practices they can adopt that help keep their research and accounts secure. This webinar builds upon content introduced in a previous webinar<a href=\"https://www.sdsc.edu/event_items/202007_CometWebinar.html\"> \"Indispensable Security: Tips to Use SDSC's HPC Resources Securely\"</a>. Attendees are encouraged to review the aforementioned webinar prior to attending, as some topics may be referred to but not covered with the same level of detail. \u00a0</p>\n",
+            "short": "The first in a recurring webinar series on using Expanse and other SDSC HPC resources securely. This webinar will cover security and security-related topics relevant to researchers and the trustworthiness of their work produced on these resources."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Scott Sakai",
+            "title": "Senior Security Analyst, SDSC",
+            "bio": "Scott is one of four cybersecurity analysts who comprise the Security Team at the San Diego Supercomputer Center. His area of focus is supporting the security needs of SDSC\u2019s HPC installations and serves as a subject-matter expert for security issues relating to intrusion detection, incident response, networking, Unix environments, programming, and general IT. In addition to supporting the security needs of SDSC, Scott also collaborates closely with XSEDE\u2019s Security Working Group in a similar role. He received his B.S. in Computer Science and Engineering from UC San Diego in 2003 and joined SDSC in 2004."
+        },
+        "vid_link": "https://youtu.be/9k_mbbT2-10",
+        "resources": {
+            "Presentation PDF": "/misc/www/projects/education/training/interactive/dev/resources/202204_ExpanseWebinar-Enduring-Security-The-Journey-Continues_presentation_pdf.pdf"
+        }
+    },
+    "202211_scc22": {
+        "name": "202211_scc22",
+        "title": "SCC at SC22",
+        "start": 1648018800,
+        "end": 1648018800,
+        "desc": {
+            "long": "<p><strong>APPLY TO COMPETE IN THE STUDENT CLUSTER COMPETITION AT SC22!</strong></p>\n",
+            "short": "Application deadline March 23. The SDSC and UC San Diego are putting together a team to compete in the Student Cluster Competition (SCC), held at the annual Supercomputing conference SC22 in Dallas, TX, November 14 \u2013 16. The SCC teams consist of a mentor plus 6 students who will design and build a small cluster with support from mentors and hardware and software vendor partners. They will learn designated scientific applications and apply optimization techniques for their chosen architectures. SCC teams compete in a non-stop 48-hour challenge to complete a real-world scientific workload, while keeping the cluster up and running, and demonstrating to the judges their HPC skills and knowledge."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202203_ExpanseWebinar-M.Kandes": {
+        "name": "202203_ExpanseWebinar-M.Kandes",
+        "title": "Expanse Webinar: Singularity \u2013 Containers for Scientific and High-Performance Computing",
+        "start": 1647540000,
+        "end": 1647543600,
+        "desc": {
+            "long": "<p>Singularity is an open-source container engine designed to bring operating system-level virtualization to scientific and high-performance computing. With Singularity you can package complex computational workflows --- software applications, libraries, and data --- in a simple, portable, and reproducible way, which can then be run almost anywhere. Once you've created your Singularity container, you can run it on the workstation in your lab, on a virtual machine in the public cloud, or on the world's largest supercomputers. Singularity is all about the mobility of compute. <br><br>In this webinar, we'll provide an overview of Singularity and how you might incorporate the use of containers in your own research. We'll also show you how to access and use some of the containerized applications that we make available to users on Expanse at SDSC. <br><br></p>",
+            "short": "Come learn all about Singularity containers. In this webinar, we'll provide an overview of Singularity and how you might incorporate the use of containers in your own research. We'll also show you how to access and use some of the containerized applications that we make available to users on Expanse at SDSC."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Computational & Data Science Research Specialist, HPC User Services Group - SDSC",
+            "bio": "Marty Kandes is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Expanse, SDSC\u2019s NSF-funded supercomputer, and maintains all the Singularity containers supported on these systems."
+        },
+        "vid_link": "https://youtu.be/Cjbc7QO_PiY",
+        "resources": {}
+    },
+    "202203_TSCC-101-Spring-Training": {
+        "name": "202203_TSCC-101-Spring-Training",
+        "title": "Triton Shared Computing Cluster (TSCC) 101 Spring Training ",
+        "start": 1646341200,
+        "end": 1646348400,
+        "desc": {
+            "long": null,
+            "short": "This training will cover everything new users need to know about using the TSCC system. Topics will include: an overview of condo/hotel program; how to apply; accounts and allocation usage monitoring; environment and software modules; overview of various queues, building PBS job scripts, job submission and monitoring; data transfers; and file systems. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": "Yuwu Chen",
+            "title": "Computational Data Science Researcher, SDSC",
+            "bio": "Yuwu Chen received a PhD from Louisiana State University in chemical engineering with an emphasis on molecular dynamics simulation of proteins. Generally, Yuwu provides a high degree of HPC customer support and professionalism to the research communities of UCSD and other institutions."
+        },
+        "vid_link": null
+    },
+    "202202_ExpanseWebinar-M.Thomas": {
+        "name": "202202_ExpanseWebinar-M.Thomas",
+        "title": "Expanse Webinar: Accessing and Running Jobs on Expanse",
+        "start": 1645124400,
+        "end": 1645128000,
+        "desc": {
+            "long": null,
+            "short": "This webinar covers the basics of accessing SDSC's Expanse supercomputer, managing the user environment, compiling and running jobs using Slurm, where to run them, and how to run batch jobs. We will also cover interactive computing using applications such as Jupyter Notebooks and how to run them via the command line or from the Expanse portal. It is assumed that you have mastered the basic skills of logging onto HPC systems using SSH and running basic Unix commands on these systems. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Computational Data Scientist - SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/cq5LENLjYIQ",
+        "resources": {}
+    },
+    "202201_ExpanseWebinar-B.Sinkovits": {
+        "name": "202201_ExpanseWebinar-B.Sinkovits",
+        "title": "Expanse Webinar: Parallel Computing Concepts ",
+        "start": 1642705200,
+        "end": 1642708800,
+        "desc": {
+            "long": null,
+            "short": "In this webinar we cover supercomputer architectures, the differences between threads and processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws) and benchmarking. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Director of Scientific Computing Applications, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/MVS5SZCXY64",
+        "resources": {
+            "GitHub": "https://github.com/sinkovit/Parallel-concepts",
+            "Presentation PDF": "/misc/www/projects/education/training/interactive/dev/resources/202201_ExpanseWebinar-B.Sinkovits_presentation_pdf.pdf"
+        }
+    },
+    "202201_HPC-CI-Training-Series": {
+        "name": "202201_HPC-CI-Training-Series",
+        "title": "2022 HPC/CI Training Series",
+        "start": 1642197600,
+        "end": 1651878000,
+        "desc": {
+            "long": "<p>SDSC\u2019s High Performance Computing (HPC)/ Cyberinfrastructure (CI) Training Series was developed to support UC San Diego undergraduates and graduates interested in furthering their knowledge of HPC concepts and hands-on training, as well as, building a team interested in competing in the Student Cluster Competition held at the annual International Conference for High Performance Computing, Networking, Storage, and Analysis (SC). This program is available to any who are interested in advancing their knowledge and experience on HPC systems and concepts.<br><br>This program is offered in two sessions, the first to support parallel programming concepts, the second to provide tools for programmers. Participants can register for one or both sessions.</p>\n",
+            "short": "SDSC\u2019s High Performance Computing (HPC)/ Cyberinfrastructure (CI) Training Series was developed to support UC San Diego undergraduates and graduates interested in furthering their knowledge of HPC concepts and hands-on training, as well as, building a team interested in competing in the Student Cluster Competition held at the annual International Conference for High Performance Computing, Networking, Storage, and Analysis (SC). This program is available to any who are interested in advancing their knowledge and experience on HPC systems and concepts."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202112_ExpanseWebinar-M.Kandes": {
+        "name": "202112_ExpanseWebinar-M.Kandes",
+        "title": "Expanse Webinar: How-to secure your Jupyter notebook sessions on Expanse",
+        "start": 1639508400,
+        "end": 1639512000,
+        "desc": {
+            "long": "<p>Jupyter notebooks have become the de facto standard interface for web-based interactive computing. However, whenever you launch and run a Jupyter notebook server on any remote compute resource, whether on a virtual machine from a public cloud provider or on a high-performance computing system like Expanse, additional security measures must be employed to protect the privacy and integrity of the data exchanged over the public internet between the notebook server and your local web browser. If such security measures are not taken, you not only put your own research code and data at risk of network eavesdropping and data tampering by malicious actors, but you may also inadvertently expose every other researcher using a shared compute resource like Expanse to these types of serious cyberthreats should your user account be compromised. <br><br>In this webinar, we\u2019ll provide you with an overview of when-to, how-to, and how-not-to secure your Jupyter notebook sessions. Most importantly, we\u2019ll introduce you to SDSC\u2019s Satellite reverse proxy service and its new client-side application, galyleo. Together, they will help you launch your Jupyter notebook sessions on Expanse in a simple, secure way, so you can focus on getting your research done rather than Jupyter notebook security.</p>",
+            "short": "Jupyter notebooks have become the de facto standard interface for web-based interactive computing. However, whenever you launch and run a Jupyter notebook server on any remote compute resource, whether on a virtual machine from a public cloud provider or on a high-performance computing system like Expanse, additional security measures must be employed to protect the privacy and integrity of the data exchanged over the public internet between the notebook server and your local web browser. If such security measures are not taken, you not only put your own research code and data at risk of network eavesdropping and data tampering by malicious actors, but you may also inadvertently expose every other researcher using a shared compute resource like Expanse to these types of serious cyberthreats should your user account be compromised. <br><br>In this webinar, we\u2019ll provide you with an overview of when-to, how-to, and how-not-to secure your Jupyter notebook sessions. Most importantly, we\u2019ll introduce you to SDSC\u2019s Satellite reverse proxy service and its new client-side application, galyleo. Together, they will help you launch your Jupyter notebook sessions on Expanse in a simple, secure way, so you can focus on getting your research done rather than Jupyter notebook security."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Computational & Data Science Research Specialist, HPC User Services Group - SDSC",
+            "bio": "Marty Kandes is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Expanse, SDSC\u2019s NSF-funded supercomputer, and maintains all the Singularity containers supported on these systems."
+        },
+        "vid_link": "https://youtu.be/2sSkvDLFFUg",
+        "resources": {
+            "Slides": "/misc/www/projects/education/training/interactive/dev/resources/202112_ExpanseWebinar-M.Kandes_slides.pdf"
+        }
+    },
+    "202110_ExpanseWebinar-M.Shantharam": {
+        "name": "202110_ExpanseWebinar-M.Shantharam",
+        "title": "Expanse Webinar: Data Management & File Systems on Expanse ",
+        "start": 1634839200,
+        "end": 1634842800,
+        "desc": {
+            "long": "<p><span class=\"TextRun SCXW104585421 BCX0\" data-contrast=\"none\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW104585421 BCX0\">Managing data efficiently on a supercomputer is very important from both users' and system's perspectives. Users need to be aware of various data storage and management mechanisms, their impact on application and system performance. In this webinar, we will cover a few basic data management techniques and I/O best practices in the context of the <em>Expanse</em> system at SDSC. We will learn about the file systems that are part of <em>Expanse</em> and discuss the pros and cons of using these file systems in terms of I/O performance, storage capacity, shared access, and backup.</span></span></p>",
+            "short": "Managing data efficiently on a supercomputer is very important from both users' and system's perspectives. In this webinar, we will cover some of the basic data management techniques, I/O best practices in the context of the Expanse system at SDSC. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Manu Shantharam, Ph.D.",
+            "title": "Senior Computational Research Scientist - SDSC",
+            "bio": "Manu Shantharam is a Senior Computational Research Scientist in the San Diego Supercomputer Center. He received his Ph.D. in Computer Science and Engineering from The Pennsylvania State University in 2012. His research interests include performance analysis of HPC applications, sparse scientific computations, scheduling HPC workloads, and resiliency in HPC."
+        },
+        "vid_link": "https://youtu.be/6mljCITo6Gk",
+        "resources": {}
+    },
+    "202109_ExpanseWebinar-M.Thomas": {
+        "name": "202109_ExpanseWebinar-M.Thomas",
+        "title": "Expanse Webinar: Accessing and Running Jobs on Expanse",
+        "start": 1631815200,
+        "end": 1631818800,
+        "desc": {
+            "long": "<p>This webinar covers the basics of accessing SDSC's <em>Expanse</em> supercomputer, managing the user environment, compiling and running jobs using Slurm, where to run them, and how to run batch jobs. We will also cover interactive computing using applications such as Jupyter Notebooks and how to run them via the command line on the <em>Expanse</em> portal. It is assumed that you have mastered the basic skills of logging onto HPC systems using SSH and running basic Unix commands on these systems.</p>",
+            "short": "This webinar covers the basics of accessing SDSC's Expanse supercomputer, managing the user environment, compiling and running jobs using Slurm, where to run them, and how to run batch jobs. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Computational Data Scientist - SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/PhzJOYVQVao",
+        "resources": {
+            "Presentation PDF": "/misc/www/projects/education/training/interactive/dev/resources/202109_ExpanseWebinar-M.Thomas_presentation_pdf.pdf"
+        }
+    },
+    "202109_TSCCworkshop": {
+        "name": "202109_TSCCworkshop",
+        "title": "Using Python and Jupyter Notebooks on TSCC",
+        "start": 1630612800,
+        "end": 1630623600,
+        "desc": {
+            "long": "<p>The Triton Shared Computing Cluster (TSCC) is UC San Diego\u2019s primary research HPC system. It is foremost a \"condo cluster\" (researcher-purchased computing hardware) that provides access, colocation, and management of a significant shared computing resource, as well as providing a \"hotel\" service for those with temporary or bursty HPC needs. Like many research scientists, the TSCC community has been increasing its usage of interactive services such as Jupyter Notebooks. <br><br>This workshop will focus on providing guidelines for setting up customized Python environments, how to install and manage packages using Miniconda/pip, and how to run secure Jupyter notebooks on TSCC.</p>\n",
+            "short": "This workshop will focus on providing guidelines for setting up customized Python environments, how to install and manage packages using Miniconda/pip, and how to run secure Jupyter notebooks on Triton Shared Computing Cluster (TSCC) HPC system. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry",
+            "TSCC"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": ""
+    },
+    "202108_rroccet": {
+        "name": "202108_rroccet",
+        "title": "RRoCCET 21 by CloudBank",
+        "start": 1628578800,
+        "end": 1628751600,
+        "desc": {
+            "long": null,
+            "short": "A virtual conference for researchers interested in using cloud computing in their work.  Hosted by researchers with a wide range of expertise, this conference explores the benefits and opportunities unlocked by migrating to the public cloud. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Research Data Services"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202108_sdscsi": {
+        "name": "202108_sdscsi",
+        "title": "SI21",
+        "start": 1627916400,
+        "end": 1628283600,
+        "desc": {
+            "long": "<p><span style=\"color: #993300;\"><strong>APPLICATION CLOSED<br>Deadline: Sunday, May 16, 2021 <br></strong></span></p>\n",
+            "short": "*Application deadline: Sunday, May 16 (EXTENDED)* \nThis year\u2019s Summer Institute continues SDSC\u2019s strategy of bringing HPC to the \u201clong tail of science,\u201d i.e., providing resources to a larger number of modest-sized computational research projects that represent, in aggregate, a tremendous amount of scientific research and discovery."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": ""
+    },
+    "202106_cimlsi": {
+        "name": "202106_cimlsi",
+        "title": "CIML SI21",
+        "start": 1624374000,
+        "end": 1624568400,
+        "desc": {
+            "long": "<p><span style=\"color: #993300;\"><strong>APPLICATION CLOSED<br>Deadline: Friday, April 23, 2021</strong></span></p>\n",
+            "short": "*APPLICATION CLOSED*\nThe CIML Summer Institute will involve introducing ML researchers, developers and educators to the techniques and methods needed to migrate their ML applications from smaller, locally run resources, such as laptops and workstations, to large-scale HPC systems, such as the SDSC Expanse supercomputer. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": ""
+    },
+    "202106_tfopentopo": {
+        "name": "202106_tfopentopo",
+        "title": "Tech Forum: Open Topography",
+        "start": 1623945600,
+        "end": 1623949200,
+        "desc": {
+            "long": null,
+            "short": "The cyberinfrastructure platform enables users to efficiently discover, access and process massive volumes of data. OpenTopography also increases the impact of investments in the collection of data and catalyzes scientific discovery.   Join us to learn more about the motivations, technology and data assets behind the National Science Foundation (NSF) funded OpenTopography platform."
+        },
+        "tags": [
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Viswanath Nandigam, SDSC ",
+            "title": "Associate Director for the Advanced Cyberinfrastructure Development Lab, SDSC",
+            "bio": "Viswanath Nandigam is the Associate Director for the Advanced Cyberinfrastructure Development Lab at the San Diego Supercomputer Center at UCSD.  He is the principal investigator/co-investigator on several federally-funded data intensive projects including the NSF funded OpenTopography project. His research interests include scientific data management and distribution, web-based data distribution platforms, data intensive application development, parallel and federated database systems and information integration."
+        },
+        "vid_link": null
+    },
+    "202105_tfgigaio": {
+        "name": "202105_tfgigaio",
+        "title": "Technology Forum with GigaIO",
+        "start": 1622131200,
+        "end": 1622134800,
+        "desc": {
+            "long": null,
+            "short": "Join Alan Benjamin, CIO, GigaIO, as he addresses the need for a composable infrastructure for heterogeneous computing, with the ability to balance CPU-to-GPU compute ratios, create systems with different types of GPUs, achieve optimal GPU-to-GPU and GPU-to-storage communications, and the ability to scale solutions spanning multiple GPU appliances. Learn how GigaIO has developed a next generation interconnect fabric based on PCIe and CXL called FabreX to address these challenges."
+        },
+        "tags": [
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Alan Benjamin",
+            "title": "CEO, GigaIO",
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202105_ExpanseWebinar-Goetz": {
+        "name": "202105_ExpanseWebinar-Goetz",
+        "title": "Expanse Webinar: GPU Computing and Programming on Expanse ",
+        "start": 1621533600,
+        "end": 1621537200,
+        "desc": {
+            "long": "<p><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">This webinar provides a brief introduction to massively parallel computing with graphics processing units (GPUs) on the SDSC <em>Expanse</em> supercomputer. The use of GPUs is becoming increasingly popular across all scientific domains</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\"><span>\u00a0</span>both for traditional simulations and AI applications</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\"><span>\u00a0</span>since GPUs can significantly accelerate time to solution for many computational tasks. In this webinar, participants will learn how to access <em>Expanse</em> GPU nodes, how to launch GPU jobs on <em>Expanse</em>, and get introduced to GPU programming.\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">The webinar will cover the essential background of GPU chip architectures and the basics of programming GPUs\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">with the NVIDIA HPC SDK\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">via the use of libraries,\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SpellingErrorV2 SCXW60828325 BCX0\">OpenACC</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">\u00a0compiler directives,\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">and\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">the CUDA programming language</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">.</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">We will also briefly\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">discuss</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">performance\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">analysis</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">\u00a0with NVIDIA\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SpellingErrorV2 SCXW60828325 BCX0\">Nsight</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">\u00a0profilers.\u00a0</span></span><span class=\"TextRun SCXW60828325 BCX0\" data-contrast=\"auto\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCXW60828325 BCX0\">Participants will thus acquire the foundation to use and develop GPU aware applications.</span></span><span class=\"EOP SCXW60828325 BCX0\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}\">\u00a0</span></p>",
+            "short": "This webinar will give a brief introduction to GPU computing and programming on Expanse. We will cover the GPU architecture, programming with the NVIDIA HPC SDK via libraries, OpenACC compiler directives, CUDA, profiling and debugging, and submitting GPU enabled jobs on Expanse. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": "Andreas Goetz",
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/tQmQuOibGYY"
+    },
+    "202105_gpuhack": {
+        "name": "202105_gpuhack",
+        "title": "GPU Hackathon",
+        "start": 1620111600,
+        "end": 1620889200,
+        "desc": {
+            "long": "<p><strong><span style=\"font-family: Arial,Helvetica,sans-serif;\"><span style=\"font-size: 14px;\"><span style=\"line-height: 107%;\">Tuesday, May 4: Preparation<br>Tuesday, May 11 - Thursday, May 13: Hackathon</span></span></span></strong></p>\n",
+            "short": "** Application Deadline is March 4, 2021**  This event begins with a preparation day on May 4 followed by the GPU Hackathon running May 11 - 13.  GPU Hackathons provide exciting opportunities for scientists to accelerate their AI research or HPC codes under the guidance of expert mentors from National Labs, Universities and Industry leaders in a collaborative environment.  The SDSC Hackathon is a multi-day event designed to help teams of three to six developers accelerate their own codes on GPUs using a programming model, or machine learning framework of their choice. Each team is assigned mentors for the duration of the event. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202104_ImplementingResearchData": {
+        "name": "202104_ImplementingResearchData",
+        "title": "Implementing Research Data Management for Labs & Grants",
+        "start": 1619636400,
+        "end": 1619640000,
+        "desc": {
+            "long": "<p><span style=\"color: #993300;\"><span style=\"color: #000000;\">Contemporary research is heavily data centered and includes multiple stakeholders and collaborators. Research data management is an important yet overlooked component by labs and smaller projects. Ad-hoc solutions are often developed to overcome pressing needs which end up becoming a norm, but they tend to have severe limitations and burdensome to use overtime. Research sponsors are now mandating strong data management during research phase and incorporation of FAIR Data principles for data products. However, research groups often do not have the resources and/or expertise to set up a well-managed data management system.</span></span></p>\n",
+            "short": "Implement a practical and well supported data management plan for your research lab, project or grant with SeedMeLab."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Senior Visualization Scientist, SDSC",
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202104_datasharing": {
+        "name": "202104_datasharing",
+        "title": "Rich Data Sharing",
+        "start": 1619118000,
+        "end": 1619120700,
+        "desc": {
+            "long": null,
+            "short": "This free webinar will introduce HPCShare, a web-based resource for users of SDSC\u2019s high-performance computing resources, including Expanse, to easily share small-to medium-scale datasets in an efficient and organized manner. Attendees will learn about using HPCShare and SDSC\u2019s SeedMeLab scientific data management system. Hosted by SDSC Visualization Group Lead Amit Chourasia."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Senior Visualization Scientist, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/eVqzNbI1EAo"
+    },
+    "202104_AMDEPYCadv": {
+        "name": "202104_AMDEPYCadv",
+        "title": "202104-AMD EPYC Advanced UT on Expanse",
+        "start": 1619020800,
+        "end": 1619035200,
+        "desc": {
+            "long": "<p>The complexity of the AMD EPYC architecture, with its large core counts, non-uniform memory access and distributed L3 caches, can make it challenging to obtain peak performance. We\u2019ll cover a range of intermediate-to-advanced topics that will help you to make most effective use of <em>Expanse</em> and other EPYC-based systems. These include an overview of the EPYC architecture, AMD\u2019s compilers and math libraries, strategies for mapping processes and tasks to compute cores, Slurm, application tuning and profiling tools. <br><br>To get the most out of this training event, you should already be familiar with the basics of working in a Linux environment, job submission, compilation and programming in C/C++, Fortran or other languages. <br><br>The event is open to all users with an XSEDE portal account. Given the amount of material and potentially large number of participants, we will not be doing hands-on exercises during the event. Attendees who have access to <em>Expanse</em> will be able to download exercises so that they can practice what they learned.</p>\n",
+            "short": "This event will help users to make the most effective use of Expanse\u2019s AMD EPYC processors. Topics include an introduction to the EPYC architecture, AMD compilers and math libraries, strategies for mapping processes and tasks to compute cores, Slurm, application tuning and profiling tools. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/oZinAo8zo58"
+    },
+    "202104_ComposableSystems-webinar": {
+        "name": "202104_ComposableSystems-webinar",
+        "title": "Composable Systems in Expanse",
+        "start": 1618509600,
+        "end": 1618513200,
+        "desc": {
+            "long": "<p>Influenced by advances in data and computing, the scientific practice increasingly involves machine learning and artificial intelligence-driven methods which require specialized capabilities at the system-, science- and service-level in addition to conventional large-capacity supercomputing approaches. <em>Expanse</em> provides system components built around composability of data-centric applications using container coordination and integration, enabling dynamic composability of heterogeneous systems and services in scientific workflows. This talk will present the approach and the architecture of the composable systems component of <em>Expanse</em>. We will summarize scientific case studies that demonstrate the application of this new infrastructure and its federation with Nautilus, a Kubernetes-based GPU geo-distributed cluster. We will also describe the allocation application process for composable systems in <em>Expanse</em>.</p>",
+            "short": "This webinar will present the approach and the architecture of the composable systems component of Expanse. We will also summarize scientific case studies that demonstrate the application of this new infrastructure and its federation with Nautilus, a Kubernetes-based GPU geo-distributed cluster. "
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Chief Data Science Officer, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/dVPE4a6TrVA"
+    },
+    "202103_Profiling_Tools": {
+        "name": "202103_Profiling_Tools",
+        "title": "Expanse Webinar: Profiling Tools",
+        "start": 1616095924,
+        "end": 1616097924,
+        "desc": {
+            "long": "Knowing where your code is spending its time and identifying performance bottlenecks are the first steps in improving the performance of your application. This webinar will give brief introductions to two tools that will be made available to Expanse users. NVIDIA\u2019s NSIGHT tool will help you understand GPU utilization and memory access so that you can take full advantage of Expanse\u2019s V100 GPUs. AMD\u2019s \u00b5Prof provides both high-level information of CPU utilization at the function level and a deep dive into low-level details such as cache misses and poorly predicted branches. The webinar will spend roughly 30 minutes on each tool and conclude with pointers to additional resources.",
+            "short": "Knowing where your code is spending its time and identifying performance bottlenecks are the first steps in improving the performance of your application. This webinar will give brief introductions to two tools that will be made available to Expanse users. NVIDIA\u2019s NSIGHT tool will help you understand GPU utilization and memory access so that you can take full advantage of Expanse\u2019s V100 GPUs. AMD\u2019s \u00b5Prof provides both high-level information of CPU utilization at the function level and a deep dive into low-level details such as cache misses and poorly predicted branches. The webinar will spend roughly 30 minutes on each tool and conclude with pointers to additional resources."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/mcVVClptvCg"
+    },
+    "202103_Comet_to_Expanse_TransitionTutorial": {
+        "name": "202103_Comet_to_Expanse_TransitionTutorial",
+        "title": "Comet to Expanse Transition Tutorial",
+        "start": 1614877200,
+        "end": 1614891600,
+        "desc": {
+            "long": "<p><span data-contrast=\"none\">SDSC\u2019s new supercomputer, <em>Expanse</em>, went into full production on December 7, 2020 as a follow-on to <em>Comet</em>. Although the transition should be straightforward for most users, there are some important differences in both the hardware and software between these two systems. We will start with an overview of the\u00a0</span><em>Expans</em><span data-contrast=\"none\"><em>e</em> architecture, which is based on AMD\u2019s 64-core EPYC Rome processor and NVIDIA\u2019s V100 GPU</span><span data-contrast=\"none\">\u00a0device</span><span data-contrast=\"none\">. Moving from Intel to AMD processors introduces a new set of compilers, math libraries and tools. We\u2019ll explain how to use the AMD software stack to build and run applications for optimal performance. GPU applications will port easily to\u00a0</span><em>Expanse</em><span data-contrast=\"none\">\u00a0and the upgrade from\u00a0</span><em>Comet\u2019s</em><span data-contrast=\"none\">\u00a0P100s to the newer V100s generally results in significantly reduced run times.\u00a0</span><span data-contrast=\"none\">With regard</span><span data-contrast=\"none\">s</span><span data-contrast=\"none\">\u00a0to</span><span data-contrast=\"none\">\u00a0job submission, we continue to use the\u00a0</span><span data-contrast=\"none\">Slurm</span><span data-contrast=\"none\">\u00a0workload\u00a0</span><span data-contrast=\"none\">manager. Partition names are left unchanged, but job scripts will have to be updated to reflect the larger core counts and, for highly scalable applications, maximum job size. We also introduce a new charging model that fairly\u00a0</span><span data-contrast=\"none\">takes into account</span><span data-contrast=\"none\">\u00a0the usage of all resources (memory, CPU, GPU). The tutorial concludes with a discussion of interactive computing using the <em>Expanse</em> Portal and efficiently moving data from\u00a0</span><em>Comet</em><span data-contrast=\"none\">\u00a0to\u00a0</span><em>Expanse</em><span data-contrast=\"none\">.</span></p>\n",
+            "short": "This tutorial is intended for all current users of Comet who intend to make the transition to Expanse. Topics will include an overview of the system, batch job submission, modules, compilation, job charging, basic optimization, interactive computing and data transfer."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/"
+    },
+    "202102_Performance_Tuning_and_Single_Processor_Optimization": {
+        "name": "202102_Performance_Tuning_and_Single_Processor_Optimization",
+        "title": "Performance Tuning and Single Processor Optimization",
+        "start": 1613674800,
+        "end": 1613678400,
+        "desc": {
+            "long": null,
+            "short": "Presentation will cover cache-level optimizations and other techniques for achieving optimal software performance. We will also cover AMD specific compiler options, libraries and performance tools."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Robert Sinkovits",
+            "title": "Director of Scientific Computing Applications, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/9-4J0Cz4wws"
+    },
+    "202101_HPC_User_Training_Series": {
+        "name": "202101_HPC_User_Training_Series",
+        "title": "2021 HPC User Training Series",
+        "start": 1611349200,
+        "end": 1620424800,
+        "desc": {
+            "long": "<p><span style=\"color: #ff0000;\"><strong>Registration is now closed.<br></strong></span></p>\n",
+            "short": "SDSC supports the training of its user community, including students, in all aspects of High-performance computing (HPC). The goal of the training is to prepare new HPC users to run jobs on HPC systems. Students who successfully complete the HPC Training program will receive an SDSC Certificate of Completion in HPC Training and UCSD Co-Curricular Record Credit (for students)."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training",
+            "Industry"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": ""
+    },
+    "202101_Intro_to_Singularity": {
+        "name": "202101_Intro_to_Singularity",
+        "title": "An Introduction to Singularity: Containers for Scientific and High-Performance Computing",
+        "start": 1611255600,
+        "end": 1611259200,
+        "desc": {
+            "long": "<p>Singularity is an open-source container engine designed to bring operating system-level virtualization (containerization) to scientific and high-performance computing. With Singularity you can package complex scientific workflows --- software applications, libraries, and data --- in a simple, portable, and reproducible way, which can then be run almost anywhere. Once you've created your container, you can run it on the workstation in your lab, on a virtual machine in the public cloud, or on hundreds of thousands of compute cores on the world's largest supercomputers. Singularity is all about the\u00a0 mobility of compute.\"<br><br>In this webinar, we'll provide an overview of Singularity and how you might incorporate the use of containers in your own research. We'll also show you how to access and use some of the containerized applications that we make available to users on XSEDE systems like Comet and Expanse at SDSC.</p>",
+            "short": "Come learn about Singularity containers and how you might use them in your own work."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Computational & Data Science Research Specialist, SDSC",
+            "bio": "Marty Kandes is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Comet and Expanse \u2014 SDSC\u2019s two NSF-funded supercomputers --- and maintains all of the Singularity containers supported on these systems."
+        },
+        "vid_link": "https://youtu.be/vEjLuX0ClN0"
+    },
+    "202012_Running_Jupyter_Notebooks_on_Expanse": {
+        "name": "202012_Running_Jupyter_Notebooks_on_Expanse",
+        "title": "Running Jupyter Notebooks on Expanse",
+        "start": 1607626800,
+        "end": 1607630400,
+        "desc": {
+            "long": "<p>Jupyter Notebooks are interactive web tools known as a computational notebooks, in which researchers can combine software, text, multimedia resources, and computational output. Notebooks can be launched locally and access local file systems, or remotely to provide access to a user\u2019s files on the remote system. In the latter case, the notebooks are launched via a process that creates a unique URL that is composed of the hostname plus an available port (chosen by the jupyter application) plus a one-time token. By default, these notebooks are not secure, and potentially expose a user\u2019s local files to unwanted access. <br><br>In this webinar, we will present SDSC\u2019s multitiered approach to running notebooks more securely: hosting Jupyter services on Expanse using SSH Tunneling or using the SDSC <a href=\"(https://comet-notebooks-101.readthedocs.io/en/master/\" rel=\"noopener\" target=\"_blank\">Jupyter Reverse Proxy Service</a> (JRPS) which connects the user over an HTTPS connection. The JRPS will launch a batch script that creates a securely hosted HTTPS access point for the user, resulting in a safer, more secure notebook environment.</p>",
+            "short": "In this webinar, we will present SDSC\u2019s multitiered approach to running notebooks more securely: hosting Jupyter services on Expanse using SSH Tunneling or using the SDSC Jupyter Reverse Proxy Service (JRPS), which connects the user over an HTTPS connection. The JRPS will launch a batch script that creates a securely hosted HTTPS access point for the user, resulting in a safer, more secure notebook environment."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Computational Data Scientist, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/AlOLkOdIjJI"
+    },
+    "202010_Comet_to_Expanse_TransitionTutorial": {
+        "name": "202010_Comet_to_Expanse_TransitionTutorial",
+        "title": "Comet to Expanse Transition Tutorial",
+        "start": 1603994400,
+        "end": 1604007000,
+        "desc": {
+            "long": "<p>SDSC\u2019s new supercomputer, <em>Expanse</em>, goes into full production on November 1, 2020 and replaces <em>Comet</em>, which will be retired on March 31, 2021. Although the transition should be straightforward for most users, there are some important differences in both the hardware and software between these two systems. We will start with an overview of the <em>Expanse</em> architecture, which is based on AMD\u2019s 64-core EPYC Rome processor and NVIDIA\u2019s V100 GPU. Moving from Intel to AMD processors introduces a new set of compilers, math libraries and tools. We\u2019ll explain how to use the AMD software stack to build and run applications for optimal performance. GPU applications will port easily to <em>Expanse</em> and the upgrade from Comet\u2019s P100s to the newer V100s generally results in significantly reduced run times. With regard to job submission, we continue to use the Slurm resource manager. Partition names are left unchanged, but job scripts will have to be updated to reflect the larger core counts and, for highly scalable applications, maximum job size. We also introduce a new charging model that fairly takes into account the usage of all resources (memory, CPU, GPU). The tutorial concludes with a discussion of interactive computing using the <em>Expanse Portal</em> and efficiently moving data from <em>Comet</em> to <em>Expanse</em>.</p>\n",
+            "short": "This tutorial is intended for all current users of Comet who intend to make the transition to Expanse. Topics will include an overview of the system, batch job submission, modules, compilation, job charging, basic optimization, interactive computing and data transfer."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/qwBZwgz-570"
+    },
+    "202009_expanse_101": {
+        "name": "202009_expanse_101",
+        "title": "Expanse 101",
+        "start": 1602180000,
+        "end": 1602183600,
+        "desc": {
+            "long": "<p><strong>(<em>originally scheduled on Tuesday, September 29, 2020)</em></strong><br>This webinar covers the basics of accessing SDSC's\u00a0<em>Expanse</em> supercomputer, managing the user environment, compiling and running jobs on <em>Expanse</em>, where to run them, and how to run batch jobs. It\u00a0is assumed that you have mastered the basic skills of logging onto HPC systems using SSH and running basic Unix commands on these systems.</p>\n",
+            "short": "This webinar covers the basics of accessing the SDSC Expanse supercomputer, managing the user environment, compiling and running jobs on Expanse."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Computational Data Scientist -  SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/SDtrLn6R4Zc"
+    },
+    "202008_sdscsi": {
+        "name": "202008_sdscsi",
+        "title": "SI20",
+        "start": 1596466800,
+        "end": 1596834000,
+        "desc": {
+            "long": null,
+            "short": "This year\u2019s Summer Institute continues SDSC\u2019s strategy of bringing HPC to the \u201dlong tail of science\u201d, i.e. providing resources to a larger number of modest-sized computational research projects that represent, in aggregate, a tremendous amount of scientific research and discovery.  The application period is now closed."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": null,
+            "bio": null
+        },
+        "vid_link": null
+    },
+    "202007_CometWebinar": {
+        "name": "202007_CometWebinar",
+        "title": "Security Tips",
+        "start": 1594922400,
+        "end": 1594926000,
+        "desc": {
+            "long": null,
+            "short": "This webinar will highlight security-related topics that can improve the trustworthiness of your research. The topics covered include logging in to SDSC's HPC resources, file and directory permissions, and common practices that may create trouble."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Scott Sakai",
+            "title": "Senior Security Analyst, SDSC",
+            "bio": "Scott is one of four cybersecurity analysts who comprise the Security Team at the San Diego Supercomputer Center. His area of focus is supporting the security needs of SDSC\u2019s HPC installations and serves as a subject-matter expert for security issues relating to intrusion detection, incident response, networking, Unix environments, programming, and general IT. In addition to supporting the security needs of SDSC, Scott also collaborates closely with XSEDE\u2019s Security Working Group in a similar role. He received his B.S. in Computer Science and Engineering from UC San Diegoin 2003 and joined SDSC in 2004."
+        },
+        "vid_link": "https://youtu.be/E7-zzv1yXr8"
+    },
+    "202006_Introduction_to_Expanse": {
+        "name": "202006_Introduction_to_Expanse",
+        "title": "Introduction to Expanse",
+        "start": 1592503200,
+        "end": 1592506800,
+        "desc": {
+            "long": null,
+            "short": "The goal of this webinar is to provide an overview of Expanse, an upcoming NSF funded HPC resource at SDSC. Expanse will have nearly double the performance compared to the Comet supercomputer. With innovations in cloud integration and composable systems, as well as continued support for science gateways and distributed computing via the Open Science Grid, Expanse will allow researchers to push the boundaries of computing."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "User Support Group Lead, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/kZqWZCFdEzU"
+    },
+    "202005_Running_Jupyter_Notebooks_on_Comet": {
+        "name": "202005_Running_Jupyter_Notebooks_on_Comet",
+        "title": "Running Jupyter Notebooks on Comet",
+        "start": 1590084000,
+        "end": 1590087600,
+        "desc": {
+            "long": null,
+            "short": "In this webinar, we will present SDSC\u2019s multitiered approach to running notebooks more securely: running notebooks in the usual way using the insecure HTTP connections; hosting Jupyter services on Comet using HTTP over SSH Tunneling; and the SDSC Reverse Proxy Service (RPS) which connects the user over an HTTPS connection. When used, the RPS will launch a batch script that creates a securely hosted HTTPS access point for the user, resulting in a safer, more secure notebook environment."
+        },
+        "tags": [
+            "Expanse",
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Computational Data Scientist, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/01wTQmPBi0s"
+    },
+    "202004_Comet101": {
+        "name": "202004_Comet101",
+        "title": "Comet 101: Accessing and Running Jobs on Comet",
+        "start": 1587060000,
+        "end": 1587063600,
+        "desc": {
+            "long": null,
+            "short": "This webinar covers the basics of accessing the SDSC Comet supercomputer, managing the user environment, compiling and running jobs on Comet, where to run them, and how to run batch jobs. It is assumed that you have mastered the basics skills of logging onto Comet and running basic Unix commands. The webinar will include access to training material. "
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Computational Data Scientist, HPC Trainer, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/-98jBeRHCEI"
+    },
+    "202002_CometWebinar": {
+        "name": "202002_CometWebinar",
+        "title": "CUDA-Python and RAPIDS for blazing fast scientific computing",
+        "start": 1582225200,
+        "end": 1582228800,
+        "desc": {
+            "long": null,
+            "short": "This webinar introduces users to Numba and RAPIDS for GPU programming in Python. Numba allows us to write just-in-time compiled CUDA code in Python, giving us easy access to the power of GPUs from a powerful high-level language. RAPIDS is a suite of tools with a Python interface for machine learning and dataframe operations."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Abraham Stern, Ph.D.",
+            "title": "Data Scientist, NVIDIA",
+            "bio": "Dr. Abraham Stern is a solutions architect with NVIDIA focused on higher education and research. Abe's interests lie at the intersection of scientific computing and machine learning, especially as applied to problems in the chemistry and materials science domain. Abe obtained his Ph.D. in computational chemistry from the University of South Florida. Previously, Abe was a postdoctoral scholar at the University of California, Irvine.\n"
+        },
+        "vid_link": "https://youtu.be/Gh78xCXnVjQ/"
+    },
+    "202001_Cometweb": {
+        "name": "202001_Cometweb",
+        "title": "Using the NVIDIA Rapids Toolkit on Comet",
+        "start": 1579806000,
+        "end": 1579809600,
+        "desc": {
+            "long": null,
+            "short": "In this webinar we will show how to use RAPIDS to accelerate your data science applications utilizing libraries like cuDF (GPU-enabled Pandas-like dataframes) and cuML (GPU-accelerated machine learning algorithms). "
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Marty Kandes, Ph.D.",
+            "title": "Computational and Data Science Research Specialist, SDSC",
+            "bio": "Marty Kandes is a Computational and Data Science Research Specialist in the High-Performance Computing User Services Group at SDSC. He currently helps manage user support for Comet \u2014 SDSC\u2019s largest supercomputer. Marty obtained his Ph.D. in Computational Science in 2015 from the Computational Science Research Center at San Diego State University, where his research focused on studying quantum systems in rotating frames of reference through the use of numerical simulation. He also holds an M.S. in Physics from San Diego State University and B.S. degrees in both Applied Mathematics and Physics from the University of Michigan, Ann Arbor. His current research interests include problems in Bayesian statistics, combinatorial optimization, nonlinear dynamical systems, and numerical partial differential equations."
+        },
+        "vid_link": "https://youtu.be/viUdb1Eil9c"
+    },
+    "201912_cometweb": {
+        "name": "201912_cometweb",
+        "title": "Data Visualization With Python Using Jupyter Notebooks",
+        "start": 1576177200,
+        "end": 1576180800,
+        "desc": {
+            "long": null,
+            "short": "Python is rapidly becoming the programming language of choice for scientific research, and Jupyter Notebooks provide a user-friendly way of writing and running python code and of teaching and learning how to program. Visual analytics is playing an increasingly important role in data science by allowing researchers to explore massive amounts of data for patterns which may not be obvious using other methods."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Jeff Sale, M.A",
+            "title": "XSEDE ECSS Visualization Consultant and SDSC Learning Design Technologist",
+            "bio": "Jeff Sale is an XSEDE ECSS visualization consultant who enjoys exploring novel visual analytics approaches to spatiotemporal data.  He also works as a Learning Design Technologist at the San Diego Supercomputer Center promoting the use of cyberinfrastructure within the K-12 and higher education HPC communities through workshops, training, and curriculum development in collaboration with a talented group of experts and educators."
+        },
+        "vid_link": "https://youtu.be/ANCuo6y2Ztw"
+    },
+    "201910_CometWebinar": {
+        "name": "201910_CometWebinar",
+        "title": "Introduction to Deep Learning",
+        "start": 1571335200,
+        "end": 1571338800,
+        "desc": {
+            "long": "<p><span>Deep learning has seen tremendous growth and success in the past few years.\u00a0 Deep learning techniques have achieved state-of-the-art performance across many domains, including image classification, speech recognition, and biomedical applications. </span></p>\n",
+            "short": "Deep learning has seen tremendous growth and success in the past few years.  Deep learning techniques have achieved state-of-the-art performance across many domains, including image classification, speech recognition, and biomedical applications. "
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Lead Data Analytics, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/qMEWrfCj1SQ"
+    },
+    "201909_cometweb1": {
+        "name": "201909_cometweb1",
+        "title": "Obtaining Hardware Information and Monitoring Performance ",
+        "start": 1568916000,
+        "end": 1568919600,
+        "desc": {
+            "long": null,
+            "short": "In this webinar we start by describing how to obtain hardware and system information such as CPU specifications, memory quantity, cache configuration, mounted file systems and their usage, peripheral storage devices and GPU properties. This information is useful for anyone who is interested in how hardware specs influence performance or who needs to report benchmarking data."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Director for Scientific Computing Applications, SDSC",
+            "bio": null
+        },
+        "vid_link": ""
+    },
+    "201906_mlweb": {
+        "name": "201906_mlweb",
+        "title": "A Quick Introduction to Machine Learning With Comet",
+        "start": 1560276000,
+        "end": 1560279600,
+        "desc": {
+            "long": null,
+            "short": "Machine learning is an interdisciplinary field focused on the study and construction of computer systems that can learn from data without being explicitly programmed. Machine learning techniques can be used to uncover patterns in your data and gain insights into your problem."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Paul Rodriguez, Ph.D.",
+            "title": "Research Analyst, SDSC ",
+            "bio": "Paul Rodriguez received his PhD in Cognitive Science at University of California, San Diego (UCSD) in 1999. He spent several years doing research in neural network modeling, dynamical systems simulations, time series analysis, and statistical methods for analysis and predictions in fMRI data. He has more recently worked in data mining for health care fraud identification, and optimization of data intensive network flow models."
+        },
+        "vid_link": "https://youtu.be/NAjiu1lpTQU"
+    },
+    "201905_cometweb": {
+        "name": "201905_cometweb",
+        "title": "Distributed Parallel Computing with Python",
+        "start": 1557856800,
+        "end": 1557860400,
+        "desc": {
+            "long": null,
+            "short": "This webinar provides an introduction to distributed computing with Python, we will show how to modify a standard Python script to use multiple CPU cores using the concurrent.futures module from the Python standard library and then the dask package."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": "Andrea Zonca, Ph.D.",
+            "title": "Senior Computational Scientist, SDSC",
+            "bio": "Andrea Zonca has a background in Cosmology, he has been working on analyzing Cosmic Microwave Background data from the Planck Satellite. In order to manage and analyze large datasets, he developed expertise in parallel programming in Python and C++. At SDSC he helps research groups in any field of science to port their data analysis pipelines to XSEDE supercomputers. Andrea is also a certified Software Carpentry instructor."
+        },
+        "vid_link": "dpc_python_2019/index_w_tabs_notes.php"
+    },
+    "201904_cometweb": {
+        "name": "201904_cometweb",
+        "title": "201904_GPU_Computing_ and_Programming",
+        "start": 1554832800,
+        "end": 1554836400,
+        "desc": {
+            "long": null,
+            "short": "This webinar provides an introduction to massively parallel computing with graphics processing units (GPUs) on the SDSC Comet supercomputer. The use of GPUs is becoming increasingly popular across all scientific domains since GPUs can significantly accelerate time to solution for many computational tasks. In this webinar, participants will learn how to access Comet GPU nodes, how to launch GPU jobs on Comet, and get introduced to GPU programming. The webinar will cover the essential background of GPU chip architectures and the basics of programming GPUs via the use of libraries, OpenACC compiler directives, and the CUDA programming language. The participants will thus acquire the foundation to use and develop GPU aware applications.\u00a0"
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Director of Computational Chemistry Laboratory, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/e7rDrnKGGYg"
+    },
+    "201901_webinar": {
+        "name": "201901_webinar",
+        "title": "201901_Intro_Running_Jobs_on_Comet",
+        "start": 1546974000,
+        "end": 1546977600,
+        "desc": {
+            "long": null,
+            "short": "This webinar covers the basics of accessing the SDSC Comet supercomputer, managing the user environment, compiling and running jobs on Comet, where to run them, and how to run batch jobs. It is assumed that you have mastered the basics skills of logging onto Comet and running basic Unix commands. The webinar will include access to training material."
+        },
+        "tags": [
+            "HPC Training"
+        ],
+        "instr": {
+            "label": null,
+            "title": "Computational Data Scientist, SDSC",
+            "bio": null
+        },
+        "vid_link": "https://youtu.be/X4rbwk-JHCM"
+    }
+}

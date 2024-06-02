@@ -26,14 +26,15 @@ def get_event_links():
 
 
 """
-Returns Hashmap
-Key:   Title
-Value: Content
+Returns List of Hashmaps
+
+Each Hashmap represents an event
+Keys: Title, Content, Link
 """
 def extract_event_text():
     event_links = get_event_links()
 
-    events_data = {}
+    events_data = []
 
     for event_link in event_links:
         event_page = requests.get(event_link)
@@ -41,7 +42,12 @@ def extract_event_text():
 
         event_title = soup.find("h1").text
         event_content = soup.find("div", class_="event-description").text
-        events_data[event_title] = event_content
+
+        events_data.append({})
+        curr_event = events_data[len(events_data) - 1]
+        curr_event["Title"] = event_title
+        curr_event["Content"] = event_content
+        curr_event["Link"] = event_link
 
     return events_data
 
@@ -64,8 +70,9 @@ def insert_events_to_db():
     if events_in_db < len(events_data):
         index = 0
         db_events_col.delete_many({})
-        for key, value in events_data.items():
-            event_document = {'_id': index, 'Title': key, 'Content': value}
+        for event in events_data:
+            event_document = event
+            event_document["_id"] = index
             db_events_col.insert_one(event_document)
             index += 1
         print("Events inserted to database.")
