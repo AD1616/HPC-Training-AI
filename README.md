@@ -42,7 +42,7 @@ Step 4 is optional, only if you want to try different chat models.
     ./local_setup.sh
     ```
     
-Note that if it says "address already in use", that (likely) means ollama is already running. From the Mac taskbar, you can always quit ollama so you can start and stop from command line. Make sure to run step 11 again if you do this.
+Note that if it says "address already in use", that (likely) means ollama is already running. From the Mac taskbar, you can always quit ollama so you can start and stop from command line. Make sure to run step 12 again if you do this.
 
 ![image](https://github.com/AD1616/HPC-Training-AI/assets/64157584/2547e651-3ee8-47bf-ba83-4e4eca0764e9)
 
@@ -52,6 +52,9 @@ Your current terminal is now running ollama, and will show any requests made to 
     python load_sdsc_events_data.py
     ```
 14. ```
+    python load_sdsc_events_with_transcripts.py
+    ```
+15. ```
     python generate_embeddings.py
     ```
 
