@@ -25,6 +25,11 @@ def main():
     query_text = args.query_text
     model = args.model
 
+    formatted_response = generate_output(query_text, model)
+    print(formatted_response)
+
+
+def generate_output(query_text: str, model: str):
     embedding_function = ollama.OllamaEmbeddings(model='nomic-embed-text')
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
@@ -44,7 +49,7 @@ def main():
     sources = [doc.metadata.get("Title", None) for doc in results]
     # formatted_response = f"Response: {response_text}\n Sources:{sources}"
     formatted_response = f"Response: {response_text}"
-    print(formatted_response)
+    return formatted_response
 
 
 if __name__ == "__main__":

@@ -58,7 +58,7 @@ def load_documents(db_name: str, collection_name: str) -> list[Document]:
 
 def chunk_documents(documents: list[Document]) -> list[Document]:
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
+        chunk_size=8192,
         chunk_overlap=500,
         length_function=len,
         add_start_index=True,
