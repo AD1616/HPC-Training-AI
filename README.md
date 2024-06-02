@@ -52,6 +52,9 @@ Your current terminal is now running ollama, and will show any requests made to 
     python load_sdsc_events_data.py
     ```
 14. ```
+    python load_sdsc_events_with_transcripts.py
+    ```
+15. ```
     python generate_embeddings.py
     ```
 
