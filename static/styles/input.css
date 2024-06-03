@@ -1,7 +1,7 @@
 .form__group {
-  position: relative;
+  position: fixed;
   padding: 1em 0 0;
-  margin-top: 10px;
+  margin-top: 40em;
   width: 50%;
 }
 
@@ -12,7 +12,7 @@
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1rem;
-  color: #000000;
+  color: #ffffff;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -32,7 +32,7 @@
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: #323131;
+  color: #414040;
 }
 
 .form__field:focus {
@@ -57,20 +57,28 @@
   box-shadow: none;
 }
 
-/* demo */
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
-  padding-top: 5em;
+  padding-bottom: 5em;
   justify-content: initial;
   align-items: center;
   min-height: 100vh;
-  font-size: 1.5rem;
-  background-color: #222222;
+  font-size: 1rem;
 }
 
 p {
-  padding-right: 10em;
-  padding-left: 10em;
+  white-space: pre-line;
+  color:white;
+  padding-top:5em;
+  position:absolute;
+  overflow: auto;
+  height: 35em;
+  width: 50%;
+}
+
+#container {
+
+
 }

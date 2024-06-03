@@ -47,9 +47,14 @@ def load_documents(db_name: str, collection_name: str) -> list[Document]:
         document_title = document_mongo["Title"]
         documents[i].metadata.update({"Title": document_title})
 
-        document_link = document_mongo["Link"]
+        document_link = str(document_mongo["Link"])
+        
+        if (document_link is not None):
+            document_link = document_link.strip()
+        
 
-        if document_link is not None and document_link != "":
+        if document_link is not None and document_link != "" and document_link[0] != '[':
+            print(document_link)
             documents[i].metadata.update({"Link": str(document_link)})
         else:
             documents[i].metadata.update({"Link": "Link not currently provided."})

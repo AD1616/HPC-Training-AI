@@ -23,8 +23,11 @@ def test():
 @app.route("/output")
 def output():
     query = request.args.get('query')
-    return generate_output(query, "llama3")
-
+    try:
+        return generate_output(query, "llama3")
+    except:
+        return "AI service is not running."
+    
 
 if __name__ == "__main__":
-    app.run(debug=DEVELOPMENT_ENV)
+    app.run(debug=DEVELOPMENT_ENV, host='localhost')

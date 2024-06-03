@@ -15,22 +15,20 @@
 
 <body>
     {% include 'includes/_navbar.html' %}
+    <body style="background-color: #222222;">
+        <p id = "output"> </p>
+       
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="What are some resources for..." name="query" id='query' autocomplete="off" />
+            <label for="query" class="form__label">Chat</label>
+          </div>
+      
 
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="What are some resources for..." name="query" id='query' autocomplete="off" />
-      <label for="query" class="form__label">Chat</label>
-    </div>
-
-    <br>
-    <br>
-
-    <p id = "loading"> </p>
-    <br>
-    <p id = "output"> </p>
+    </body>
 
     <script>
         var input = document.getElementById('query');
-        var loading = document.getElementById('loading');
+        var output = document.getElementById('output');
 
         var fetching = false;
 
@@ -38,16 +36,24 @@
             if (event.key === "Enter") {
                 event.preventDefault();
                 const url = `/output?query=${encodeURIComponent(input.value)}`;
-                loading.innerText = "finding sources...";
-                console.log(loading.innerText);
+                output.innerText = "finding sources...";
                 
                 if (!fetching) {
                     fetching = true;
                     fetch(url)
                     .then(response => response.text())
                     .then(data => {
-                        loading.innerText = "";
-                        document.getElementById('output').innerText = data;
+                        output.innerText = "";
+                        var i = 0;
+                        var speed = 5;
+                        function typeWriter() {
+                            if (i < data.length) {
+                                output.innerHTML += data.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, speed);
+                            }
+                        }
+                        typeWriter();
                     })
                     .catch(error => console.error('Error:', error));
                 }

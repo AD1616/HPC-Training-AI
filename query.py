@@ -38,10 +38,10 @@ def generate_output(query_text: str, model: str):
         print("Unable to find matching results.")
         return
 
-    context_text = "\n\n---\n\n".join([doc.page_content + str(doc.metadata) for doc in results])
-    print(context_text)
+    context_text = "\n\n---\n\n".join(["Title: " + doc.metadata.get("Title") +  "URL: " + doc.metadata.get("Link") for doc in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context_text, question=query_text)
+    print(prompt)
 
     model = ChatOllama(model=model)
     response_text = model.predict(prompt)
