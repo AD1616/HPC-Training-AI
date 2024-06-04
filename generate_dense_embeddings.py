@@ -1,64 +1,11 @@
-from langchain_community.document_loaders import MongodbLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 import pymongo
-from langchain_community.embeddings import ollama
 from langchain_community.vectorstores.chroma import Chroma
-import os
-import shutil
+from preprocess_documents import load_documents
+from get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
-
-
-"""
-It is very important to get the Ollama embedding function in this way.
-
-The following import contains embedding function that works with Chroma db:
-from langchain_community.embeddings import ollama
-
-This does not:
-from langchain_community.embeddings import OllamaEmbeddings
-"""
-def get_embedding_function():
-    ollama_emb = ollama.OllamaEmbeddings(model='nomic-embed-text')
-
-    return ollama_emb
-
-
-"""
-Creates langchain documents from MongoDB entries.
-
-Note that metadata, particularly "Title" of each document, is additionally part of document content.
-The intention for this is to account for titles including keywords that may not otherwise be present.
-"""
-def load_documents(db_name: str, collection_name: str) -> list[Document]:
-    loader = MongodbLoader(
-        connection_string="mongodb://localhost:27017/",
-        db_name=db_name,
-        collection_name=collection_name,
-    )
-
-    documents = loader.load()
-    client = pymongo.MongoClient("mongodb://localhost:27017/")
-    db = client[db_name]
-    collection = db[collection_name]
-    for i in range(len(documents)):
-        document_mongo = collection.find_one({"_id": i})
-        document_title = document_mongo["Title"]
-        documents[i].metadata.update({"Title": document_title})
-
-        document_link = str(document_mongo["Link"])
-        
-        if (document_link is not None):
-            document_link = document_link.strip()
-        
-
-        if document_link is not None and document_link != "" and document_link[0] != '[':
-            print(document_link)
-            documents[i].metadata.update({"Link": str(document_link)})
-        else:
-            documents[i].metadata.update({"Link": "Link not currently provided."})
-    return documents
 
 
 def chunk_documents(documents: list[Document]) -> list[Document]:
@@ -127,6 +74,15 @@ def create_chroma_ids(chunks: list[Document]):
         ids.add(chunk_id)
 
     return list(ids), list(duplicates)
+
+
+def dense_relevant_ranked_documents(query_text: str):
+    embedding_function = get_embedding_function()
+    db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
+
+    results = db.similarity_search(query_text, k=5)
+
+    return results
 
 
 def pipeline():
