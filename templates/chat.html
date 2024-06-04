@@ -17,6 +17,19 @@
     {% include 'includes/_navbar.html' %}
     <body style="background-color: #222222;">
         <p id = "output"> </p>
+
+        <div id="loading" class="loading">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
        
         <div class="form__group field">
             <input type="input" class="form__field" placeholder="What are some resources for..." name="query" id='query' autocomplete="off" />
@@ -36,14 +49,15 @@
             if (event.key === "Enter") {
                 event.preventDefault();
                 const url = `/output?query=${encodeURIComponent(input.value)}`;
-                output.innerText = "finding sources...";
+                //output.innerText = "finding sources...";
+                document.getElementById("loading").style.display = "flex";
                 
                 if (!fetching) {
                     fetching = true;
                     fetch(url)
                     .then(response => response.text())
                     .then(data => {
-                        output.innerText = "";
+                        document.getElementById("loading").style.display = "none";
                         var i = 0;
                         var speed = 5;
                         function linkify(text) {
