@@ -21,7 +21,7 @@
         <div class="form__group field">
             <input type="input" class="form__field" placeholder="What are some resources for..." name="query" id='query' autocomplete="off" />
             <label for="query" class="form__label">Chat</label>
-          </div>
+        </div>
       
 
     </body>
@@ -46,9 +46,16 @@
                         output.innerText = "";
                         var i = 0;
                         var speed = 5;
+                        function linkify(text) {
+                            const urlPattern = /(https?:\/\/[^\s]+)/g;
+                            return text.replace(urlPattern, '<a href="$1" target="_blank">$1</a>');
+                        }
+                        var modifiedData = linkify(data);
+                        var htmlBuffer = "";
                         function typeWriter() {
-                            if (i < data.length) {
-                                output.innerHTML += data.charAt(i);
+                            if (i < modifiedData.length) {
+                                htmlBuffer += modifiedData.charAt(i);
+                                output.innerHTML = htmlBuffer;
                                 i++;
                                 setTimeout(typeWriter, speed);
                             }
