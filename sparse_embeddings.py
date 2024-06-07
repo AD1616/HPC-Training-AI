@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from langchain.schema import Document
-from preprocess_documents import get_all_documents
+from aggregate_documents import get_all_documents
 import pickle
 
 

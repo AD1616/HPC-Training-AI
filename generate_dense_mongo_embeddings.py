@@ -1,10 +1,9 @@
+import pymongo
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
-import pymongo
 from langchain_community.vectorstores.chroma import Chroma
-from preprocess_documents import load_documents
 from get_embedding_function import get_embedding_function
-import pdf_embeddings
+from aggregate_documents import load_mongo_documents
 
 CHROMA_PATH = "chroma"
 
@@ -101,20 +100,15 @@ def dense_relevant_ranked_documents(query_text: str, num_docs: int):
     return final
 
 
-def pipeline():
-    # handle mongodb data
+def mongo_pipeline():
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     db = client["hpc_training_raw_local_db"]
     collections = db.list_collection_names()
     for collection in collections:
-        documents = load_documents("hpc_training_raw_local_db", collection)
+        documents = load_mongo_documents("hpc_training_raw_local_db", collection)
         chunks = chunk_documents(documents)
         save_to_chroma(chunks)
 
-    # handle pdf data
-    pdf_embeddings.pdf_pipeline()
-
 
 if __name__ == "__main__":
-    pipeline()
-
+    mongo_pipeline()

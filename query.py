@@ -1,9 +1,7 @@
 import argparse
-from langchain_community.vectorstores.chroma import Chroma
-from langchain_community.embeddings import ollama
 from langchain_community.chat_models import ChatOllama
 from langchain.prompts import ChatPromptTemplate
-from generate_dense_embeddings import dense_relevant_ranked_documents
+from generate_all_dense_embeddings import dense_relevant_ranked_documents
 from sparse_embeddings import sparse_relevant_ranked_documents
 
 CHROMA_PATH = "chroma"
@@ -35,13 +33,6 @@ def generate_output(query_text: str, model: str):
     dense_results = dense_relevant_ranked_documents(query_text, 20)
     sparse_results = sparse_relevant_ranked_documents(query_text, 20)
 
-    # for doc in dense_results:
-    #     print("Title: " + doc.metadata.get("Title") + " URL: " + doc.metadata.get("Link"))
-    # print("-----------------")
-    # for doc in sparse_results:
-    #     print("Title: " + doc.metadata.get("Title") + " URL: " + doc.metadata.get("Link"))
-    # print("-----------------")
-
     if len(dense_results) == 0 or len(sparse_results) == 0:
         print("Unable to find matching results.")
         return
@@ -59,8 +50,9 @@ def generate_output(query_text: str, model: str):
     model = ChatOllama(model=model)
     response_text = model.predict(prompt)
 
-    sources = [doc.metadata.get("Title", None) for doc in dense_results]
+    # sources = [doc.metadata.get("Title", None) for doc in dense_results]
     # formatted_response = f"Response: {response_text}\n Sources:{sources}"
+
     formatted_response = f"Response: {response_text}"
     return formatted_response
 
