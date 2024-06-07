@@ -2,9 +2,7 @@ import generate_dense_pdf_embeddings
 import generate_dense_mongo_embeddings
 from langchain_community.vectorstores.chroma import Chroma
 from get_embedding_function import get_embedding_function
-
-
-CHROMA_PATH = "chroma"
+from aggregate_documents import CHROMA_PATH
 
 
 def pipeline():

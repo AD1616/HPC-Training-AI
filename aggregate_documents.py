@@ -4,6 +4,13 @@ import pymongo
 
 DATA_PATH = "pdf_data"
 
+CHROMA_PATH = "chroma"
+
+MONGODB_URL = "mongodb://localhost:27017/"
+
+MONGODB_NAME = "hpc_training_raw_local_db"
+
+
 """
 Creates langchain documents from MongoDB entries.
 
@@ -13,13 +20,13 @@ The intention for this is to account for titles including keywords that may not 
 
 def load_mongo_documents(db_name: str, collection_name: str) -> list[Document]:
     loader = MongodbLoader(
-        connection_string="mongodb://localhost:27017/",
+        connection_string=MONGODB_URL,
         db_name=db_name,
         collection_name=collection_name,
     )
 
     documents = loader.load()
-    client = pymongo.MongoClient("mongodb://localhost:27017/")
+    client = pymongo.MongoClient(MONGODB_URL)
     db = client[db_name]
     collection = db[collection_name]
     for i in range(len(documents)):
@@ -29,7 +36,7 @@ def load_mongo_documents(db_name: str, collection_name: str) -> list[Document]:
 
         document_link = str(document_mongo.get("Link"))
 
-        if (document_link is not None):
+        if document_link is not None:
             document_link = document_link.strip()
 
         if document_link is not None and document_link != "" and document_link[0] != '[':
@@ -49,13 +56,13 @@ def load_pdf_documents():
 
 
 def get_all_documents():
-    client = pymongo.MongoClient("mongodb://localhost:27017/")
-    db = client["hpc_training_raw_local_db"]
+    client = pymongo.MongoClient(MONGODB_URL)
+    db = client[MONGODB_NAME]
     collections = db.list_collection_names()
 
     data = []
     for collection in collections:
-        data += load_mongo_documents("hpc_training_raw_local_db", collection)
+        data += load_mongo_documents(MONGODB_NAME, collection)
 
     data += load_pdf_documents()
 

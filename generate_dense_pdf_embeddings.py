@@ -3,10 +3,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 from langchain_community.vectorstores.chroma import Chroma
-
-DATA_PATH = "pdf_data"
-
-CHROMA_PATH = "chroma"
+from aggregate_documents import DATA_PATH, CHROMA_PATH
 
 
 def load_documents():
@@ -32,7 +29,7 @@ def add_to_chroma(chunks: list[Document]):
 
     existing_items = db.get(include=[])
     existing_ids = set(existing_items["ids"])
-    print(f"Number of existing documents in DB: {len(existing_ids)}")
+    print(f"PDF: Number of existing documents in DB: {len(existing_ids)}")
 
     new_chunks = []
     for chunk in chunks_with_ids:
@@ -42,7 +39,7 @@ def add_to_chroma(chunks: list[Document]):
             new_chunks.append(chunk)
 
     if len(new_chunks) > 0:
-        print(f"Adding new documents: {len(new_chunks)}")
+        print(f"PDF: Adding new documents: {len(new_chunks)}")
         new_chunk_ids = [chunk.metadata["id"] for chunk in new_chunks]
         db.add_documents(new_chunks, ids=new_chunk_ids)
     else:

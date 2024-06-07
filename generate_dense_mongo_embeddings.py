@@ -3,9 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from langchain_community.vectorstores.chroma import Chroma
 from get_embedding_function import get_embedding_function
-from aggregate_documents import load_mongo_documents
-
-CHROMA_PATH = "chroma"
+from aggregate_documents import load_mongo_documents, CHROMA_PATH, MONGODB_NAME, MONGODB_URL
 
 
 def chunk_documents(documents: list[Document]) -> list[Document]:
@@ -34,7 +32,7 @@ def save_to_chroma(chunks: list[Document]):
 
     existing_items = db.get(include=[])
     existing_ids = set(existing_items["ids"])
-    print(f"Number of existing documents in DB: {len(existing_ids)}")
+    print(f"Mongo: Number of existing documents in DB: {len(existing_ids)}")
 
     new_chunks = []
     for chunk in chunks:
@@ -43,7 +41,7 @@ def save_to_chroma(chunks: list[Document]):
             new_chunks.append(chunk)
 
     if len(new_chunks) > 0:
-        print(f"Adding new documents: {len(new_chunks)}")
+        print(f"Mongo: Adding new documents: {len(new_chunks)}")
         new_chunk_ids, duplicates = create_chroma_ids(new_chunks)
         for i in sorted(duplicates, reverse=True):
             del new_chunks[i]
@@ -80,11 +78,11 @@ def create_chroma_ids(chunks: list[Document]):
 
 
 def mongo_pipeline():
-    client = pymongo.MongoClient("mongodb://localhost:27017/")
-    db = client["hpc_training_raw_local_db"]
+    client = pymongo.MongoClient(MONGODB_URL)
+    db = client[MONGODB_NAME]
     collections = db.list_collection_names()
     for collection in collections:
-        documents = load_mongo_documents("hpc_training_raw_local_db", collection)
+        documents = load_mongo_documents(MONGODB_NAME, collection)
         chunks = chunk_documents(documents)
         save_to_chroma(chunks)
 

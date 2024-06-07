@@ -4,7 +4,6 @@ from langchain.prompts import ChatPromptTemplate
 from generate_all_dense_embeddings import dense_relevant_ranked_documents
 from sparse_embeddings import sparse_relevant_ranked_documents
 
-CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following sources:
