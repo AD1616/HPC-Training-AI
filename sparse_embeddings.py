@@ -48,9 +48,9 @@ def dump_sparse_embeddings():
     return data_embeddings, vectorizer, length
 
 
-def sparse_relevant_ranked_documents(query: str):
+def sparse_relevant_ranked_documents(query: str, num_docs: int):
     data = get_all_documents()
-    data_embeddings, vectorizer, length = generate_sparse_embeddings(data)
+    data_embeddings, vectorizer, length = load_sparse_embeddings()
 
     query_embedding = vectorizer.transform([query])
 
@@ -61,11 +61,24 @@ def sparse_relevant_ranked_documents(query: str):
     # for i, doc in enumerate(ranked_documents):
     #     print(f"Rank {i + 1}: {doc.metadata}")
 
-    return ranked_documents[:5]
+    final = []
+    for i in range(len(ranked_documents)):
+        if len(final) > num_docs:
+            break
+        found = False
+        for j in range(len(final)):
+            if final[j].metadata["Title"] == ranked_documents[i].metadata["Title"]:
+                found = True
+                break
+        if not found:
+            final.append(ranked_documents[i])
+
+    # return ranked_documents[:num_docs]
+    return final
 
 
 def main():
-    sparse_relevant_ranked_documents("Cyberinfrastructure")
+    print(sparse_relevant_ranked_documents("Cyberinfrastructure", 15))
 
 
 if __name__ == "__main__":

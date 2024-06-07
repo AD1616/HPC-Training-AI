@@ -15,7 +15,7 @@ Answer the question based only on the following sources:
 
 ---
 
-Answer the question by providing a numbered list of sources with titles, URLs, and descriptions ONLY coming from the above list: {question}
+Answer the question by providing a numbered list of sources with titles and URLs ONLY coming from the above list: {question}
 """
 
 
@@ -32,8 +32,8 @@ def main():
 
 
 def generate_output(query_text: str, model: str):
-    dense_results = dense_relevant_ranked_documents(query_text)
-    sparse_results = sparse_relevant_ranked_documents(query_text)
+    dense_results = dense_relevant_ranked_documents(query_text, 20)
+    sparse_results = sparse_relevant_ranked_documents(query_text, 20)
 
     # for doc in dense_results:
     #     print("Title: " + doc.metadata.get("Title") + " URL: " + doc.metadata.get("Link"))
@@ -47,9 +47,9 @@ def generate_output(query_text: str, model: str):
         return
 
     context_text = ""
-    context_text += "\n\nHere are 5 relevant sources based on keywords: \n\n"
+    context_text += "\n\nHere are 20 relevant sources based on keywords: \n\n"
     context_text += "\n\n---\n\n".join(["Title: " + doc.metadata.get("Title") + " URL: " + doc.metadata.get("Link") for doc in sparse_results])
-    context_text += "\n\nHere are 5 relevant sources based on general context: \n\n"
+    context_text += "\n\nHere are 20 relevant sources based on general context: \n\n"
     context_text += "\n\n---\n\n".join(["Title: " + doc.metadata.get("Title") + " URL: " + doc.metadata.get("Link") for doc in dense_results])
 
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)

@@ -1,4 +1,4 @@
-from langchain_community.document_loaders import MongodbLoader
+from langchain_community.document_loaders import MongodbLoader, PyPDFDirectoryLoader
 from langchain.schema import Document
 import pymongo
 
@@ -8,6 +8,8 @@ Creates langchain documents from MongoDB entries.
 Note that metadata, particularly "Title" of each document, is additionally part of document content.
 The intention for this is to account for titles including keywords that may not otherwise be present.
 """
+
+DATA_PATH = "pdf_data"
 
 
 def load_documents(db_name: str, collection_name: str) -> list[Document]:
@@ -38,6 +40,15 @@ def load_documents(db_name: str, collection_name: str) -> list[Document]:
     return documents
 
 
+def load_pdf_documents():
+    document_loader = PyPDFDirectoryLoader(DATA_PATH)
+    documents = document_loader.load()
+    for document in documents:
+        document.metadata["Title"] = document.metadata["source"][9:-4]
+        document.metadata["Link"] = "Link not provided."
+    return documents
+
+
 def get_all_documents():
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     db = client["hpc_training_raw_local_db"]
@@ -47,9 +58,11 @@ def get_all_documents():
     for collection in collections:
         data += load_documents("hpc_training_raw_local_db", collection)
 
+    data += load_pdf_documents()
+
     return data
 
 
 if __name__ == "__main__":
     data = get_all_documents()
-    print(data)
+    print(len(data))

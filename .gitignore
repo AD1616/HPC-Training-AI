@@ -24,3 +24,4 @@ chroma/212a2493-0a0e-4662-ba4c-ad3be9be77a4/header.bin
 chroma/212a2493-0a0e-4662-ba4c-ad3be9be77a4/data_level0.bin
 *.pyc
 .DS_Store
+*.pdf

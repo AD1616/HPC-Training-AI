@@ -4,6 +4,7 @@ import pymongo
 from langchain_community.vectorstores.chroma import Chroma
 from preprocess_documents import load_documents
 from get_embedding_function import get_embedding_function
+import pdf_embeddings
 
 CHROMA_PATH = "chroma"
 
@@ -49,13 +50,16 @@ def save_to_chroma(chunks: list[Document]):
             del new_chunks[i]
         db.add_documents(new_chunks, ids=new_chunk_ids)
     else:
-        print("No new documents to add.")
+        print("Mongo: No new documents to add.")
 
 
 """
-This is the way we will have unique IDs for each document in chromadb.
+This is the way we will have unique IDs for each document FOR MONGODB DATA in chromadb.
 
 Chunks from the same document will have the same title, so start index is included as well.
+
+Note that pdf data and mongodb data will have a separate template for ids.
+The below data should only be used to check for existence of data that came from mongodb.
 """
 def chroma_id_format(chunk: Document) -> str:
     collection = chunk.metadata.get("collection")
@@ -76,16 +80,29 @@ def create_chroma_ids(chunks: list[Document]):
     return list(ids), list(duplicates)
 
 
-def dense_relevant_ranked_documents(query_text: str):
+def dense_relevant_ranked_documents(query_text: str, num_docs: int):
     embedding_function = get_embedding_function()
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
-    results = db.similarity_search(query_text, k=5)
+    results = db.similarity_search(query_text, k=500)
 
-    return results
+    final = []
+    for i in range(len(results)):
+        if len(final) > num_docs:
+            break
+        found = False
+        for j in range(len(final)):
+            if final[j].metadata["Title"] == results[i].metadata["Title"]:
+                found = True
+                break
+        if not found:
+            final.append(results[i])
+
+    return final
 
 
 def pipeline():
+    # handle mongodb data
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     db = client["hpc_training_raw_local_db"]
     collections = db.list_collection_names()
@@ -93,6 +110,9 @@ def pipeline():
         documents = load_documents("hpc_training_raw_local_db", collection)
         chunks = chunk_documents(documents)
         save_to_chroma(chunks)
+
+    # handle pdf data
+    pdf_embeddings.pdf_pipeline()
 
 
 if __name__ == "__main__":
