@@ -79,27 +79,6 @@ def create_chroma_ids(chunks: list[Document]):
     return list(ids), list(duplicates)
 
 
-def dense_relevant_ranked_documents(query_text: str, num_docs: int):
-    embedding_function = get_embedding_function()
-    db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
-
-    results = db.similarity_search(query_text, k=500)
-
-    final = []
-    for i in range(len(results)):
-        if len(final) > num_docs:
-            break
-        found = False
-        for j in range(len(final)):
-            if final[j].metadata["Title"] == results[i].metadata["Title"]:
-                found = True
-                break
-        if not found:
-            final.append(results[i])
-
-    return final
-
-
 def mongo_pipeline():
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     db = client["hpc_training_raw_local_db"]
