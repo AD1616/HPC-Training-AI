@@ -54,6 +54,7 @@
                 
                 if (!fetching) {
                     fetching = true;
+                    output.innerHTML = "";
                     fetch(url)
                     .then(response => response.text())
                     .then(data => {

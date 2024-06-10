@@ -8,8 +8,8 @@ from aggregate_documents import load_mongo_documents, CHROMA_PATH, MONGODB_NAME,
 
 def chunk_documents(documents: list[Document]) -> list[Document]:
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=8192,
-        chunk_overlap=500,
+        chunk_size=500,
+        chunk_overlap=80,
         length_function=len,
         add_start_index=True,
     )
