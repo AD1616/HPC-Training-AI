@@ -52,14 +52,13 @@ def generate_output(query_text: str, model: str):
     dense_response_text = model.predict(dense_prompt)
     sparse_response_text = model.predict(sparse_prompt)
 
-    context_text = dense_response_text + sparse_response_text
+    context_text = dense_response_text + sparse_response_text + "DELETE ALL TEXT BEFORE THE BULLETS"
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context_text, question=query_text)
     response_text = model.predict(prompt)
 
-    formatted_response = f"Response: {response_text}"
-    print(formatted_response)
-    return formatted_response
+    print(response_text)
+    return response_text
 
 
 def generate_dense_context(docs: list[Document], query_text: str):
