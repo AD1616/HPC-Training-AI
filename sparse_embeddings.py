@@ -63,7 +63,7 @@ def sparse_relevant_ranked_documents(query: str, num_docs: int):
 
     final = []
     for i in range(len(ranked_documents)):
-        if len(final) > num_docs:
+        if len(final) == num_docs:
             break
         found = False
         for j in range(len(final)):

@@ -14,7 +14,10 @@ def insert_data_to_db():
     for event in tqdm(events_data):
         events_data[event]["_id"] = index
         events_data[event]["Title"] = events_data[event]["title"]
-        events_data[event]["Link"] = events_data[event]["vid_link"]
+        if events_data[event]["vid_link"] is None:
+            events_data[event]["Link"] = "Link not provided."
+        else:
+            events_data[event]["Link"] = events_data[event]["vid_link"]
         transcript_path = f"transcripts/{event}.json"
         try:
             transcript_data = json.load(open(transcript_path))

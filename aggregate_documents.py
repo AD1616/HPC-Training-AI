@@ -1,6 +1,8 @@
 from langchain_community.document_loaders import MongodbLoader, PyPDFDirectoryLoader
 from langchain.schema import Document
 import pymongo
+from langchain_community.vectorstores.chroma import Chroma
+from get_embedding_function import get_embedding_function
 
 DATA_PATH = "pdf_data"
 
@@ -9,6 +11,10 @@ CHROMA_PATH = "chroma"
 MONGODB_URL = "mongodb://localhost:27017/"
 
 MONGODB_NAME = "hpc_training_raw_local_db"
+
+LLM_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
+
+CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 
 """
@@ -56,19 +62,27 @@ def load_pdf_documents():
 
 
 def get_all_documents():
-    client = pymongo.MongoClient(MONGODB_URL)
-    db = client[MONGODB_NAME]
-    collections = db.list_collection_names()
+    db = Chroma(persist_directory=CHROMA_PATH, embedding_function=get_embedding_function())
 
-    data = []
-    for collection in collections:
-        data += load_mongo_documents(MONGODB_NAME, collection)
+    data = db.get(include=['metadatas', 'documents'])
+    total = total_documents()
 
-    data += load_pdf_documents()
+    docs = []
+    for i in range(total):
+        content = data['documents'][i]
+        metadata = data['metadatas'][i]
+        doc = Document(page_content=content, metadata=metadata)
+        docs.append(doc)
 
-    return data
+    return docs
+
+
+def total_documents():
+    db = Chroma(persist_directory=CHROMA_PATH, embedding_function=get_embedding_function())
+
+    return len(db.get(include=[])['ids'])
 
 
 if __name__ == "__main__":
-    data = get_all_documents()
-    print(len(data))
+    print(total_documents())
+    print(get_all_documents()[0])

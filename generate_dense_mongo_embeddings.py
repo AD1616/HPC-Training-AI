@@ -39,6 +39,7 @@ def save_to_chroma(chunks: list[Document]):
         chunk_chroma_id = chroma_id_format(chunk)
         if chunk_chroma_id not in existing_ids:
             new_chunks.append(chunk)
+            chunk.metadata.update({"id": chunk_chroma_id})
 
     if len(new_chunks) > 0:
         print(f"Mongo: Adding new documents: {len(new_chunks)}")

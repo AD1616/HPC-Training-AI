@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 from query import generate_output
 
 DEVELOPMENT_ENV = True
 
 app = Flask(__name__)
-
+app.secret_key = 'HPC-AI'
 
 @app.route("/")
 def index():
@@ -24,7 +24,11 @@ def test():
 def output():
     query = request.args.get('query')
     try:
-        return generate_output(query, "llama3")
+        session['documents'] = []
+        response, documents = generate_output(query)
+        for document in documents:
+            session['documents'].append(document.metadata)
+        return response
     except:
         return "AI service is not running."
     
