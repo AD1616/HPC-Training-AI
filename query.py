@@ -21,15 +21,23 @@ def generate_output(query_text: str):
     dense_results = dense_relevant_ranked_documents(query_text, 10)
     sparse_results = sparse_relevant_ranked_documents(query_text, 10)
 
+    if len(dense_results) == 0 and len(sparse_results) == 0:
+        print("Unable to find matching results.")
+        return "Unable to find matching results.", []
+
     relevant_dense_documents, irrelevant_dense_documents = grade(dense_results, query_text)
     relevant_sparse_documents, irrelevant_sparse_documents = grade(sparse_results, query_text)
+
+    if len(relevant_dense_documents) == 0 and len(relevant_sparse_documents):
+        print("Unable to find matching results.")
+        return "Unable to find matching results.", []
 
     training_dense_documents, paper_dense_documents = identify_documents(relevant_dense_documents)
     training_sparse_documents, paper_sparse_documents = identify_documents(relevant_sparse_documents)
 
-    if len(dense_results) == 0 or len(sparse_results) == 0:
+    if len(training_dense_documents) == 0 and len(training_sparse_documents) == 0:
         print("Unable to find matching results.")
-        return
+        return "Unable to find matching results.", []
 
     all_documents = []
     for document in training_sparse_documents:

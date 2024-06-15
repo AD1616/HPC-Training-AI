@@ -85,4 +85,4 @@ def total_documents():
 
 if __name__ == "__main__":
     print(total_documents())
-    print(get_all_documents()[0])
+    print(get_all_documents()[2000])

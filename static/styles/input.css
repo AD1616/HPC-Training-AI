@@ -77,6 +77,10 @@ p {
   width: 50%;
 }
 
+.guide {
+  padding-top:35em;
+}
+
 .loading {
   padding-top:5em;
   height: 25vh;

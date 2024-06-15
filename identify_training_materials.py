@@ -2,7 +2,7 @@ from langchain_community.vectorstores.chroma import Chroma
 from get_embedding_function import get_embedding_function
 from aggregate_documents import CHROMA_PATH, total_documents, LLM_MODEL
 from langchain_community.chat_models import ChatOllama
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain.schema import Document
@@ -21,7 +21,6 @@ def identify_documents(documents: list[Document]):
         model=LLM_MODEL,
         openai_api_key="js8CT4Cs6HShr8Ct2X",
         openai_api_base=inference_server_url,
-        max_tokens=5,
         temperature=0,
     )
 

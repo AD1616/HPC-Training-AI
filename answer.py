@@ -1,44 +1,63 @@
-import argparse
+from langchain_community.vectorstores.chroma import Chroma
+from get_embedding_function import get_embedding_function
+from aggregate_documents import CHROMA_PATH, total_documents, LLM_MODEL
 from langchain_community.chat_models import ChatOllama
-from langchain.prompts import ChatPromptTemplate
-from generate_all_dense_embeddings import dense_relevant_ranked_documents
-from sparse_embeddings import sparse_relevant_ranked_documents
-from grade_documents import grade
-from identify_training_materials import identify_documents
+from langchain_openai import ChatOpenAI
+from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain.schema import Document
 
-PROMPT_TEMPLATE = """
-Find documents relevant to the user question only from the following list:
 
-{context}
-
----
-
-Provide a numbered list of sources with titles and URLs ONLY coming from the above list, relating to the following question: {question}
 """
+Takes in a list of documents and a string question.
 
+Outputs which of those documents are relevant to the question and which are not, both as lists.
+"""
+def guided_response(documents: list[Document], question: str):
+    # llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
+    inference_server_url = "https://sdsc-llama3-api.nrp-nautilus.io/v1"
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query_text", type=str, help="The query text.")
-    parser.add_argument("model", type=str, help="model")
-    args = parser.parse_args()
-    query_text = args.query_text
-    model = args.model
+    llm = ChatOpenAI(
+        model=LLM_MODEL,
+        openai_api_key="js8CT4Cs6HShr8Ct2X",
+        openai_api_base=inference_server_url,
+        temperature=0,
+    )
 
-    formatted_response = generate_output(query_text, model)
-    print(formatted_response)
+    prompt = PromptTemplate(
+        template="""<|begin_of_text|><|start_header_id|>system<|end_header_id|> You are an expert on High Performance
+        computing. You will be given a user query along with a list of potentially helpful documents in answering that query.
+        Answer the query, and provide helpful guidance for further learning. \n
+         <|eot_id|><|start_header_id|>user<|end_header_id|>
+        Here are the retrieved documents: \n\n {documents} \n\n
+        Here is the user question: {question} \n <|eot_id|><|start_header_id|>assistant<|end_header_id|>
+        """,
+        input_variables=["question", "documents"],
+    )
 
+    generator = prompt | llm
 
-def generate_output(context_text: str, query_text: str, model: str):
+    document_text = ""
+    for document in documents:
+        doc_content = document.page_content
+        doc_title = document.metadata.get("Title")
+        doc_link = document.metadata.get("Link")
+        document_text += f"\n Title: {doc_title} Link: {doc_link} \n Content: {doc_content} \n"
 
-    prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
-    prompt = prompt_template.format(context=context_text, question=query_text)
+    output = generator.invoke({"question": question, "documents": document_text})
 
-    model = ChatOllama(model=model)
-    response_text = model.predict(prompt)
-
-    return response_text
+    return output.content
 
 
 if __name__ == "__main__":
-    main()
+    vectorstore = Chroma(persist_directory=CHROMA_PATH, embedding_function=get_embedding_function())
+
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
+
+    question = "parallel computing"
+
+    documents = retriever.invoke(question)
+
+    output = guided_response(documents, question)
+
+    print(output)

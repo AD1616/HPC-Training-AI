@@ -1,8 +1,9 @@
 from langchain_community.embeddings import ollama
+# from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
 """
-It is very important to get the Ollama embedding function in this way.
+    It is very important to get the Ollama embedding function in this way.
 
 The following import contains embedding function that works with Chroma db:
 from langchain_community.embeddings import ollama
@@ -14,3 +15,7 @@ def get_embedding_function():
     ollama_emb = ollama.OllamaEmbeddings(model='nomic-embed-text')
 
     return ollama_emb
+
+    # vectorizer = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    #
+    # return vectorizer
