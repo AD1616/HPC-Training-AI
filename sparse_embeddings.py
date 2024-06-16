@@ -67,7 +67,7 @@ def sparse_relevant_ranked_documents(query: str, num_docs: int):
             break
         found = False
         for j in range(len(final)):
-            if final[j].metadata["Title"] == ranked_documents[i].metadata["Title"]:
+            if final[j].metadata["id"] == ranked_documents[i].metadata["id"]:
                 found = True
                 break
         if not found:
@@ -78,7 +78,10 @@ def sparse_relevant_ranked_documents(query: str, num_docs: int):
 
 
 def main():
-    print(sparse_relevant_ranked_documents("Cyberinfrastructure", 15))
+    documents = sparse_relevant_ranked_documents("ciml", 15)
+
+    for doc in documents:
+        print(doc.metadata.get("Title"))
 
 
 if __name__ == "__main__":

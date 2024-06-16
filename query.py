@@ -18,8 +18,8 @@ def main():
 
 
 def generate_output(query_text: str):
-    dense_results = dense_relevant_ranked_documents(query_text, 10)
-    sparse_results = sparse_relevant_ranked_documents(query_text, 10)
+    dense_results = dense_relevant_ranked_documents(query_text, 20)
+    sparse_results = sparse_relevant_ranked_documents(query_text, 20)
 
     if len(dense_results) == 0 and len(sparse_results) == 0:
         print("Unable to find matching results.")
@@ -42,25 +42,38 @@ def generate_output(query_text: str):
     all_documents = []
     for document in training_sparse_documents:
         found = False
+        # found_display = False
         for existing in all_documents:
-            if existing.metadata.get("Title") == document.metadata.get("Title"):
+            if existing.metadata.get("id") == document.metadata.get("id"):
                 found = True
+            # if existing.metadata.get("Title") == document.metadata.get("Title"):
+            #     found_display = True
         if not found:
-            if document.metadata.get("Link") != "Link not provided." and document.metadata.get("Link") != "None":
-                all_documents.append(document)
+            all_documents.append(document)
+        # if not found_display:
+        #     display_documents.append(document)
 
     for document in training_dense_documents:
         found = False
         for existing in all_documents:
+            if existing.metadata.get("id") == document.metadata.get("id"):
+                found = True
+        if not found:
+            all_documents.append(document)
+
+    reranked_documents = rank_docs(all_documents, query_text)
+
+    display_docs = []
+    for document in reranked_documents:
+        found = False
+        for existing in display_docs:
             if existing.metadata.get("Title") == document.metadata.get("Title"):
                 found = True
         if not found:
-            if document.metadata.get("Link") != "Link not provided." and document.metadata.get("Link") != "None":
-                all_documents.append(document)
+            display_docs.append(document)
 
-    reranked_documents = rank_docs(all_documents, query_text)
     response_text = ""
-    for document in reranked_documents:
+    for document in display_docs:
         response_text += f"\n\n{document.metadata.get('Title')} \n {document.metadata.get('Link')} \n"
 
     return response_text, all_documents

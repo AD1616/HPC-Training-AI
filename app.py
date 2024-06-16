@@ -11,6 +11,7 @@ DEVELOPMENT_ENV = True
 app = Flask(__name__)
 app.secret_key = 'HPC-AI'
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -20,11 +21,15 @@ def index():
 def chat():
     return render_template("chat.html")
 
+
 @app.route("/test")
 def test():
     return render_template("test.html")
 
 
+"""
+Endpoint to return list of relevant documents to query.
+"""
 @app.route("/output")
 def output():
     query = request.args.get('query')
@@ -37,6 +42,10 @@ def output():
     except:
         return "AI service is not running."
 
+
+"""
+Endpoint to generate description to elaborate on query based on relevant documents.
+"""
 @app.route("/guide")
 def guide():
     query = request.args.get('query')

@@ -32,7 +32,7 @@
           <div class="wave"></div>
         </div>
 
-        <div class="guide">
+        <div id="guide" class="guide">
             <button class="button-27" onclick="guide()"> Get Guidance </button>
         </div>
        
@@ -56,8 +56,9 @@
                 const url = `/output?query=${encodeURIComponent(input.value)}`;
                 //output.innerText = "finding sources...";
                 document.getElementById("loading").style.display = "flex";
-                
+
                 if (!fetching) {
+                    document.getElementById("guide").style.display = "none";
                     fetching = true;
                     output.innerHTML = "";
                     fetch(url)
@@ -78,6 +79,9 @@
                                 output.innerHTML = htmlBuffer;
                                 i++;
                                 setTimeout(typeWriter, speed);
+                                if (i == modifiedData.length - 1) {
+                                    document.getElementById("guide").style.display = "flex";
+                                }
                             }
                         }
                         typeWriter();
@@ -95,6 +99,8 @@
             const url = `/guide?query=${encodeURIComponent(input.value)}`;
             var output = document.getElementById('output');
             if (!fetching) {
+                document.getElementById("guide").style.display = "none";
+                document.getElementById("loading").style.display = "flex";
                 fetching = true;
                 output.innerHTML = "";
                 fetch(url)
@@ -115,6 +121,9 @@
                             output.innerHTML = htmlBuffer;
                             i++;
                             setTimeout(typeWriter, speed);
+                            if (i == modifiedData.length - 1) {
+                                document.getElementById("guide").style.display = "flex";
+                            }
                         }
                     }
                     typeWriter();

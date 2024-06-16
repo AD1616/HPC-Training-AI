@@ -21,7 +21,7 @@ def guided_response(documents: list[Document], question: str):
         model=LLM_MODEL,
         openai_api_key="js8CT4Cs6HShr8Ct2X",
         openai_api_base=inference_server_url,
-        temperature=0,
+        temperature=0
     )
 
     prompt = PromptTemplate(

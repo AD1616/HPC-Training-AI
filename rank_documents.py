@@ -5,6 +5,8 @@ from langchain.schema import Document
 Reranking documents with a cross encoder based on relevance to query.
 """
 def rank_docs(documents: list[Document], query: str):
+    if len(documents) == 0:
+        return documents
     model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
     ranks = model.rank(query, [document.page_content for document in documents])
 

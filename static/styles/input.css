@@ -78,7 +78,8 @@ p {
 }
 
 .guide {
-  padding-top:35em;
+  padding-top:36em;
+  display: none;
 }
 
 .loading {

@@ -86,7 +86,7 @@ def identify_query(question: str):
 if __name__ == "__main__":
     vectorstore = Chroma(persist_directory=CHROMA_PATH, embedding_function=get_embedding_function())
 
-    retriever = vectorstore.as_retriever(search_kwargs={"k": total_documents()})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 20})
 
     question = "parallel computing"
 
@@ -94,5 +94,5 @@ if __name__ == "__main__":
 
     training_documents, paper_documents = identify_documents(documents)
 
-    for document in paper_documents:
+    for document in training_documents:
         print(document.metadata.get("Title"))

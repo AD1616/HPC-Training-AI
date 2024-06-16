@@ -29,7 +29,7 @@ def dense_relevant_ranked_documents(query_text: str, num_docs: int):
             break
         found = False
         for j in range(len(final)):
-            if final[j].metadata["Title"] == results[i].metadata["Title"]:
+            if final[j].metadata["id"] == results[i].metadata["id"]:
                 found = True
                 break
         if not found:
