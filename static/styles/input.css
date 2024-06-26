@@ -57,7 +57,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   padding-bottom: 5em;

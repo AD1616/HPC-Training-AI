@@ -60,6 +60,11 @@ def guide():
         documents.append(doc)
     response = guided_response(documents, query)
     return response
+
+
+@app.route("/roadmap")
+def roadmap():
+    return render_template("roadmap.html")
     
 
 if __name__ == "__main__":

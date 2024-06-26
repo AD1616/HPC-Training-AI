@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+{% include 'includes/_navbar.html' %}
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>HPC Training AI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/input.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/chatbutton.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/homebutton.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- load the d3.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+    <style>
+        .node circle {
+            fill: #fff;
+            stroke: orange;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 0.8rem sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        body {
+            background-color: #222222;
+        }
+
+        #side {
+            position: absolute;
+            left: 6.5em;
+            margin-top: 6em;
+        }
+
+    </style>
+
+    </head>
+
+    <button id="side" class="button-28" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      View Output
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">AI Response</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="sidebar-output">
+          Nothing to display yet.
+        </div>
+      </div>
+    </div>
+
+    <body>
+        <script>
+            const data = {
+                name: "Basic Skills",
+                __children: [
+                    {
+                        name: "Basic Linux Skills",
+                        __children: [
+                            { name: "Basic Environment", prompt: "Explain Linux and the command line to someone who has only used GUIs" },
+                            { name: "Directories and Navigation", prompt: "Explain directories and navigation in Linux" },
+                            { name: "Files" },
+                            { name: "Permissions" },
+                            { name: "Wildcards" },
+                            { name: "Common Utilities" }
+                        ]
+                    },
+                    {
+                        name: "Using GitHub",
+                        __children: [
+                            { name: "Create Git Account" },
+                            { name: "Install Git on Local System" },
+                            { name: "Install Git on Linux" },
+                            { name: "Install Git on Mac" },
+                            { name: "Install Git on Windows" },
+                            { name: "Clone the Git repository" },
+                            { name: "Checkout a branch" }
+                        ]
+                    },
+                    {
+                        name: "Servers/HPC",
+                        __children: [
+                            { name: "What is HPC?", prompt: "Explain what a High Performance Computing cluster is and why it is important to researchers in all fields."},
+                            { name: "How do I access a server?", prompt: "Explain the ssh command and how to use it." }
+                        ]
+                    },
+                    {
+                        name: "Interactive Computing",
+                        __children: [
+                            { name: "Obtain interactive node" },
+                            { name: "Obtain interactive shared GPU node(s)" }
+                        ]
+                    }
+                ]
+            };
+
+            // ************** Generate the tree diagram	 *****************
+            const margin = { top: 50, right: 120, bottom: 20, left: 120 },
+                width = 1280 - margin.right - margin.left,
+                height = 720 - margin.top - margin.bottom;
+
+            let i = 0;
+            const duration = 750;
+
+            const tree = d3.layout.tree()
+                .size([height, width]);
+
+            const diagonal = d3.svg.diagonal()
+                .projection(d => [d.y, d.x]);
+
+            const svg = d3.select("body").append("svg")
+                .attr("width",  width + margin.right + margin.left)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            data.__x = height / 2;
+            data.__y = 0;
+
+            const color = "#ffe28c";
+
+            d3.select(self.frameElement).style("height", "500px");
+
+            const update = source => {
+
+                // Compute the new tree layout.
+                const nodes = tree.nodes(data).reverse();
+                const links = tree.links(nodes);
+
+                const maxDepth = Math.max(1, ...nodes.map(n => n.depth));
+                // Normalize for fixed-depth.
+                nodes.forEach(d => d.y = d.depth / (maxDepth + 1) * width);
+
+                // Update the nodes
+                const node = svg.selectAll("g.node")
+                    .data(nodes, d => d.id || (d.id = ++i));
+
+                // Enter any new nodes at the parent's previous position.
+                const nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .style("cursor", d => (d.children || d.__children) ? "pointer" : "")
+                    .attr("transform", _ => "translate(" + source.__y + "," + source.__x + ")")
+                    .on("click", d => { // Toggle children on click.
+                        if (d.children) {
+                            d.__children = d.children;
+                            d.children = null;
+                        } else {
+                            d.children = d.__children;
+                            d.__children = null;
+                        }
+
+
+                        update(d);
+                    });
+
+                nodeEnter.append("circle")
+                    .attr("r", 1e-6)
+                    .style("fill", d => d.__children ? color : "#fff");
+
+
+                var fetching = false;
+
+                nodeEnter.append("foreignObject")
+                    .attr("x", d => (d.children || d.__children) ? -40 : 13)
+                    .attr("y", d => (d.children || d.__children) ? -40 : -10)
+                    .attr("width", 200)
+                    .attr("height", 30)
+                    .append("xhtml:div")
+                    .append("a")
+                    .attr("class", "button")
+                    .text(d => d.name)
+                    .on("click", d => {
+                        // You can add additional logic here for button click
+                        console.log(d.prompt);
+                        if (d.prompt != undefined) {
+                          const doc_url = `/output?query=${encodeURIComponent(d.prompt)}`;
+                          fetch(doc_url)
+                          .then(response => response.text())
+                          .then(data => {
+                            console.log(data);
+                            const guide_url = `/guide?query=${encodeURIComponent(d.prompt)}`;
+                            fetch(guide_url)
+                            .then(response => response.text())
+                            .then(data => {
+                              console.log(data);
+                              document.getElementById("sidebar-output").innerText = data;
+                              document.getElementById('side').click();
+                            })
+                            .catch(error => console.error('Error:', error));
+                          })
+                          .catch(error => console.error('Error:', error));
+                        }
+                    });
+
+
+                // Transition nodes to their new position.
+                const nodeUpdate = node.transition()
+                    .duration(duration)
+                    .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
+
+                nodeUpdate.select("circle")
+                    .attr("r", 10)
+                    .style("fill", d => d.__children ? color : "#fff");
+
+                nodeUpdate.select("text")
+                    .style("fill-opacity", 1);
+
+                // Transition exiting nodes to the parent's new position.
+                const nodeExit = node.exit().transition()
+                    .duration(duration)
+                    .attr("transform", _ => "translate(" + source.y + "," + source.x + ")")
+                    .remove();
+
+                nodeExit.select("circle")
+                    .attr("r", 1e-6);
+
+                nodeExit.select("text")
+                    .style("fill-opacity", 1e-6);
+
+                // Update the links
+                const link = svg.selectAll("path.link")
+                    .data(links, d => d.target.id);
+
+                // Enter any new links at the parent's previous position.
+                link.enter().insert("path", "g")
+                    .attr("class", "link")
+                    .attr("d", _ => {
+                        const o = { x: source.__x, y: source.__y };
+                        return diagonal({ source: o, target: o });
+                    });
+
+                // Transition links to their new position.
+                link.transition()
+                    .duration(duration)
+                    .attr("d", diagonal);
+
+                // Transition exiting nodes to the parent's new position.
+                link.exit().transition()
+                    .duration(duration)
+                    .attr("d", d => {
+                        const o = { x: source.x, y: source.y };
+                        return diagonal({ source: o, target: o });
+                    })
+                    .remove();
+
+                // Stash the old positions for transition.
+                nodes.forEach(d => {
+                    d.__x = d.x;
+                    d.__y = d.y;
+                });
+            }
+
+            update(data);
+        </script>
+    </body>
+</html>
