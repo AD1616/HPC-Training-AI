@@ -3,7 +3,6 @@ from get_embedding_function import get_embedding_function
 from aggregate_documents import CHROMA_PATH, total_documents, LLM_MODEL
 from langchain_community.chat_models import ChatOllama
 from langchain_openai import ChatOpenAI
-from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain.schema import Document
 
@@ -27,7 +26,7 @@ def guided_response(documents: list[Document], question: str):
     prompt = PromptTemplate(
         template="""<|begin_of_text|><|start_header_id|>system<|end_header_id|> You are an expert on High Performance
         computing. You will be given a user query along with a list of potentially helpful documents in answering that query.
-        Answer the query, and provide helpful guidance for further learning. \n
+        Answer the query, and provide helpful guidance for further learning. Do not provide a preamble. \n
          <|eot_id|><|start_header_id|>user<|end_header_id|>
         Here are the retrieved documents: \n\n {documents} \n\n
         Here is the user question: {question} \n <|eot_id|><|start_header_id|>assistant<|end_header_id|>

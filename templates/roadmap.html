@@ -24,7 +24,8 @@
         .node circle {
             fill: #fff;
             stroke: orange;
-            stroke-width: 3px;
+            stroke-width: 0.2em;
+            
         }
 
         .node text {
@@ -34,7 +35,7 @@
         .link {
             fill: none;
             stroke: #ccc;
-            stroke-width: 2px;
+            stroke-width: 0.2em;
         }
 
         body {
@@ -45,6 +46,10 @@
             position: absolute;
             left: 6.5em;
             margin-top: 6em;
+        }
+
+        #sidebar-sources {
+            white-space: pre-line;
         }
 
     </style>
@@ -64,6 +69,10 @@
         <div id="sidebar-output">
           Nothing to display yet.
         </div>
+
+        <div id="sidebar-sources">
+
+        </div>
       </div>
     </div>
 
@@ -77,10 +86,10 @@
                         __children: [
                             { name: "Basic Environment", prompt: "Explain Linux and the command line to someone who has only used GUIs" },
                             { name: "Directories and Navigation", prompt: "Explain directories and navigation in Linux" },
-                            { name: "Files" },
-                            { name: "Permissions" },
-                            { name: "Wildcards" },
-                            { name: "Common Utilities" }
+                            { name: "Files", prompt: "Explain how to display and edit files in the command line in Linux." },
+                            { name: "Permissions", prompt: "Explain permissions in Linux." },
+                            { name: "Wildcards", prompt: "Explain wildcards in Linux." },
+                            { name: "Aliases/Env Vars", prompt: "Explain Aliases and Environment Variables."}
                         ]
                     },
                     {
@@ -99,7 +108,7 @@
                         name: "Servers/HPC",
                         __children: [
                             { name: "What is HPC?", prompt: "Explain what a High Performance Computing cluster is and why it is important to researchers in all fields."},
-                            { name: "How do I access a server?", prompt: "Explain the ssh command and how to use it." }
+                            { name: "How do I access a server?", prompt: "Explain how to connect to servers (including HPC clusters), and in doing so explain the ssh command and how to use it." }
                         ]
                     },
                     {
@@ -188,25 +197,39 @@
                     .attr("class", "button")
                     .text(d => d.name)
                     .on("click", d => {
-                        // You can add additional logic here for button click
                         console.log(d.prompt);
                         if (d.prompt != undefined) {
-                          const doc_url = `/output?query=${encodeURIComponent(d.prompt)}`;
-                          fetch(doc_url)
-                          .then(response => response.text())
-                          .then(data => {
-                            console.log(data);
-                            const guide_url = `/guide?query=${encodeURIComponent(d.prompt)}`;
-                            fetch(guide_url)
-                            .then(response => response.text())
-                            .then(data => {
-                              console.log(data);
-                              document.getElementById("sidebar-output").innerText = data;
-                              document.getElementById('side').click();
-                            })
-                            .catch(error => console.error('Error:', error));
-                          })
-                          .catch(error => console.error('Error:', error));
+                            document.getElementById('side').click();
+                            document.getElementById("sidebar-output").innerText = "Working...";
+                            document.getElementById("sidebar-sources").innerHTML = "";
+                            const doc_url = `/output?query=${encodeURIComponent(d.prompt)}`;
+                            fetch(doc_url)
+                                .then(response => response.text())
+                                .then(data1 => {
+                                    console.log(data1);
+                                    const guide_url = `/guide?query=${encodeURIComponent(d.prompt)}`;
+                                    fetch(guide_url)
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        console.log(data);
+                                        function linkify(text) {
+                                            const urlPattern = /(https?:\/\/[^\s]+)/g;
+                                            return text.replace(urlPattern, '<a href="$1" target="_blank">$1</a>');
+                                        }
+                                        var modifiedSources = linkify(data1);
+                                        var output = data + "\n\n\n Sources: ";
+                                        document.getElementById("sidebar-output").innerText = output;
+                                        document.getElementById("sidebar-sources").innerHTML = modifiedSources;
+                                    })
+                                    .catch(error => {
+                                        console.error('Error:', error)
+                                        document.getElementById("sidebar-output").innerText = "Error.";
+                                    });
+                                })
+                            .catch(error => {
+                                console.error('Error:', error)
+                                document.getElementById("sidebar-output").innerText = "Error.";
+                            });
                         }
                     });
 

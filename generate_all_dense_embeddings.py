@@ -17,25 +17,9 @@ def dense_relevant_ranked_documents(query_text: str, num_docs: int):
     embedding_function = get_embedding_function()
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
-    total_docs = total_documents()
-    k = num_docs
-    if total_docs >= 2 * num_docs:
-        k = 2 * num_docs
-    results = db.similarity_search(query_text, k=k)
+    results = db.similarity_search(query_text, k=num_docs)
 
-    final = []
-    for i in range(len(results)):
-        if len(final) == num_docs:
-            break
-        found = False
-        for j in range(len(final)):
-            if final[j].metadata["id"] == results[i].metadata["id"]:
-                found = True
-                break
-        if not found:
-            final.append(results[i])
-
-    return final
+    return results
 
 
 if __name__ == "__main__":
