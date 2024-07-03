@@ -1,4 +1,5 @@
 from __future__ import annotations
+import json
 
 
 class RoadmapNode:
@@ -21,12 +22,20 @@ class RoadmapNode:
 
         return output
 
+    def to_dict(self) -> dict[str, any]:
+        return {
+            "name": self.name,
+            "prompt": self.prompt,
+            "children": [child.to_dict() for child in self.children]
+        }
+
+    def to_json(self) -> str:
+        return json.dumps(self.to_dict(), indent=4)
+
 
 if __name__ == "__main__":
-    test_child = RoadmapNode(name="Test Child", prompt="Child Prompt", children=[])
+    test_third = RoadmapNode(name="Third", prompt="Third", children=[])
+    test_child = RoadmapNode(name="Test Child", prompt="Child Prompt", children=[test_third])
     test_root = RoadmapNode(name="Test Root", prompt="Root Prompt", children=[test_child])
 
-    print("Root: " + test_root.__str__())
-    print("Child: " + test_child.__str__())
-    print("Root's Child: " + test_root.get_children())
-
+    print(json.dumps(test_root.to_dict()))
