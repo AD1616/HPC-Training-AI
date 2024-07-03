@@ -4,6 +4,7 @@ import numpy as np
 from langchain.schema import Document
 from aggregate_documents import get_all_documents
 import pickle
+import time
 
 
 """
@@ -49,12 +50,23 @@ def dump_sparse_embeddings():
 
 
 def sparse_relevant_ranked_documents(query: str, num_docs: int):
+    start = time.time()
     data = get_all_documents()
     data_embeddings, vectorizer, length = load_sparse_embeddings()
+    end = time.time()
+    time_load = end - start
 
+    start = time.time()
     query_embedding = vectorizer.transform([query])
+    end = time.time()
+    time_transform = end - start
 
+    start = time.time()
     similarities = cosine_similarity(data_embeddings, query_embedding)
+    end = time.time()
+    time_similarities = end - start
+
+    start = time.time()
     ranked_indices = np.argsort(similarities, axis=0)[::-1].flatten()
     ranked_documents = [data[i] for i in ranked_indices]
 
@@ -69,8 +81,13 @@ def sparse_relevant_ranked_documents(query: str, num_docs: int):
                 break
         if not found:
             final.append(ranked_documents[i])
+    end = time.time()
+    time_sort = end - start
 
-    # return ranked_documents[:num_docs]
+    print(f"Sparse load: {time_load}")
+    print(f"Sparse transform: {time_transform}")
+    print(f"Sparse similarities: {time_similarities}")
+    print(f"Sparse sort: {time_sort}")
     return final
 
 

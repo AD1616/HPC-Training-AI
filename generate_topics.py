@@ -1,9 +1,7 @@
 from langchain_community.vectorstores.chroma import Chroma
 from get_embedding_function import get_embedding_function
-from aggregate_documents import CHROMA_PATH, total_documents, LLM_MODEL
-from langchain_community.chat_models import ChatOllama
+from aggregate_documents import CHROMA_PATH, LLM_MODEL
 from langchain_openai import ChatOpenAI
-from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain.schema import Document
 

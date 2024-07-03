@@ -107,10 +107,10 @@ def generate_output(query_text: str):
     print(f"Sparse retrieval: {time_sparse}")
     print(f"Relevant dense: {time_relevant_dense}")
     print(f"Relevant sparse: {time_relevant_sparse}")
-    print(time_training_dense)
-    print(time_training_sparse)
+    print(f"Training dense: {time_training_dense}")
+    print(f"Training sparse: {time_training_sparse}")
     print(time_unique)
-    print(time_rerank)
+    print(f"Rerank: {time_rerank}")
     print(time_display)
     return response_text, all_documents
 

@@ -5,11 +5,14 @@ from langchain_community.vectorstores.chroma import Chroma
 from langchain.schema import Document
 from aggregate_documents import CHROMA_PATH
 from get_embedding_function import get_embedding_function
+from roadmaps.map_endpoints import map_bp
 
 DEVELOPMENT_ENV = True
 
 app = Flask(__name__)
 app.secret_key = 'HPC-AI'
+
+app.register_blueprint(map_bp, url_prefix='/roadmaps')
 
 
 @app.route("/")

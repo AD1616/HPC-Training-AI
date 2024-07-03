@@ -78,48 +78,17 @@
 
     <body>
         <script>
-            const data = {
-                name: "Basic Skills",
-                __children: [
-                    {
-                        name: "Basic Linux Skills",
-                        __children: [
-                            { name: "Basic Environment", prompt: "Explain Linux and the command line to someone who has only used GUIs" },
-                            { name: "Directories and Navigation", prompt: "Explain directories and navigation in Linux, from the context of GUI folders and files." },
-                            { name: "Files", prompt: "Explain how to display and edit files in the command line in Linux." },
-                            { name: "Permissions", prompt: "Explain permissions in Linux." },
-                            { name: "Wildcards", prompt: "Explain wildcards in Linux." },
-                            { name: "Aliases/Env Vars", prompt: "Explain Aliases and Environment Variables."}
-                        ]
-                    },
-                    {
-                        name: "Git",
-                        __children: [
-                            { name: "Git, Github, Gitlab", prompt: "Explain what Git is, and what Github and Gitlab are, and how they are useful for HPC due to making it easier to share code and applications." },
-                            { name: "Install Git on Local System", prompt: "Explain how to install Git on a local system. Then explain how this relates to Github, explaining how to connect local to remote and what the difference is between Git and Github." },
-                            { name: "Clone Git repository", prompt: "Explain how to clone repositories from Github." },
-                            { name: "Branches", prompt: "Explain what Github branches are and how to work with them." },
-                            { name: "Contributing", prompt: "Explain Git commit, pull, push, pull requests, and merge conflicts, and how to apply these concepts when contributing code to a git repository."}
-                        ]
-                    },
-                    {
-                        name: "Servers/HPC",
-                        __children: [
-                            { name: "What is HPC?", prompt: "Explain what a High Performance Computing cluster is and why it is important to researchers in all fields."},
-                            { name: "HPC Technical Details", prompt: "Explain what a High Performance Computing cluster is made up of, describing nodes and the components within nodes with specific examples."},
-                            { name: "Accessing HPC", prompt: "Explain how to connect to servers (including HPC clusters), and in doing so explain the ssh command and how to use it." },
-                            {
-                                name: "Jobs",
-                                __children: [
-                                    { name: "What are Jobs?", prompt: "Explain Jobs on HPC systems, slurm, and sbatch scripts." },
-                                    { name: "HPC Resources", prompt: "Explain types of resources that are commonly requested for jobs, including CPU, GPU, and memory. Explain the limited nature of HPC resources and how they are shared, and why it is therefore important to know the extent of resources to request for a job." },
-                                    { name: "Submitting Jobs", prompt: "Explain the process of submitting an sbatch script in detail, and also explain how srun works. Describe the differences between these two approaches of running jobs."}
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            };
+            var data = '';
+
+            var url = '/roadmaps/basic-skills';
+
+            fetch(url)
+                .then(response => response.text())
+                .then(content => {
+                    data = JSON.parse(content);
+                    update(data);
+                })
+                .catch(error => console.error('Error:', error));
 
             // ************** Generate the tree diagram	 *****************
             const margin = { top: 50, right: 120, bottom: 20, left: 120 },
@@ -198,7 +167,7 @@
                     .text(d => d.name)
                     .on("click", d => {
                         console.log(d.prompt);
-                        if (d.prompt != undefined) {
+                        if (d.prompt != "") {
                             document.getElementById('side').click();
                             document.getElementById("sidebar-output").innerText = "Working...";
                             document.getElementById("sidebar-sources").innerHTML = "";
@@ -291,7 +260,6 @@
                 });
             }
 
-            update(data);
         </script>
     </body>
 </html>

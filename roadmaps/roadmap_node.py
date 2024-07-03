@@ -5,19 +5,19 @@ import json
 class RoadmapNode:
     name: str
     prompt: str
-    children: list[RoadmapNode]
+    __children: list[RoadmapNode]
 
     def __init__(self, name: str, prompt: str, children: list[RoadmapNode]):
         self.name = name
         self.prompt = prompt
-        self.children = children
+        self.__children = children
 
     def __str__(self) -> str:
         return f"{self.name} | {self.prompt}"
 
     def get_children(self) -> str:
         output = ""
-        for child in self.children:
+        for child in self.__children:
             output += child.__str__()
 
         return output
@@ -26,7 +26,7 @@ class RoadmapNode:
         return {
             "name": self.name,
             "prompt": self.prompt,
-            "children": [child.to_dict() for child in self.children]
+            "__children": [child.to_dict() for child in self.__children]
         }
 
     def to_json(self) -> str:

@@ -1,0 +1,115 @@
+{
+    "name": "Basic Skills",
+    "prompt": "",
+    "__children": [
+        {
+            "name": "Basic Linux Skills",
+            "prompt": "",
+            "__children": [
+                {
+                    "name": "Basic Environment",
+                    "prompt": "Explain Linux and the command line to someone who has only used GUIs.",
+                    "__children": []
+                },
+                {
+                    "name": "Directories and Navigation",
+                    "prompt": "Explain directories and navigation in Linux, from the context of GUI folders and files.",
+                    "__children": []
+                },
+                {
+                    "name": "Files",
+                    "prompt": "Explain how to display and edit files in the command line in Linux.",
+                    "__children": []
+                },
+                {
+                    "name": "Permissions",
+                    "prompt": "Explain permissions in Linux.",
+                    "__children": []
+                },
+                {
+                    "name": "Wildcards",
+                    "prompt": "Explain wildcards in Linux.",
+                    "__children": []
+                },
+                {
+                    "name": "Aliases/Env Vars",
+                    "prompt": "Explain Aliases and Environment Variables.",
+                    "__children": []
+                }
+            ]
+        },
+        {
+            "name": "Git",
+            "prompt": "",
+            "__children": [
+                {
+                    "name": "Git, Github, Gitlab",
+                    "prompt": "Explain what Git is, and what Github and Gitlab are, and how they are useful for HPC due to making it easier to share code and applications.",
+                    "__children": []
+                },
+                {
+                    "name": "Install Git Locally",
+                    "prompt": "Explain how to install Git on a local system. Then explain how this relates to Github, explaining how to connect local to remote and what the difference is between Git and Github.",
+                    "__children": []
+                },
+                {
+                    "name": "Clone Git Repository",
+                    "prompt": "Explain how to clone repositories from Github.",
+                    "__children": []
+                },
+                {
+                    "name": "Branches",
+                    "prompt": "Explain what Github branches are and how to work with them.",
+                    "__children": []
+                },
+                {
+                    "name": "Git, Github, Gitlab",
+                    "prompt": "Explain Git commit, pull, push, pull requests, and merge conflicts, and how to apply these concepts when contributing code to a git repository.",
+                    "__children": []
+                }
+            ]
+        },
+        {
+            "name": "Servers/HPC",
+            "prompt": "",
+            "__children": [
+                {
+                    "name": "What is HPC?",
+                    "prompt": "Explain what a High Performance Computing cluster is and why it is important to researchers in all fields.",
+                    "__children": []
+                },
+                {
+                    "name": "HPC Technical Details",
+                    "prompt": "Explain what a High Performance Computing cluster is made up of, describing nodes and the components within nodes with specific examples.",
+                    "__children": []
+                },
+                {
+                    "name": "Accessing HPC",
+                    "prompt": "Explain how to connect to servers (including HPC clusters), and in doing so explain the ssh command and how to use it.",
+                    "__children": []
+                },
+                {
+                    "name": "Jobs",
+                    "prompt": "",
+                    "__children": [
+                        {
+                            "name": "What are Jobs",
+                            "prompt": "Explain Jobs on HPC systems, slurm, and sbatch scripts.",
+                            "__children": []
+                        },
+                        {
+                            "name": "HPC Resources",
+                            "prompt": "Explain types of resources that are commonly requested for jobs, including CPU, GPU, and memory. Explain the limited nature of HPC resources and how they are shared, and why it is therefore important to know the extent of resources to request for a job.",
+                            "__children": []
+                        },
+                        {
+                            "name": "Submitting Jobs",
+                            "prompt": "Explain the process of submitting an sbatch script in detail, and also explain how srun works. Describe the differences between these two approaches of running jobs.",
+                            "__children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
