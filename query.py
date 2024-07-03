@@ -25,7 +25,7 @@ def generate_output(query_text: str):
     time_dense = end - start
 
     start = time.time()
-    sparse_results = sparse_relevant_ranked_documents(query_text, 20)
+    sparse_results = sparse_relevant_ranked_documents(query_text, 5)
     end = time.time()
     time_sparse = end - start
 

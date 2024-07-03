@@ -58,9 +58,6 @@ def sparse_relevant_ranked_documents(query: str, num_docs: int):
     ranked_indices = np.argsort(similarities, axis=0)[::-1].flatten()
     ranked_documents = [data[i] for i in ranked_indices]
 
-    # for i, doc in enumerate(ranked_documents):
-    #     print(f"Rank {i + 1}: {doc.metadata}")
-
     final = []
     for i in range(len(ranked_documents)):
         if len(final) == num_docs:
