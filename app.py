@@ -68,6 +68,11 @@ def guide():
 @app.route("/roadmap")
 def roadmap():
     return render_template("roadmap.html")
+
+
+@app.route("/dynamic")
+def dynamic():
+    return render_template("dynamic_generation.html")
     
 
 if __name__ == "__main__":
