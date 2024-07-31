@@ -12,3 +12,11 @@ def basic_skills():
         basic_skills_map = json.load(openfile)
         return basic_skills_map
 
+
+@map_bp.route('/dynamic-generation-test')
+def dynamic_generation_test():
+    with open('roadmaps/dynamic_generation_test.json', 'r') as openfile:
+        dynamic_generation_test_map = json.load(openfile)
+        return dynamic_generation_test_map
+
+

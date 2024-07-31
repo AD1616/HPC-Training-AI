@@ -15,7 +15,7 @@ Outputs which of those documents are research papers and which are training mate
 """
 def identify_documents(documents: list[Document]):
     # llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
-    inference_server_url = "https://sdsc-llama3-api.nrp-nautilus.io/v1"
+    inference_server_url = "https://sdsc-llm-api.nrp-nautilus.io/"
 
     llm = ChatOpenAI(
         model=LLM_MODEL,

@@ -15,7 +15,7 @@ Outputs which of those documents are relevant to the question and which are not,
 """
 def grade(documents: list[Document], question: str):
     # llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
-    inference_server_url = "https://sdsc-llama3-api.nrp-nautilus.io/v1"
+    inference_server_url = "https://sdsc-llm-api.nrp-nautilus.io/"
 
     llm = ChatOpenAI(
         model=LLM_MODEL,

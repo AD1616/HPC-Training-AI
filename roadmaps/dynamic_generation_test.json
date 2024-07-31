@@ -1,0 +1,124 @@
+{
+    "name": "Parallel Computing Roadmap",
+    "prompt": "Parallel Computing",
+    "__children": [
+        {
+            "name": "Parallel Computing Concepts",
+            "prompt": "Provide resources and materials that explain the fundamental concepts of parallel computing, including supercomputer architectures, threads, processes, implementations of parallelism (e.g., OpenMP and MPI), strong and weak scaling, limitations on scalability (Amdahl\u2019s and Gustafson\u2019s Laws), and benchmarking.",
+            "__children": [
+                {
+                    "name": "Parallel Computing",
+                    "prompt": "Provide resources and materials that explain the fundamental concepts of parallel computing, including supercomputer architectures, threads, processes, implementations of parallelism, strong and weak scaling, limitations on scalability, and benchmarking.",
+                    "__children": []
+                },
+                {
+                    "name": "Supercomputer Architectures",
+                    "prompt": "Provide resources and materials that explain the design and architecture of supercomputers, including their hardware components, interconnects, and memory hierarchy.",
+                    "__children": []
+                },
+                {
+                    "name": "Threads and Processes",
+                    "prompt": "Provide resources and materials that explain the differences between threads and processes in parallel computing, including their creation, management, and synchronization.",
+                    "__children": []
+                },
+                {
+                    "name": "Parallelism Implementations",
+                    "prompt": "Provide resources and materials that explain the different implementations of parallelism, including OpenMP and MPI, and their applications in high-performance computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Scaling and Scalability",
+                    "prompt": "Provide resources and materials that explain the concepts of strong and weak scaling, limitations on scalability, and Amdahl's and Gustafson's Laws, and how they relate to parallel computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Benchmarking",
+                    "prompt": "Provide resources and materials that explain the importance of benchmarking in parallel computing, including how to design and run benchmarks, and how to analyze and interpret benchmarking results.",
+                    "__children": []
+                },
+                {
+                    "name": "High-Performance Computing",
+                    "prompt": "Provide resources and materials that explain the concepts and techniques of high-performance computing, including parallel computing, distributed computing, and cloud computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Parallel Programming",
+                    "prompt": "Provide resources and materials that explain the concepts and techniques of parallel programming, including parallel algorithms, data parallelism, and task parallelism.",
+                    "__children": []
+                }
+            ]
+        },
+        {
+            "name": "Computer Architecture",
+            "prompt": "Provide resources and materials that explain the design and organization of modern computer systems, including processors, memory hierarchies, and input/output systems. Include examples of how computer architecture supports parallel computing and high-performance computing.",
+            "__children": [
+                {
+                    "name": "Computer Organization",
+                    "prompt": "Provide materials that explain the high-level aspects of computer design, including the memory system, memory interconnect, and internal processor or CPU design. Include information on the organization of modern computer systems and how they support parallel computing and high-performance computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Memory Hierarchy",
+                    "prompt": "Provide resources that explain the concept of memory hierarchy, including caching, main memory design, virtual memory architecture, and memory hierarchy implementation. Include examples of how memory hierarchy affects processor performance and supports high-performance computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Input/Output Systems",
+                    "prompt": "Provide materials that explain the design and organization of input/output systems, including common input/output devices, processor-I/O interaction, and bus design and organization. Include information on how I/O systems support parallel computing and high-performance computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Superscalar Processors",
+                    "prompt": "Provide materials that explain the design and organization of superscalar processors, including the main concepts and overall organization of superscalar processors. Include information on how superscalar processors support high-performance computing.",
+                    "__children": []
+                },
+                {
+                    "name": "Quantitative Design",
+                    "prompt": "Provide resources that explain the use of quantitative design and analysis in computer architecture, including the use of formulas for energy, static power, dynamic power, and integrated circuit costs. Include information on how quantitative design is used in high-performance computing applications.",
+                    "__children": []
+                },
+                {
+                    "name": "Microarchitecture",
+                    "prompt": "Provide materials that explain the concept of microarchitecture and its role in computer design, including the design of the internal processor or CPU. Include information on how microarchitecture supports parallel computing and high-performance computing.",
+                    "__children": []
+                }
+            ]
+        },
+        {
+            "name": "Scalability and Performance",
+            "prompt": "Offer materials that discuss the challenges of scaling parallel applications and achieving high performance on large-scale systems. Include techniques for measuring and improving performance, such as benchmarking and profiling, and strategies for optimizing parallel algorithms and data structures.",
+            "__children": [
+                {
+                    "name": "Scalability Challenges",
+                    "prompt": "Provide materials that discuss the challenges of scaling parallel applications on large-scale systems, including Amdahl's and Gustafson's Laws, and the limitations of parallelism. Include case studies and examples of how these challenges have been addressed in real-world applications.",
+                    "__children": []
+                },
+                {
+                    "name": "Benchmarking and Profiling",
+                    "prompt": "Offer resources on techniques for measuring and improving performance in parallel applications, including benchmarking and profiling tools, and methods for analyzing and interpreting results. Discuss how these techniques can be used to identify performance bottlenecks and optimize parallel algorithms and data structures.",
+                    "__children": []
+                },
+                {
+                    "name": "Parallel Algorithm Optimization",
+                    "prompt": "Provide materials on strategies for optimizing parallel algorithms and data structures, including techniques for reducing communication overhead, improving load balancing, and increasing parallelism. Include examples of optimized parallel algorithms and data structures, and discuss the trade-offs between different optimization techniques.",
+                    "__children": []
+                },
+                {
+                    "name": "Large-Scale System Architectures",
+                    "prompt": "Discuss the architectures of large-scale systems, including supercomputers, clusters, and distributed systems. Provide materials on how these architectures support parallel computing, and how they can be optimized for high-performance applications.",
+                    "__children": []
+                },
+                {
+                    "name": "Data-Parallel Programming",
+                    "prompt": "Offer resources on data-parallel programming models and languages, including SIMD, OpenMP, and MPI. Discuss how these models and languages can be used to write efficient parallel code, and provide examples of data-parallel algorithms and applications.",
+                    "__children": []
+                },
+                {
+                    "name": "Performance Modeling and Analysis",
+                    "prompt": "Provide materials on performance modeling and analysis techniques for parallel applications, including analytical models, simulation tools, and machine learning-based approaches. Discuss how these techniques can be used to predict and optimize performance, and to identify potential performance bottlenecks.",
+                    "__children": []
+                }
+            ]
+        }
+    ]
+}

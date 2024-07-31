@@ -20,7 +20,7 @@ def main():
 
 def generate_output(query_text: str):
     start = time.time()
-    dense_results = dense_relevant_ranked_documents(query_text, 20)
+    dense_results = dense_relevant_ranked_documents(query_text, 10)
     end = time.time()
     time_dense = end - start
 
