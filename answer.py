@@ -13,15 +13,15 @@ Takes in a list of documents and a string question.
 Outputs which of those documents are relevant to the question and which are not, both as lists.
 """
 def guided_response(documents: list[Document], question: str):
-    # llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
-    inference_server_url = "https://sdsc-llama3-api.nrp-nautilus.io/v1"
-
-    llm = ChatOpenAI(
-        model=LLM_MODEL,
-        openai_api_key="js8CT4Cs6HShr8Ct2X",
-        openai_api_base=inference_server_url,
-        temperature=0
-    )
+    llm = ChatOllama(model=LLM_MODEL, temperature=0)
+    # inference_server_url = "https://sdsc-llama3-api.nrp-nautilus.io/v1"
+    #
+    # llm = ChatOpenAI(
+    #     model=LLM_MODEL,
+    #     openai_api_key="js8CT4Cs6HShr8Ct2X",
+    #     openai_api_base=inference_server_url,
+    #     temperature=0
+    # )
 
     prompt = PromptTemplate(
         template="""<|begin_of_text|><|start_header_id|>system<|end_header_id|> You are an expert on High Performance

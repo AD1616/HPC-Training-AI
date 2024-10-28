@@ -12,8 +12,9 @@ MONGODB_URL = "mongodb://localhost:27017/"
 
 MONGODB_NAME = "hpc_training_raw_local_db"
 
-LLM_MODEL = "meta-llama/Meta-Llama-3.1-70B-Instruct"
+# LLM_MODEL = "meta-llama/Meta-Llama-3.1-70B-Instruct"
 # LLM_MODEL = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+LLM_MODEL = "llama3"
 
 CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 

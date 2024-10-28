@@ -14,15 +14,15 @@ Takes in a list of documents
 Outputs which of those documents are research papers and which are training materials.
 """
 def identify_documents(documents: list[Document]):
-    # llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
-    inference_server_url = "https://sdsc-llm-api.nrp-nautilus.io/"
-
-    llm = ChatOpenAI(
-        model=LLM_MODEL,
-        openai_api_key="js8CT4Cs6HShr8Ct2X",
-        openai_api_base=inference_server_url,
-        temperature=0,
-    )
+    llm = ChatOllama(model=LLM_MODEL, format="json", temperature=0)
+    # inference_server_url = "https://sdsc-llm-api.nrp-nautilus.io/"
+    #
+    # llm = ChatOpenAI(
+    #     model=LLM_MODEL,
+    #     openai_api_key="js8CT4Cs6HShr8Ct2X",
+    #     openai_api_base=inference_server_url,
+    #     temperature=0,
+    # )
 
     prompt = PromptTemplate(
         template="""<|begin_of_text|><|start_header_id|>system<|end_header_id|> You are a grader assessing whether
